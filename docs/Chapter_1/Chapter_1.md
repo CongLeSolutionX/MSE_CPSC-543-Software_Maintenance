@@ -1,0 +1,138 @@
+
+
+----
+
+# Chapter 1 - Introduction to Basic Concepts
+
+```mermaid
+---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Chapter 1: Introduction to Basic Concepts))
+    node(1.1 Introduction)
+      label(Software Maintenance defined)
+      label(Discipline after delivery)
+      label(High Costs: 40-70% lifecycle)
+      label(Urgent need for solutions)
+      label(Proliferation of Software Systems)
+      label(Importance of System Usefulness)
+      label(Life & Death Context)
+      label(Challenges of Change Management)
+    node(1.2 Definitions)
+      node(Evolution)
+        label(Continuous change)
+        label(Simpler to Complex)
+        label(Worse to Better)
+      node(Maintainability)
+        label(Ease of Maintenance)
+      node(Maintenance)
+        label(Keeping Existing State)
+        label(Repair, Efficiency, Validity)
+        label(Preserve from Failure/Decline)
+      node(Software)
+        label(Programs)
+        label(Documentation)
+        label(Operating Procedures)
+        label(Computers Useful to Man)
+      node(Software Maintenance)
+        label(Modification after Delivery)
+        label(Correct Faults)
+        label(Improve Performance)
+        label(Adapt to Modified Environment)
+    node(1.3 The Basics of "Software")
+      label(Software != Programs alone)
+      label(Comprehensive View)
+        label(Programs: Source & Object Code)
+        label(Documentation: Analysis, Design, User Manuals)
+        label(Operating Procedures: Setup, Failure Response)
+      node(Maintainability - Difficult to Quantify)
+        label(Complexity Measures Exist)
+        label(Interoperability, Standards are factors)
+        label(No Simple 'Maintainability Factor')
+        label(Recognizing Maintainability Traits is Key Skill)
+        label(Maintainer Worth = Weight in Gold)
+        label(Maintainers becoming "Elite")
+    node(1.4 New Development vs Maintenance)
+      label(Maintenance - Constraints of Existing System)
+      label(New Development - Green Field Site)
+      label(Impact Analysis - Before ANY work)
+      node(Difference in Enhancement Design)
+        label(Maintenance - Investigate Current System)
+          label("Architectural Design")
+          label("Low-Level Design")
+        label(Designer Needs to:)
+          label("Accommodate Change")
+          label("Predict Ripple Effect")
+          label("Determine Skills Required")
+      node(Jones Analogy - Room Addition)
+        label("Do not weaken existing structure")
+        label("Cost per sq ft higher in maintenance")
+        label("Remove walls, reroute circuits, avoid disruption")
+    node(1.5 Why Software Maintenance is Needed)
+      label(Continuity of Service)
+        label("Keep Running")
+        label("Life-Threatening Failures Possible")
+        label("Daily Life Managed by Computers")
+      label(Mandatory Upgrades)
+        label("Government Regulations")
+        label("Tax Laws Change")
+        label("Competitive Edge")
+      label(User Requests for Improvements)
+        label("Better System = More Use")
+        label("Functionality Enhancements")
+        label("Performance Improvements")
+        label("Customization")
+      label(Facilitate Future Maintenance)
+        label("Shortcuts Costly Long-Term")
+        label("Code & Database Restructuring")
+        label("Documentation Updates")
+      label("System is Never Finished if Used")
+    node(1.6 Maintaining Systems Effectively)
+      label(Good Grounding in Theory & Skills Essential)
+      label(Key Discipline for System Operation)
+      label(Far-Reaching Maintenance Activities)
+      label(Wider Skillset needed)
+        label("Beyond Programming")
+        label("Comprehension Skills")
+        label("Analytical Powers")
+    node(1.7 Case Study - Air Traffic Control)
+      label("UK New System Delays <br> (1990-2002)")
+      label(Old System Over Capacity)
+      label(Initial Decision - Brand New Bespoke System)
+      label(Delays, Bugs, Cost Overruns)
+      label(Off-the-shelf components suggested)
+      label(Safety Compromised by Delays)
+      label(Less Ambitious European Upgrades - More Success)
+    node(1.8 Categorizing Software Change)
+      label(Motivation for Change)
+      label(Understanding When/How to Change)
+      label(Resource Assignment)
+      label(Prioritizing Change Requests)
+      node(Categories of Change)
+        label("Modification by Defects")
+        label("Environmental Modifications ")
+        label("Expanded Requirements")
+        label("Prevent Malfunctions")
+    node(1.9 Summary)
+      label("Maintenance Costs 40-70% Life-cycle")
+      label(Understand Basic Terms: Software, Maintenance, Evolution)
+      label(Maintenance != Development - Key Differences)
+      label(Software Maintenance - Increasing Importance)
+      label(Theoretical Base Underpins Maintenance)
+      label(Next Chapter: Maintenance Framework)
+
+%% style root fill:#f0f,stroke:#333,stroke-width:1px
+
+```
+
+
+**Diagram 1: Chapter 1 - Introduction to Basic Concepts - Mindmap**
+
+This mindmap provides a comprehensive overview of Chapter 1, breaking down each section (`1.x`) into its main points. It highlights the definitions, key comparisons (Development vs. Maintenance), reasons for maintenance, and the case study, all within a hierarchical structure typical of a mindmap.
+
+
+----
