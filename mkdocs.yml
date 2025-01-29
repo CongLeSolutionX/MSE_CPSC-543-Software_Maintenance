@@ -1,16 +1,10 @@
-site_name: MSE CSUF
+site_name: MSE - CPSC-543 - Software Maintenance
 # site_url: "CHANGE_ME_LATER"
 
 nav:
   - Introduction: 'index.md'
   - Syllabus: 'Syllabus.md'
   - Textbook: 'Chapter_1/Chapter_1.md/'
-
-markdown_extensions:
-  smarty: {}
-  toc:
-    permalink: true
-  sane_lists: {}
 
 theme:
   name: material
@@ -35,15 +29,21 @@ theme:
       primary: deep orange
       accent: green
 
+# Plugins
+plugins:
+  - search
+
 markdown_extensions:
-  - pymdownx.superfences:
+  smarty: {}
+  toc:
+    permalink: true
+  sane_lists: {}
+  pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-# Plugins
-plugins:
-  - search
+
 
 # # Add toggle for English and Vietnamese language
 #   extra:
