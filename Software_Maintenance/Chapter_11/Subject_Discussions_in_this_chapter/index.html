@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Cong Le" name="author"/>
+<link href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_11/Subject_Discussions_in_this_chapter/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.50" name="generator"/>
+<title>Subject Discussions in this chapter - MSE - CPSC-543 - Software Maintenance</title>
+<link href="../../../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+<body data-md-color-accent="amber" data-md-color-primary="orange" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#subject-1-branching-strategies-in-a-collaborative-ios-development-environment">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Subject Discussions in this chapter
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="orange" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="deep-orange" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Introduction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Syllabus/">
+<span class="md-ellipsis">
+    Syllabus
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Software Maintenance
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Discussing_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-gitflow-branching-strategy-for-ios-development">
+<span class="md-ellipsis">
+      Diagram: Gitflow Branching Strategy for iOS Development
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<hr/>
+<p>Below are two subjects related to Chapter 11 (Configuration Management), viewed through the lens of an experienced iOS developer.</p>
+<hr/>
+<h1 id="subject-1-branching-strategies-in-a-collaborative-ios-development-environment">Subject 1: Branching Strategies in a Collaborative iOS Development Environment<a class="headerlink" href="#subject-1-branching-strategies-in-a-collaborative-ios-development-environment" title="Permanent link">¶</a></h1>
+<p><strong>Context:</strong> In Chapter 11, version control is mentioned as a core part of configuration management. As an experienced iOS developer, I know that effective branching strategies are essential for navigating the complexities of collaborative development, especially when dealing with large projects, multiple features, and frequent releases.</p>
+<p><strong>iOS Developer’s Perspective:</strong></p>
+<ul>
+<li>
+<p><strong>The Challenge of Parallel Development:</strong> In iOS development, we don’t work in isolation. Multiple developers might be concurrently working on different features, bug fixes, or experimental changes for the same project. Without a well-defined branching strategy, chaos ensues: code conflicts become frequent, bug fixes get mixed with feature changes, and the risk of destabilizing the <em>main</em> branch becomes high.</p>
+</li>
+<li>
+<p><strong>Gitflow as a Common Approach:</strong> Many iOS teams rely on Gitflow or something similar. This strategy involves using:</p>
+<ul>
+<li><code>main</code> branch: Represents the production-ready state.</li>
+<li><code>develop</code> branch: Integrates all stable feature development.</li>
+<li><code>feature</code> branches: Individual branches for each new feature of your application.</li>
+<li><code>release</code> branches:  Used to prepare a release, and freeze the features in preparation to make sure, it will be fully tested.</li>
+<li><code>hotfix</code> branches: Addresses critical issues post-release using a hotfix branch, often developed from a <code>main</code> branch.</li>
+</ul>
+</li>
+<li><strong>Why Gitflow works for iOS:</strong> iOS ecosystem is one where app updates are pushed frequently, this approach allows us to be flexible about features, and at the same time being stable about releases, using <code>release</code> branches in a smart way. It also makes it easier to manage code for multiple app versions simultaneously.</li>
+<li><strong>Dealing with Swift Package Manager (SPM):</strong> Gitflow is not only for your code base. It also works well for a mixed source environment. As an example, if you also depend on third-party libraries distributed using SPM and if the third party release a new update, a new <code>feature</code> branch can spin off and test the upgrade in an isolated environment, before merging back to <code>develop</code> branch.</li>
+<li><strong>Code Review Implementation from a Branching Perspective:</strong> An effective code review process is crucial. Before merging <code>feature</code> branches back into <code>develop</code>, all code must be reviewed which will help to reduce bugs, and enforce high standards among the development team. The code review process may not only consist of technical merits, but also performance and architecture best practices for a specific project.</li>
+<li><strong>Tools and Automation:</strong> Tools like Xcode’s built-in source control integration, command line git, and platforms like Bitbucket, GitHub, and GitLab are crucial for managing branches, code review, pull requests. CI/CD (Continuous Integration/Continuous Deployment) pipelines are also essential, to manage releases automatically and deploy application in different environments.</li>
+<li><strong>Practical Learnings</strong>: I have seen many projects where not having a suitable merging strategy has resulted in the source code being out-of-sync with the releases. This creates a lot of frustration and instability. A good branching strategy is critical, and should always be prioritized on collaborative environments.</li>
+</ul>
+<hr/>
+<h2 id="diagram-gitflow-branching-strategy-for-ios-development">Diagram: Gitflow Branching Strategy for iOS Development<a class="headerlink" href="#diagram-gitflow-branching-strategy-for-ios-development" title="Permanent link">¶</a></h2>
+<p>Here’s a Mermaid diagram illustrating the Gitflow branching strategy discussed in this subject, focused on its use in an iOS development context:</p>
+<pre class="mermaid"><code>---
+config:
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[main];
+    B("release/v1.0");
+    C{Hotfix};
+    D["release/v1.0.1"];
+    E[(develop)];
+    F("feature/NewFeature A");
+    G("feature/BugFix B");
+    H("release/v2.0");
+    I["Merge Release to Main"];
+
+
+    A --&gt; B
+    B --&gt; C
+    C -- BugFix --&gt; D
+    C -- NoBugFix --&gt;E
+    D --&gt; E
+    A --&gt; E
+    E --&gt; F
+    E --&gt; G
+    F --&gt; E
+    G --&gt; E
+
+    E --&gt; H
+    H --&gt; I
+    I --&gt; A
+
+    style A fill:#c3c9,stroke:#333,stroke-width:1px
+    style E fill:#a3e9,stroke:#333,stroke-width:1px
+    style C fill:#c319,stroke:#333,stroke-width:1px
+
+    classDef Elements fill:#a399,stroke:#333,stroke-width:1px
+    class B,D,F,G,H Elements
+    style I fill:#a919,stroke:#333,stroke-width:1px
+</code></pre>
+<p>This diagram represents the core structure and flow of Gitflow, particularly with iOS development in mind.</p>
+<ul>
+<li><strong><code>main</code> Branch (Blue Node):</strong>: The central branch, representing the production-ready code.</li>
+<li><strong><code>develop</code> Branch (Purple Node):</strong>: Where features and minor changes merges after code review.</li>
+<li><strong><code>feature</code> Branches (Grey Nodes):</strong>: Individual branches (e.g., <code>feature/NewFeature A</code>) are created for new features, and will eventually merge back  into <code>develop</code></li>
+<li><code>hotfix</code> branches (Light-Blue Nodes): spin of for any post release issues and merge into <code>main</code>, and then <code>develop</code>.</li>
+<li><code>release</code> branches (Yellow Nodes): used to freeze, stabilize and test in preparation for a new application release.</li>
+</ul>
+<p>This diagram should provide a clear visual illustration of how Gitflow works in a typical iOS development environment. This is often implemented in various iOS projects, and has the objective of making the development and release process more organized.</p>
+<hr/>
+<h1 id="subject-2-configuration-management-of-xcode-projects-and-build-settings">Subject 2: Configuration Management of Xcode Projects and Build Settings<a class="headerlink" href="#subject-2-configuration-management-of-xcode-projects-and-build-settings" title="Permanent link">¶</a></h1>
+<p><strong>Context:</strong> Chapter 11 mentions the importance of “Building” and “Environment Management” within configuration management. For an iOS developer, this translates directly to the intricate world of Xcode project management and build settings configuration.</p>
+<p><strong>iOS Developer’s Perspective:</strong></p>
+<ul>
+<li>
+<p><strong>The Complexity of Xcode Projects:</strong> Xcode projects, especially for large apps, are not simply about organizing source code. They involve complex build settings, schemes, targets, Info.plist files, asset catalogs, and dependencies. Managing and versioning these elements consistently forms a part of this CM.</p>
+</li>
+<li>
+<p><strong>Importance of Build Settings Configuration</strong>: Setting the correct configuration for build phases, such as defining the code signing identities, compilation flags, target frameworks, frameworks search paths, etc. is an error prone, and tedious task. If not properly setup, can lead to instability, not only the compilation process, but also during deployment stage of the app life cycle.</p>
+</li>
+<li><strong>Understanding Xcode Schemes:</strong> Xcode schemes determine what gets built, how it gets built, and where it runs. They’re essential for managing different build configurations (e.g., debug, release, staging) and should be versioned as well. Configuration Management (CM) approach should include different targets for different versions of the app, e.g. free versions, versions with in app purchases, beta versions, and the final versions deployed to app store.</li>
+<li><strong>Beyond the Xcode UI:</strong> Many iOS developers use <code>xcconfig</code> files to manage build settings, since they are textual files and are easier to control, and it also makes it easier to compare the different configurations over time. Also, this is the way to have a more granular control over configurations that can’t be simply done with XCode UI, and is often the standard for many big iOS development teams.</li>
+<li><strong>Info.plist and Asset Catalogs:</strong> These files and catalogs are also configuration elements, in form of non-binary files, since they are used as entry points for the system. So, they must also be included as part of the configuration management process, to keep track of changes. This includes application names, versioning, assets such as the application icon, images, audio files etc…</li>
+<li><strong>Dealing with Swift Packages:</strong> As an iOS developer, I need to manage a mix of internal code and libraries and also other third party dependencies using SPM. Version control needs to be applied to those files, and an understanding of transitive dependencies must be kept. An incorrect version of a package could lead to compilation or runtime errors. This highlights the importance of a shared and controlled, centralized location for source code storage, that handles different dependencies and relationships.</li>
+<li><strong>Automation and CI/CD:</strong> Continuous Integration and Continuous Deployment (CI/CD) pipelines, using tools like Jenkins, GitLab ci or GitHub Actions, become very essential. These pipelines automatically builds, tests and deploys the applications. Such environments should be well integrated to CM to fetch code from the right branch, apply the right build settings, and be able to revert configurations in case something goes wrong.</li>
+<li><strong>Practical Learnings:</strong> In my personal experience, incorrect handling of build settings, configurations and Info.plist files have been the source of much instability. So, a detailed understanding of configuration management is required to prevent issues at different stages of an iOS app life cycle. Automating build processes using scripting is invaluable.</li>
+</ul>
+<p><strong>Summary:</strong></p>
+<p>Both of these subjects are crucial for any experienced iOS developer and highlight practical components of Configuration Management that are often overlooked but essential for producing robust and maintainable applications. Understanding these concepts moves beyond academic knowledge and relates directly to day-to-day development challenges for experienced developers. These real-world applications demonstrate the essential role that CM plays in iOS projects.</p>
+<hr/>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

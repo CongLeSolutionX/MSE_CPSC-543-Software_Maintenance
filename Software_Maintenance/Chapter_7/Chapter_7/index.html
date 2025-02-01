@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Cong Le" name="author"/>
+<link href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_7/Chapter_7/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.50" name="generator"/>
+<title>Chapter 7 - MSE - CPSC-543 - Software Maintenance</title>
+<link href="../../../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+<body data-md-color-accent="amber" data-md-color-primary="orange" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-7-reverse-engineering">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 7
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="orange" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="deep-orange" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Introduction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Syllabus/">
+<span class="md-ellipsis">
+    Syllabus
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Software Maintenance
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Discussing_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<hr/>
+<h1 id="chapter-7-reverse-engineering">Chapter 7: Reverse Engineering<a class="headerlink" href="#chapter-7-reverse-engineering" title="Permanent link">¶</a></h1>
+<p>Here are the diagrams and illustrations created using Mermaid syntax to cover all the key concepts:</p>
+<h1 id="diagram-1-overview-mindmap">Diagram 1: Overview - Mindmap<a class="headerlink" href="#diagram-1-overview-mindmap" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root(("Chapter 7: &lt;br&gt;Reverse Engineering"))
+    node(Introduction)
+      label(Focus on Program Understanding)
+      label(Reverse Engineering for Change Facilitation)
+      label(Reverse Engineering vs. Change Implementation)
+    node(Definitions)
+      label(Key Terms Defined)
+        label(Reverse Engineering)
+        label(Forward Engineering)
+        label(Reengineering)
+        label(Restructuring)
+        label(Abstraction)
+    node(Abstraction)
+      label(Core Concept)
+      label(Types of Abstraction)
+        node(Function Abstraction)
+          label(Eliciting Functions)
+          label(Focus on 'What' not 'How')
+        node(Data Abstraction)
+          label(Eliciting Data Objects)
+          label(Focus on Data, not implementation)
+          label(Abstract Data Types)
+        node(Process Abstraction)
+          label(Eliciting Operation Order)
+          label("Concurrent and Distributed Processes")
+    node(Purpose and Objectives)
+      label("Goal: &lt;br&gt;Facilitate Change")
+      label(Objectives List)
+        label("Recover Lost Information")
+        label("Platform Migration")
+        label("Improve Documentation")
+        label("Provide Alternative Views")
+        label("Extract Reusable Components")
+        label("Cope with Complexity")
+        label("Detect Side Effects")
+        label("Reduce Maintenance Effort")
+    node(Levels of Reverse Engineering)
+      label(Abstraction Levels)
+      node(Redocumentation)
+        label(Same Abstraction Level)
+        label(Alternative Representations)
+        label(Enhance Understanding)
+      node(Design Recovery)
+        label(Higher Abstraction Level)
+        label(Recover Design Info)
+        label(Not Necessarily Original Design)
+      node(Specification Recovery)
+        label(Highest Abstraction Level)
+        label(Recover System Specification)
+        label(Paradigm Shift Context)
+    node(Supporting Techniques)
+      label(Techniques for Change)
+      node(Forward Engineering)
+        label(Traditional Development)
+        label(Requirements to Implementation)
+      node(Restructuring)
+        label(Same Abstraction Level)
+        label(Transformation to Improve Structure)
+        label(No Functionality Change)
+      node(Reengineering)
+        label(Reverse Engineering + Forward Engineering)
+        label(Analysis &amp; Alteration Process)
+    node(Benefits)
+      label(Advantages of Reverse Engineering)
+      node(Maintenance Benefits)
+        label(Enhanced Understanding)
+        label(Error Identification)
+        label(Ripple Effect Prediction)
+      node(Software Reuse Benefits)
+        label(Component Extraction)
+        label(Reusable Assets)
+    node("Case Study: &lt;br&gt;US Dept of Defense")
+      label(Real-world Application)
+      label(Inventory System Example)
+      label(Data Requirement Focus)
+      label(Lessons Learned)
+    node(Current Problems)
+      label(Challenges and Limitations)
+      label(Automation Limits)
+      label(Naming Problem)
+    node(Summary)
+      label(Key Takeaways)
+      label(Recap of Chapter Concepts)
+</code></pre>
+<p>This mindmap provides a hierarchical overview of Chapter 7, outlining all the sections and sub-sections to give a structured representation of the chapter’s content.</p>
+<hr/>
+<h1 id="table-1-levels-of-reverse-engineering">Table 1: Levels of Reverse Engineering<a class="headerlink" href="#table-1-levels-of-reverse-engineering" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 7: Levels of Reverse Engineering
+    header Level | Abstraction Level | Objective | Output
+    row Redocumentation | Same | Enhance Understanding, Create Alternative Views  | Semantically Equivalent Representation (e.g., Diagrams)
+    row Design Recovery | Higher (Design) | Recover Design Information | Design Documents, Architectural Views
+    row Specification Recovery | Highest (Specification) | Recover System Specification  | Formal Specification, Abstract Models</code></pre>
+<p>This table summarizes and compares the three levels of reverse engineering discussed in Chapter 7: Redocumentation, Design Recovery, and Specification Recovery. It compares them based on Abstraction Level, Objective, and Output for quick understanding.</p>
+<hr/>
+<h1 id="diagram-2-reverse-engineering-process">Diagram 2: Reverse Engineering Process<a class="headerlink" href="#diagram-2-reverse-engineering-process" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Start with Source Code];
+    B{Reverse Engineering};
+    C[Abstraction];
+    D{Redocumentation};
+    E{Design Recovery};
+    F{Specification Recovery};
+    G["Alternative Views &amp; Documentation"];
+    H["Design Information &amp; Models"];
+    I[System Specification];
+    J["Goal:&lt;br&gt;Program Understanding"];
+    K[Facilitate Change];
+
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    C --&gt; E
+    C --&gt; F
+    D --&gt; G
+    E --&gt; H
+    F --&gt; I
+    B --&gt; J
+    J --&gt; K
+
+    style B fill:#c3cf,stroke:#333,stroke-width:1px
+    style C fill:#a3aa,stroke:#333,stroke-width:1px
+    style D fill:#f3f2,stroke:#333,stroke-width:1px
+    style E fill:#f3f2,stroke:#333,stroke-width:1px
+    style F fill:#f3f2,stroke:#333,stroke-width:1px
+</code></pre>
+<p>This flowchart illustrates the Reverse Engineering process as described in Chapter 7, starting from Source Code and leading to different levels of abstraction: Redocumentation, Design Recovery, and Specification Recovery. It shows how abstraction facilitates program understanding and ultimately change.</p>
+<hr/>
+<h1 id="table-2-benefits-of-reverse-engineering">Table 2: Benefits of Reverse Engineering<a class="headerlink" href="#table-2-benefits-of-reverse-engineering" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 7: Benefits of Reverse Engineering
+    header Benefit Area | Specific Benefit | Description
+    row Maintenance | Enhanced Understanding | Easier Error Identification and Correction, Ripple Effect Analysis
+    row Maintenance | Facilitated Change Implementation | Supports Adaptive, Perfective, and Preventive Maintenance
+    row Maintenance | Improved Documentation | Provides Up-to-date or Alternative Documentation
+    row Reuse | Component Extraction | Identifies and Extracts Reusable Components
+    row Quality Improvement | Enhanced System Quality | Contributes to more Reliable and Maintainable Systems
+    row Cost Reduction | Reduced Maintenance Effort | Decreases Time and Resources Needed for Changes</code></pre>
+<p>This table outlines the Benefits of Reverse Engineering categorized into Maintenance Benefits, Reuse Benefits and overall Quality and Cost reduction. Each benefit is further described for clarity and impact assessment.</p>
+<hr/>
+<p>Here are the additional diagrams for Chapter 7</p>
+<hr/>
+<h1 id="diagram-3-abstraction-types">Diagram 3: Abstraction Types<a class="headerlink" href="#diagram-3-abstraction-types" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Chapter 7: &lt;br&gt;Abstraction Types))
+    node(Function Abstraction)
+      label(Focus: What a Function Does, not How)
+      label(Elicits Program Functions)
+      label(Describes through Verbs)
+        label(e.g., add, check, pop)
+      label("Input-Output Relation")
+    node(Data Abstraction)
+      label("Focus: &lt;br&gt; Data Objects &amp; Operations")
+      label(Abstract Data Types)
+        label(Data Types &amp; Operations)
+        label(e.g., Stack &amp; Push, Pop operations)
+      label(Encapsulation)
+        label(Separating Definition from Implementation)
+        label(e.g., Modules/Classes in oop)
+    node(Process Abstraction)
+      label(Focus: Order of Operations)
+        label("What to do and not How to do")
+      label(Types)
+        label(Concurrent Processes)
+           label("Communication via Shared Data")
+        label(Distributed Processes)
+          label("Communication via Message Passing")
+          label("No Shared Data Area")
+</code></pre>
+<p>This mindmap elaborates on the three abstraction types (Function, Data, and Process) in Chapter 7, providing more detail on each type including defining characteristics and examples.</p>
+<hr/>
+<h1 id="diagram-4-levels-of-reverse-engineering">Diagram 4: Levels of Reverse Engineering<a class="headerlink" href="#diagram-4-levels-of-reverse-engineering" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A["Subject System Source Code"];
+    B{"Reverse Engineering"};
+    C{"Same Abstraction Level"};
+    D[Redocumentation];
+    E{"Higher Abstraction Level?"};
+    F{"Design or Specification Recovery"};
+    H["Design Recovery"];
+    G[End];
+    I["Specification Recovery"];
+
+    A --&gt; B
+    B --&gt; C
+    C -- Yes --&gt; D
+    C -- No --&gt; E
+    E -- Yes --&gt; F
+    E -- No --&gt; G
+    F -- Design --&gt; H
+    F -- Specification --&gt; I
+
+classDef Components fill:#c3c9,stroke:#333,stroke-width:1px
+class B,C,E,F Components
+
+classDef OtherComponents fill:#a329,stroke:#333,stroke-width:1px
+class D,H,I OtherComponents
+</code></pre>
+<p>A flowchart that visually details the steps of determining the levels of reverse engineering, showing how source code is transformed from one level to another (Redocumentation, Design Recovery and Specification Recovery)</p>
+<hr/>
+<h1 id="diagram-5-supporting-techniques">Diagram 5: Supporting Techniques<a class="headerlink" href="#diagram-5-supporting-techniques" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Reverse Engineering];
+    B{Supporting Techniques};
+    C[Forward Engineering];
+    D[Restructuring];
+    D1("Same level");
+    D2(Change in Format);
+    D3("No function change");
+    E[Reengineering];
+    E1(Reverse Engineer);
+    E2(Forward Engineering);
+    E3(Change Implementation);;
+
+    A --&gt; B
+    B --&gt; C
+    B --&gt; D
+    D --&gt; D1
+    D1 --&gt; D2
+    D2 --&gt; D3
+    B --&gt; E
+    E --&gt; E1
+    E1 --&gt; E2
+    E2 --&gt; E3
+
+classDef Component fill:#c3c9,stroke:#333,stroke-width:1px
+class B Component
+
+classDef OtherComponents fill:#a3fa,stroke:#333,stroke-width:1px
+class C,D,E OtherComponents
+</code></pre>
+<p>This diagram visualizes the Supporting Techniques discussed in chapter 7, using another flowchart to show the relationship between Reverse Engineering, Forward Engineering, Restructuring and Reengineering, including sub-steps taken during Restructuring and Reengineering.</p>
+<hr/>
+<h1 id="diagram-6-case-study-us-dod">Diagram 6: Case Study (US DoD)<a class="headerlink" href="#diagram-6-case-study-us-dod" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+    root(("Chapter 7: &lt;br&gt;Case Study - US Department of Defense"))
+      node(The Context)
+        label(Heterogeneous non-combat info systems)
+        label("1700+ data centers and &lt;br&gt;1.4 Billion LOC")
+        label("High maintenance costs &lt;br&gt;($9B/year)")
+        label("Lack of standardized data")
+      node(Objectives)
+        label("Integrate different systems")
+          label("Focus on data requirements")
+      node(Approach)
+        label("Reverse engineering data requirements")
+        node(Top-down Phase)
+          label(High level 'as-is' models)
+            label("User screens, reports, policy")
+              label("Draft business and &lt;br&gt; data models")
+
+        node(Bottom-up Phase)
+          label("Analysis using tools")
+            label("Data Dependency Analysis")
+            label("Software, data, files ")
+              label("Validate and &lt;br&gt; Resolve Inconsistencies")
+      node(Outcomes)
+        label("Logical data Models")
+        label("Data elements")
+        label("Model decomposition hierarchies")
+        label("Traceability matrix")
+        label("Reuse requirements")
+        label("Data Migration Plans")
+        label("Integrated database")
+      node(Lessons Learned)
+        label("Management commitment essential")
+        label("Human analysis with tool support")
+        label("Cost estimation was difficult")
+        label("Single tool not sufficient")
+        label("Focus on data, not just code")
+      label(Conclusion)
+</code></pre>
+<p>This mindmap details the Case Study within Chapter 7, illustrating the context, objectives, approach (divided into top-down and bottom-up phases), outcomes, and key lessons learned from the DoD’s legacy systems reverse engineering project.</p>
+<hr/>
+<h1 id="table-3-conditions-for-reverse-engineering">Table 3: Conditions for Reverse Engineering<a class="headerlink" href="#table-3-conditions-for-reverse-engineering" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 7: Conditions for Reverse Engineering
+    header Category | Indicator | Description
+    row Product / Environment | Missing or incomplete design/specification | Lack of clear design or requirements documentation
+    row Product / Environment | Out-of-date / incorrect / missing documentation | Inaccurate or absent system documentation
+    row Product / Environment | Need to translate programs into a different programming language | Software migration to new environments/languages
+        row Product / Environment |    Increased Program Complexity | Difficult to understand and modify
+ row Product / Environment | Poorly structured source code |  spaghetti code or code with irregular constructs
+    row Commercial |  Need to make compatible products | Products needing compatibility with other systems
+    row Commercial | Need to migrate between different platforms |  Software relocation due to compatibility issues
+    row Maintenance Process | Static or increasing bug backlog | Rising number of reported faults
+    row Maintenance Process |  Decreasing personnel productivity | Drop in workforce efficiency for system changes
+    row Maintenance Process |  Excessive corrective change |  Frequent bug-fixing and emergency modifications
+       row Commercial |    Need to extend economic life of system | System preservation is of prime importance
+         row Commercial |  Need to create new or similar products | Competitive product development strategies
+</code></pre>
+<p>This table summarizes the various conditions that would motivate the application of Reverse Engineering techniques, categorized into Product/Environment, Maintenance Process, and Commercial conditions, respectively.</p>
+<hr/>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

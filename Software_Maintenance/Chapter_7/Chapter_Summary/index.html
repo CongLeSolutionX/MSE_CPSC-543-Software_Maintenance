@@ -7,27 +7,27 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/">
-      
+        <meta name="author" content="Cong Le">
       
       
-        <link rel="next" href="Syllabus/">
+        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_7/Chapter_Summary/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>MSE - CPSC-543 - Software Maintenance</title>
+        <title>Chapter Summary - MSE - CPSC-543 - Software Maintenance</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-cpsc-543-software-maintenance" class="md-skip">
+        <a href="#chapter-7-reverse-engineering-summary" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Chapter Summary
             
           </span>
         </div>
@@ -218,7 +218,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -233,30 +233,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,44 +245,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -314,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Syllabus/" class="md-nav__link">
+      <a href="../../../Syllabus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Overview/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Summary/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Discussing_Subjects/" class="md-nav__link">
+      <a href="../../Chapter_1/Discussing_Subjects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -502,18 +444,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#key-concepts-and-definitions" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Key Concepts and Definitions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#purpose-and-objectives-of-reverse-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Purpose and Objectives of Reverse Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levels-of-reverse-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Levels of Reverse Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supporting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supporting Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-reverse-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of Reverse Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-study-us-department-of-defense" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Study: US Department of Defense
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Problems
     </span>
   </a>
   
@@ -534,27 +521,77 @@
                   
 
 
-<h1 id="welcome-to-cpsc-543-software-maintenance">Welcome to CPSC-543 Software Maintenance<a class="headerlink" href="#welcome-to-cpsc-543-software-maintenance" title="Permanent link">&para;</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<hr />
+<h1 id="chapter-7-reverse-engineering-summary">Chapter 7: Reverse Engineering - Summary<a class="headerlink" href="#chapter-7-reverse-engineering-summary" title="Permanent link">&para;</a></h1>
+<p>Chapter 7 delves into the crucial practice of reverse engineering within the context of software maintenance. It underscores that before any meaningful changes can be made to a system, a thorough understanding of its existing state is essential, and that reverse engineering provides the tools and techniques to achieve that understanding when documentation is missing, inaccurate, or outdated.</p>
+<h2 id="key-concepts-and-definitions">Key Concepts and Definitions<a class="headerlink" href="#key-concepts-and-definitions" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Reverse Engineering</strong> is defined as the process of analyzing a subject system to identify its components, their interrelationships, and to create representations of the system in a different form or abstraction level. It&rsquo;s a fact-finding mission that enables us to understand a system by working backward from its current state and then using that understanding to transform the system.</li>
+<li><strong>Forward Engineering,</strong> on the other hand, is the traditional software development approach, moving from requirements to design, onto implementation and testing of a system.</li>
+<li><strong>Reengineering</strong> combines forward and reverse engineering. It begins by using reverse engineering to understand a system and represent it in a new form, followed by forward engineering to implement desired changes or enhancements.</li>
+<li><strong>Restructuring</strong> is the transformation of a system from one representational form to another at the same level of abstraction, without changing its functionality. It’s often aimed at improving the system’s structure and maintainability.</li>
+<li><strong>Abstraction</strong> involves creating a simplified model of a system, highlighting essential features while ignoring irrelevant details. The chapter introduces three types:<ul>
+<li><strong>Function Abstraction:</strong> Focusing on <em>what</em> a function does, not <em>how</em> it achieves the result.</li>
+<li><strong>Data Abstraction:</strong> The essence of data types and operations, independent of specific implementations, and using abstract data types.</li>
+<li><strong>Process Abstraction:</strong> Understanding the order of operations, particularly for concurrent or distributed systems.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</li>
+</ul>
+<h2 id="purpose-and-objectives-of-reverse-engineering">Purpose and Objectives of Reverse Engineering<a class="headerlink" href="#purpose-and-objectives-of-reverse-engineering" title="Permanent link">&para;</a></h2>
+<p>The primary goal of reverse engineering is to facilitate change by improving system understanding. The specific objectives include:</p>
+<ul>
+<li><strong>Recovering lost information:</strong> Obtaining missing specifications, designs, or rationales.</li>
+<li><strong>Facilitating platform migration:</strong> Assisting with transferring code to new software or hardware environments.</li>
+<li><strong>Improving or providing documentation:</strong> Creating or updating system documentation to support maintainers.</li>
+<li><strong>Providing alternative views:</strong> Generating new perspectives on the system via different representations (e.g. flowcharts or diagrams).</li>
+<li><strong>Extracting reusable components:</strong> Identifying and isolating modules to be reused in other systems.</li>
+<li><strong>Coping with complexity:</strong> Making large, complex systems more comprehensible.</li>
+<li><strong>Detecting side effects:</strong> Identifying unintended consequences of software changes.</li>
+<li><strong>Reducing maintenance effort:</strong> Streamlining the process of making changes to the system using a clear understanding of its structure and function.</li>
+</ul>
+<h2 id="levels-of-reverse-engineering">Levels of Reverse Engineering<a class="headerlink" href="#levels-of-reverse-engineering" title="Permanent link">&para;</a></h2>
+<p>The chapter categorizes the abstraction levels of reverse engineering:</p>
+<ul>
+<li><strong>Redocumentation:</strong> Creating alternative representations at the same level of abstraction, which includes restructuring code, refining code and generating diagrams to improve understanding.</li>
+<li><strong>Design Recovery:</strong> Extracting design information and creating models at a higher level of abstraction than code. This is not necessarily the original design but a representation of system organization.</li>
+<li><strong>Specification Recovery:</strong> Recovering system specifications at the highest level of abstraction from the source code or design.</li>
+</ul>
+<h2 id="supporting-techniques">Supporting Techniques<a class="headerlink" href="#supporting-techniques" title="Permanent link">&para;</a></h2>
+<p>The different techniques discussed are:</p>
+<ul>
+<li><strong>Forward Engineering:</strong>  The traditional software creation, starting from the requirements going through design, implementation and testing. Not for maintenance itself, but the end point for Reengineering.</li>
+<li><strong>Restructuring:</strong> Transforms existing code to improve its structure or performance without adding or changing functionality, it reorganizes the code, and optimizes code making it easier to understand and maintain.</li>
+<li><strong>Reengineering:</strong> Uses Reverse Engineering first to understand a software system before transforming it, or developing new functionalities by moving through to a forward engineering approach.</li>
+</ul>
+<h2 id="benefits-of-reverse-engineering">Benefits of Reverse Engineering<a class="headerlink" href="#benefits-of-reverse-engineering" title="Permanent link">&para;</a></h2>
+<p>The benefits of this approach are:</p>
+<ul>
+<li>In <strong>Maintenance:</strong>  Better system understanding, easier identification and correction of errors, with ripple effect awareness and accurate documentation.</li>
+<li>For <strong>Software Reuse:</strong> Makes components readily available for future uses, as a by product of the process of understanding the current system.</li>
+<li><strong>Quality Improvement:</strong> Leads to higher quality, more maintainable, and more robust systems.</li>
+</ul>
+<h2 id="case-study-us-department-of-defense">Case Study: US Department of Defense<a class="headerlink" href="#case-study-us-department-of-defense" title="Permanent link">&para;</a></h2>
+<p>This case study describes a large project to integrate and maintain numerous disparate DoD information systems. It emphasizes the complex nature of legacy systems data reverse engineering. Key insights included the necessity of:
+*   Management commitment.
+*   Human analysis combined with automated tools which reveal data dependencies.
+*       The importance of standardizing interfaces and data models, and the difficultly in cost estimating.</p>
+<h2 id="current-problems">Current Problems<a class="headerlink" href="#current-problems" title="Permanent link">&para;</a></h2>
+<p>Chapter 7 notes some ongoing and difficult challenges in the field of reverse engineering:</p>
+<ul>
+<li><strong>Automation:</strong> Existing technology cannot fully automate tasks requiring design and high-level specification extraction with a high degree of accuracy.</li>
+<li><strong>Naming:</strong> Semantic clues from the code may be lost if naming strategies are not meaningful; particularly in code intended for reuse..</li>
+</ul>
+<p>By understanding how reverse engineering operates on a software system, the maintenance programmer can improve its long-term maintainability. These techniques often require a large initial effort, but are intended to repay that investment in the long-term management of the system through improved understandability.</p>
+<hr />
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -595,10 +632,10 @@ docs/
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

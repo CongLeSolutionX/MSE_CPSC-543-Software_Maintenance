@@ -1,0 +1,585 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Cong Le">
+      
+      
+        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_4/Subject_Discussions_in_this_chapter/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Subject Discussions in this chapter - MSE - CPSC-543 - Software Maintenance</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#subject-1-resource-limitations-the-ios-developers-daily-reality" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Subject Discussions in this chapter
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
+
+    </a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Syllabus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Syllabus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Maintenance
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapter 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter_1/Chapter_Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter_1/Chapter_Summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter_1/Discussing_Subjects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discussing Subjects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<hr />
+<p>Below are two subjects, viewed through the practical experience of an iOS developer, illustrate how the theoretical concepts from Chapter 4 manifest in real-world iOS development and maintenance scenarios.</p>
+<p>They highlight the constant balancing act between resource constraints, technical debt, immediate needs, and the essential goal of building and sustaining maintainable iOS applications.</p>
+<hr />
+<h1 id="subject-1-resource-limitations-the-ios-developers-daily-reality">Subject 1: Resource Limitations - The iOS Developer&rsquo;s Daily Reality<a class="headerlink" href="#subject-1-resource-limitations-the-ios-developers-daily-reality" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>Chapter 4 Context:</strong> Chapter 4 discusses &ldquo;Resource Limitations&rdquo; as a key constraint on software change. It points out that lack of budget, skilled personnel, and appropriate tools hinders effective maintenance.</p>
+</li>
+<li>
+<p><strong>iOS Developer Lens:</strong> For an iOS developer, &ldquo;Resource Limitations&rdquo; takes on a very practical and often immediate meaning, deeply intertwined with the platform itself. It&rsquo;s not just about budget or staffing, but also about the intrinsic constraints of mobile devices and the iOS ecosystem.  These limitations are not theoretical; they are faced daily:</p>
+<ul>
+<li>
+<p><strong>Device Constraints:</strong> iOS devices have finite resources: limited memory, battery life, and processing power compared to desktop or server environments.  This forces iOS developers to be extremely mindful of performance and efficiency from the outset.  Every code decision has a resource implication.  Thinking about change means constantly considering how a new feature or modification will impact device resources. A poorly optimized feature can quickly lead to battery drain, sluggish performance, and app crashes, directly impacting user experience and potentially leading to negative App Store reviews and user churn – a very real &ldquo;economic implication&rdquo; in the app world!</p>
+</li>
+<li>
+<p><strong>Development Time as a Resource:</strong>  App Store deadlines are often tight, especially for new features or major releases.  &ldquo;Time&rdquo; becomes a critical and extremely limited resource.  This pressure can lead to compromises in code quality and technical debt accumulation, which then <em>directly</em> exacerbates future maintenance burdens.  The temptation to take shortcuts for a quick fix (&ldquo;code-and-fix&rdquo; mentality mentioned in the book) is ever-present.  However, experienced iOS developers know this is a false economy.  While <em>time to market</em> is vital, neglecting maintainability for speed in the short term will cost significantly more time and resources during the inevitable maintenance phase.</p>
+</li>
+<li>
+<p><strong>Skill Set and Specialized Libraries (Tooling Constraint):</strong> While iOS has mature SDKs and a vast ecosystem, specialized tasks might require external libraries or frameworks. Integrating these adds complexity and dependencies that must be maintained – another resource consideration.  Furthermore, expertise in specific areas of iOS (like Core Data, SwiftUI Animations, Combine) is a valuable but limited resource within a team.  Knowledge silos can develop around these specialized parts of the codebase, making broader maintenance and change more challenging when the &lsquo;expert&rsquo; is not available.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Experienced iOS Developer Perspective:</strong> An experienced iOS developer deeply understands that resource awareness is not just about optimization as a separate step, but an integral part of the <em>entire</em> development and maintenance lifecycle.  They instinctively make design and coding choices that are mindful of these constraints:</p>
+<ul>
+<li><strong>Prioritizing Performance from the Start:</strong> Architectures are chosen and code is written with performance in mind.  Asynchronous operations, efficient data handling, and careful memory management become ingrained habits. This proactive approach to performance is essentially preventative maintenance – reducing the likelihood of performance-related issues arising and requiring costly fixes later.</li>
+<li><strong>Choosing the Right Tools and Frameworks:</strong> Experienced developers weigh the benefits of external libraries against the maintenance overhead they introduce. They also make informed decisions about using newer frameworks like SwiftUI vs. UIKit, considering both immediate feature velocity and long-term maintainability and ecosystem support.</li>
+<li><strong>Advocating for Sustainable Practices:</strong>  They understand the long-term cost of technical debt and champion practices like code reviews, unit testing, and refactoring – even when facing tight deadlines. This reflects the &ldquo;Budget &amp; Effort Reallocation&rdquo; solution discussed in Chapter 4, strategically investing effort upfront for long-term gains.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="subject-2-quality-of-existing-system-legacy-code-the-ever-present-uikit-elephant">Subject 2: Quality of Existing System (Legacy Code) - The Ever-Present UIKit Elephant<a class="headerlink" href="#subject-2-quality-of-existing-system-legacy-code-the-ever-present-uikit-elephant" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>Chapter 4 Context:</strong> Chapter 4 emphasizes that &ldquo;Quality of Existing System&rdquo; is a major limitation. Poor quality legacy code becomes increasingly difficult and expensive to maintain, hindering evolution and innovation.</p>
+</li>
+<li>
+<p><strong>iOS Developer Lens:</strong>  In the iOS world, &ldquo;Legacy Code&rdquo; often translates directly to codebases built using <strong>Objective-C and/or older UIKit</strong>.  While Objective-C is still supported and many apps rely on UIKit, these are considered <em>legacy</em> in the context of modern, Swift/SwiftUI-driven iOS development. The &ldquo;quality issues&rdquo; discussed in Chapter 4 become very concrete when dealing with such legacy iOS projects:</p>
+<ul>
+<li>
+<p><strong>Technical Debt Embodied in UIKit/Objective-C:</strong>  Older iOS projects often carry technical debt from earlier eras of iOS development.  Common issues include:</p>
+<ul>
+<li><strong>Massive View Controllers (MVC gone wrong):</strong>  UIKit’s MVC architecture, especially when not rigorously followed, can lead to View Controllers that become enormous, complex, and tightly coupled, making changes risky and time-consuming.</li>
+<li><strong>Manual Memory Management (Before ARC):</strong>  If the project predates Automatic Reference Counting (ARC), developers face the hazards of manual memory management (retain/release), a source of insidious bugs and memory leaks that are notoriously difficult to debug.</li>
+<li><strong>Outdated Patterns and Libraries:</strong> Using deprecated APIs or outdated third-party libraries introduces compatibility challenges with newer iOS versions and makes it harder to integrate modern features.</li>
+<li><strong>Lack of Unit Tests (Often in older projects):</strong> The absence of comprehensive unit tests dramatically increases the risk of regressions when making even seemingly small changes. This is particularly critical in maintenance, where understanding the full impact of a change in a complex legacy system is challenging.</li>
+</ul>
+</li>
+<li>
+<p><strong>Developer Skill Gap:</strong>  While skilled Objective-C developers exist, the primary focus for new iOS talent and frameworks is now Swift and SwiftUI. Finding developers enthusiastic and skilled in maintaining large Objective-C/UIKit codebases can become increasingly difficult and expensive, mirroring the &ldquo;Attracting and Retaining Staff&rdquo; limitation from Chapter 4 but exacerbated by the legacy code factor.  Newer developers might be less familiar and comfortable with older paradigms, potentially increasing error rates and slowing down maintenance tasks.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Experienced iOS Developer Perspective:</strong>  An experienced iOS developer facing a legacy UIKit/Objective-C project understands the critical importance of addressing technical debt and making strategic modernization choices to improve maintainability:</p>
+<ul>
+<li>
+<p><strong>Incremental Modernization Strategy:</strong>  Recognizing that a full rewrite is often impractical and high-risk (as Chapter 4 suggests regarding &ldquo;Complete System Replacement&rdquo;), they advocate for incremental modernization.  This might involve:</p>
+<ul>
+<li><strong>Gradually Migrating to Swift:</strong> Introducing new features in Swift, while carefully bridging with the existing Objective-C codebase.</li>
+<li><strong>Adopting SwiftUI for New UI Components:</strong>  Where feasible, using SwiftUI for new UI elements, especially in less critical areas, to introduce modern UI paradigms and gain experience with the new framework within the existing application.</li>
+<li><strong>Refactoring to Improve MVC Architecture:</strong>  Strategically refactoring massive View Controllers into smaller, more manageable components, potentially adopting architectural patterns like MVVM or VIPER to improve separation of concerns and testability.</li>
+</ul>
+</li>
+<li>
+<p><strong>Investing in Testing and Documentation:</strong> Prioritizing the creation of unit tests for critical parts of the legacy system is paramount to gain confidence in making changes and preventing regressions.  Improving internal documentation becomes crucial as tribal knowledge might be limited or fading.  This investment directly addresses the &ldquo;Quality of Existing System&rdquo; limitation by making the codebase more understandable and less fragile.</p>
+</li>
+<li><strong>Balancing &ldquo;Quick Fixes&rdquo; with Long-Term Maintainability:</strong> Experienced iOS developers are pragmatic.  They understand that sometimes a quick fix is necessary to address urgent issues. However, they strive to do so in a way that minimizes further technical debt and advocate for &ldquo;preventive maintenance&rdquo; – addressing underlying architectural issues and technical debt – to ensure the long-term health and maintainability of the iOS application, echoing the &ldquo;Potential Solutions&rdquo; section of Chapter 4.</li>
+</ul>
+</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

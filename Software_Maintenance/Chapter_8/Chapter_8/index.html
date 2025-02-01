@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Cong Le" name="author"/>
+<link href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_8/Chapter_8/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.50" name="generator"/>
+<title>Chapter 8 - MSE - CPSC-543 - Software Maintenance</title>
+<link href="../../../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+<body data-md-color-accent="amber" data-md-color-primary="orange" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-8-reuse-and-reusability">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 8
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="orange" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="deep-orange" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Introduction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Syllabus/">
+<span class="md-ellipsis">
+    Syllabus
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Software Maintenance
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Discussing_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<hr/>
+<h1 id="chapter-8-reuse-and-reusability">Chapter 8 - Reuse and Reusability<a class="headerlink" href="#chapter-8-reuse-and-reusability" title="Permanent link">¶</a></h1>
+<p>Here are the diagrams and illustrations Mermaid syntax to cover its concepts:</p>
+<hr/>
+<h1 id="diagram-1-overview-mindmap">Diagram 1: Overview - Mindmap<a class="headerlink" href="#diagram-1-overview-mindmap" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Chapter 8: Reuse and Reusability))
+    node(Introduction)
+      label(Addressing Low Productivity &amp; Quality)
+      label(Software Reuse as Solution)
+      label(Benefits of Reuse)
+    node(Definitions)
+      label(Reuse - Broad Concept)
+      label(Reusability - Component Attribute)
+    node(Targets for Reuse)
+      label(Process)
+      label(Personnel)
+      node(Product)
+        label(Data)
+        label(Design)
+        label(Program)
+    node(Objectives &amp; Benefits)
+      label(Increase Productivity)
+      label(Improve Quality)
+      label(Facilitate Code Transportation)
+      label(Reduce Maintenance Effort)
+    node(Approaches to Reuse)
+      label(Composition-Based Reuse)
+      label(Generation-Based Reuse)
+    node(Domain Analysis)
+      label(Identifying Reusable Knowledge)
+      label(Domain-Specific Solutions)
+    node(Components Engineering)
+      label(Design for Reuse)
+      label(Reverse Engineering for Reuse)
+      label(Components-Based Processes)
+    node(Reuse Process Model)
+      label(Generic Reuse/Reusability Model)
+      label(Integrating Reuse in Life-Cycle)
+    node(Factors Impacting Reuse)
+      label(Technical Factors)
+      label(Non-Technical Factors)
+    node(Case Study)
+      label(Patient Identification - ACME Clinic)
+    node(Summary)
+      label(Key Chapter Takeaways)
+</code></pre>
+<p>This mindmap provides a chapter-level overview of Chapter 8, structuring the main topics discussed within “Reuse and Reusability.”</p>
+<hr/>
+<h1 id="diagram-2-approaches-to-reuse-detailed-mindmap">Diagram 2: Approaches to Reuse - Detailed Mindmap<a class="headerlink" href="#diagram-2-approaches-to-reuse-detailed-mindmap" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Approaches to Reuse))
+    node(Composition-Based Reuse)
+      label(Atomic Building Blocks)
+      label(Reusable components as building blocks)
+      label(Assembled to compose target system)
+      label(Components retain characteristics)
+      label(Composition Mechanisms)
+      label(e.g., UNIX pipe, Inheritance)
+      node(Types)
+        node(Black-box Reuse)
+          label(Reuse without Modification)
+          label(Users see 'What' - Functionality)
+          label(Implementation hidden)
+          label(Examples)
+            label(Math Libraries)
+            label(Standard Routines)
+        node(White-box Reuse)
+          label(Reuse with Modification)
+          label(Users see 'How' - Implementation)
+          label(Requires Source Code Access)
+          label(Customization Allowed)
+    node(Generation-Based Reuse)
+      label(Reusable Components - Generators)
+      label(Generators create target systems)
+      label(Output differs from Generator)
+      node(Types)
+        node(Application Generator Systems)
+          label(Domain-Specific Generators)
+          label(Automatic Code Generation)
+          label(Specification-Driven)
+          label(Examples)
+            label(YACC)
+            label(Draco)
+        node(Transformation-Based Systems)
+          label(High-Level Spec to Operational Code)
+          label(Transformation Process)
+          node(Step-wise Refinement)
+            label(Incremental Detail addition)
+            label(Gradual conversion)
+          node(Linguistic Transformation)
+            label(Intermediate Languages)
+            label(Language-Based Systems)
+            label(e.g., SETL)
+</code></pre>
+<p>This mindmap drills down into the “Approaches to Reuse” discussed in Chapter 8, providing a detailed breakdown of Composition-Based and Generation-Based Reuse, including their types and characteristics.</p>
+<hr/>
+<h1 id="diagram-3-factors-impacting-reuse">Diagram 3: Factors Impacting Reuse<a class="headerlink" href="#diagram-3-factors-impacting-reuse" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Factors Impacting Reuse))
+    node(Technical Factors)
+      label(Programming Languages)
+        label(Language Variety Hinders Reuse)
+        label(Standardization Encourages Reuse)
+      label(Representation of Information)
+        label(Design Info Format)
+        label(Reusable Design Representation)
+      node(Reuse Library)
+        label(Component Accessibility)
+        label(Effective Library Management)
+        label(Search &amp; Classification Challenges)
+      node(Reuse-Maintenance Vicious Cycle)
+        label(Growing Library Complexity)
+        label(Management Overhead)
+        label(Need for Good Design Principles)
+    node(Non-Technical Factors)
+      label(Initial Capital Outlay)
+        label(High Start-up Costs)
+        label(Long-Term Investment)
+        label(Risk Perception)
+      label("Not Invented Here (NIH) Factor")
+        label(Cultural Resistance)
+        label(Programmer Preference for New Code)
+        label(Need Cultural Shift)
+      label(Commercial Interest)
+        label(Proprietary Components)
+        label(Profit Motive vs. Public Domain)
+      label(Education)
+        label(Managerial Understanding)
+        label(Awareness of Reuse Benefits)
+      label(Project Co-ordination)
+        label(Lack of Central Coordination)
+        label(Duplication of Effort)
+      label(Legal Issues)
+        label(Patents &amp; Copyright)
+        label(Liability Concerns)
+        label(Unclear Legal Framework)
+</code></pre>
+<p>This mindmap details the “Factors Impacting Reuse” from Chapter 8, categorizing them into Technical and Non-Technical Factors, and listing specific points under each category for a comprehensive overview.</p>
+<hr/>
+<h1 id="diagram-4-reuse-process-model">Diagram 4: Reuse Process Model<a class="headerlink" href="#diagram-4-reuse-process-model" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Step 1: Understand Problem] --&gt; B[Step 2: Reconfiguration];
+    B --&gt; C[Step 3: Acquisition &amp; Modification];
+    C --&gt; D[Step 4: Integration];
+    D --&gt; E[Step 5: Evaluation];
+    E --&gt; A;
+    A --&gt; F[Domain Expert Input];
+    B --&gt; F;
+    C --&gt; G[Candidate Components from Library];
+    G --&gt; D;
+    E --&gt; G;
+    E --&gt; H[Feedback to Library];
+
+style A fill:#c3ce,stroke:#333,stroke-width:1px
+style B fill:#c3ce,stroke:#333,stroke-width:1px
+style C fill:#c3ce,stroke:#333,stroke-width:1px
+style D fill:#c3ce,stroke:#333,stroke-width:1px
+style E fill:#c3ce,stroke:#333,stroke-width:1px
+</code></pre>
+<p>This flowchart represents the “Reuse Process Model” detailed in Chapter 8, breaking down the model into five key steps: Understand Problem, Reconfiguration, Acquisition &amp; Modification, Integration, and Evaluation. It also indicates the inputs and feedback loops in the process.</p>
+<hr/>
+<h1 id="table-1-targets-for-reuse">Table 1: Targets for Reuse<a class="headerlink" href="#table-1-targets-for-reuse" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 8 : Targets for Reuse
+    header Target | Description | Examples | Considerations
+    row Process | Reapplication of Methodologies | Project Management, Cost Estimation, Development Steps | Requires clear, repeatable and flexible methodologies
+    row Personnel | Reuse of Domain Expertise  | Experienced developers, domain experts, lessons learned | Can be difficult to transfer, dependent on individuals’ skills
+    row Product | Reusing deliverables from prior Projects | Code, Design, Data | Needs careful cataloguing, versioning, and adaptation techniques
+        row Data | Reusing the data and its format | File structures, databases, schemas, external files, record layouts  | Requires suitable interfaces for sharing and transformation
+        row Design | Reusing architectural and detailed design components | system architectures, object models, data flow diagram | Requires proper design documentation that is easy to understand and modify
+        row Program  | Reusing code components | Modules, procedures, libraries, functions, templates, frameworks  | Requires modular design and good understanding of function</code></pre>
+<p>This table breaks down the “Targets for Reuse” from Chapter 8. It specifies each target, its description, the examples of what form they might be and considerations about each target.</p>
+<hr/>
+<h1 id="diagram-5-objectives-and-benefits-of-reuse">Diagram 5: Objectives and Benefits of Reuse<a class="headerlink" href="#diagram-5-objectives-and-benefits-of-reuse" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Objectives and Benefits of Reuse))
+    node(Objectives)
+       label(Core Motivation for Reuse)
+        label("The why Reuse matters")
+        node(Increase Productivity)
+        label("Reduce development time")
+        label("Focus on reusable elements")
+          label("Reduces time spent specifying, designing, coding and testing")
+        node(Improve Quality)
+         label ("Ensure more reliable software")
+           label("Well-tested code reduces bugs")
+        node(Facilitate Code Transportation)
+        label("Ease of portability between environments")
+         label ("Standardised components, better adaptability")
+    node(Benefits)
+     label(Desired Outcomes from Successful Reuse)
+      node(Reduced Maintenance Effort)
+        label ("Less time spent finding ways to make changes.")
+        label("Faster debugging and upgrades")
+      node(Increased Reliability and Quality)
+        label("More robust software")
+        label("Fewer errors")
+      node(Cost reductions)
+        label("Reduced time means reduced costs")
+        label("Redeploy personnel for other tasks")
+</code></pre>
+<p>This mindmap visualizes  the “Objectives and Benefits of Reuse” in an easy to understand manner of its main points, showing what the core objectives of reuse are and the benefits that can be expected.</p>
+<hr/>
+<h1 id="diagram-6-components-engineering-and-domain-analysis">Diagram 6: Components Engineering and Domain Analysis<a class="headerlink" href="#diagram-6-components-engineering-and-domain-analysis" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Components Engineering];
+    B{Design for Reuse};
+
+    C[Characteristics of Reusable Components];
+    C1[Generality];
+    C2["Cohesion &amp; Coupling"];
+    C3[Interaction];
+    C4["Uniformity &amp; Standardisation"];
+    C5["Data &amp; Control Abstractions"];
+    C6[Interoperability];
+
+    D{Problems with Reuse Libraries};
+    E["Granularity &amp; Size"];
+    F[Search];
+    G[Classification];
+    H["Specification &amp; Flexibility"];
+    I{Reverse Engineering};
+
+    J[Domain Analysis];
+    J1[Identify Common Problems];
+    J2(Target Reusable Solutions);
+    J3[Specific Domain Expertise];
+    J4[System Requirements Analysis];
+    J5[Reusable Components];
+
+    A --&gt; B
+    B --&gt; C
+    C --&gt; C1
+    C --&gt; C2
+    C --&gt; C3
+    C --&gt; C4
+    C --&gt; C5
+    C --&gt; C6
+
+    B --&gt; D
+    D --&gt; E
+    D --&gt; F
+    D --&gt; G
+    D --&gt; H
+
+    A --&gt; I
+
+    J --&gt; J1
+    J1 --&gt; J2
+    J2 --&gt; J3
+    J3 --&gt; J4
+    J4 --&gt; J5
+
+classDef Component fill:#d3d9,stroke:#333,stroke-width:1px
+class A,J Component
+</code></pre>
+<p>This diagram illustrates the “Components Engineering” and “Domain Analysis” concepts from Chapter 8. It depicts Components Engineering leading to either Design for Reuse aspects or Reverse Engineering. Domain Analysis is shown to target Reusable Solutions, facilitated by expert knowledge and good system analysis.</p>
+<hr/>
+<h1 id="diagram-7-factors-impacting-reuse">Diagram 7: Factors Impacting Reuse<a class="headerlink" href="#diagram-7-factors-impacting-reuse" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 8: Factors That Impact Reuse
+    header Factor |  Description  | Consequence
+    row Initial Capital Outlay | High upfront costs of setting up reuse infrastructure  | Difficulty in adoption if low-budget
+    row Not Invented Here (NIH) Factor |  Cultural resistance to using external code | Undermines reuse potential, preference for new code.
+    row Commercial Interest |   Software authors prioritize profits over sharing | Reduced availability of public components.
+    row Education | Insufficient understanding of benefits or implementation | Limits potential adoption and practice.
+    row Project Coordination | Poor cooperation between teams on reuse  | Duplicated effort and missed reuse opportunities.
+    row Legal Issues | lack of clarity on reuse rules and legal frameworks  |  Inhibits reuse among external entities and projects
+    row Programming Languages  | Diversity among Programming Languages in different projects    | Difficulty to share common components and promote reuse
+        row Representation of Information   | Insufficient use of appropriate format for the reuse of design | Difficulty sharing design and reuse of code components
+        row Reuse Library   | Inability to easily access and use reuse library   | Reduces usability of reuse and access of library
+    row Reuse-Maintenance Vicious Cycle  |   Effort involved in maintaining a large reuse libraries | Diminished gains or even negative returns from reuse programs
+</code></pre>
+<p>This table summarizes the key factors impacting reuse from Chapter 8. It includes the name of each factor, a description of its meaning and a clear representation of the consequence that factor has on reuse.</p>
+<hr/>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

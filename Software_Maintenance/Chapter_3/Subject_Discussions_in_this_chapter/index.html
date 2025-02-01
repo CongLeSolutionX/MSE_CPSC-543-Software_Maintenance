@@ -7,27 +7,27 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/">
-      
+        <meta name="author" content="Cong Le">
       
       
-        <link rel="next" href="Syllabus/">
+        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_3/Subject_Discussions_in_this_chapter/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>MSE - CPSC-543 - Software Maintenance</title>
+        <title>Subject Discussions in this chapter - MSE - CPSC-543 - Software Maintenance</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-cpsc-543-software-maintenance" class="md-skip">
+        <a href="#subject-1-adaptive-maintenance-and-the-relentless-ios-platform-evolution" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Subject Discussions in this chapter
             
           </span>
         </div>
@@ -218,7 +218,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -233,30 +233,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,44 +245,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -314,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Syllabus/" class="md-nav__link">
+      <a href="../../../Syllabus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Overview/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Summary/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Discussing_Subjects/" class="md-nav__link">
+      <a href="../../Chapter_1/Discussing_Subjects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,32 +437,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -534,27 +450,57 @@
                   
 
 
-<h1 id="welcome-to-cpsc-543-software-maintenance">Welcome to CPSC-543 Software Maintenance<a class="headerlink" href="#welcome-to-cpsc-543-software-maintenance" title="Permanent link">&para;</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<hr />
+<p>These two subjects below, Adaptive and Preventive Maintenance in iOS, highlight how the fundamental concepts from Chapter 3 are not just theoretical constructs, but deeply practical concerns that shape the daily work and long-term strategies of experienced iOS developers.</p>
+<hr />
+<h1 id="subject-1-adaptive-maintenance-and-the-relentless-ios-platform-evolution">Subject 1: Adaptive Maintenance and the Relentless iOS Platform Evolution<a class="headerlink" href="#subject-1-adaptive-maintenance-and-the-relentless-ios-platform-evolution" title="Permanent link">&para;</a></h1>
+<p>From a textbook perspective, Chapter 3 introduces &ldquo;Adaptive Maintenance&rdquo; as changes driven by modifications in the software&rsquo;s environment. For an iOS developer, this isn&rsquo;t just theory – it’s a daily reality.  Apple&rsquo;s ecosystem is in constant flux:
+*   <strong>Yearly iOS Updates are a Given:</strong> Every year, we brace for a new iOS release. This isn&rsquo;t merely an &ldquo;upgrade&rdquo;; it&rsquo;s a substantial environmental change. New APIs are introduced, old ones deprecated, system behaviors shift, and sometimes, entire UI paradigms are revamped (like the move to SwiftUI).  As seasoned iOS developers, we know that apps <em>must</em> adapt.
+*   <strong>API Deprecations and Breaking Changes:</strong>  Apple, to its credit, pushes the platform forward. But this progress often involves deprecating older APIs.  What worked perfectly for years can suddenly throw warnings, or worse, break entirely in the next iOS version. Adaptive maintenance becomes essential to keep apps functional and up-to-date with the &ldquo;recommended&rdquo; way of doing things. Think of the transition from <code>UIWebView</code> to <code>WKWebView</code>, or the ongoing shifts in concurrency models (from GCD to Operations to Async/Await).
+*   <strong>New Device Types and Screen Sizes:</strong>  iOS isn&rsquo;t just about iPhones anymore. We have iPads, different iPhone screen sizes (and notches!), CarPlay, Apple Watch, and now increasingly, visionOS. Each new device type brings its own set of adaptive challenges – different UI paradigms, input methods, and system capabilities. An app designed solely for a specific iPhone needs adaptive maintenance to expand to iPads or fully leverage the spatial computing features in visionOS for example.
+*   <strong>Xcode and Tooling Evolution:</strong> The development environment itself, Xcode, evolves rapidly. New Swift versions are released, build settings change, compiler warnings become errors, and debugging techniques shift. We&rsquo;re constantly adapting our development workflows and project settings just to keep building and submitting apps.</p>
+<p><strong>Practical iOS Developer Perspective on Adaptive Maintenance:</strong></p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Proactive Adaptation is Key:</strong> We don&rsquo;t just react to breakage. Experienced iOS developers proactively plan for adaptive maintenance. This means:<ul>
+<li><strong>Staying Informed:</strong>  Actively following Apple&rsquo;s developer documentation, WWDC sessions, and community resources to anticipate platform changes.</li>
+<li><strong>Modular and Abstracted Code:</strong>  Designing code with clear layers of abstraction makes adaptation easier.  For example, isolating network layers, data persistence layers, or UI components allows for focused updates when environmental changes impact specific parts of the app.</li>
+<li><strong>Embracing New Technologies Gradually:</strong>  We often adopt new frameworks like SwiftUI incrementally, not all at once. This reduces the immediate adaptive burden and allows for a phased approach to modernization.</li>
+<li><strong>Automated Testing is Crucial:</strong>  Robust UI and unit tests are our safety net. They help us quickly identify regressions when platform updates introduce unexpected behavior changes, massively reducing the cost and time of adaptive maintenance.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</li>
+</ul>
+<p>In essence, adaptive maintenance in iOS development is not an optional activity; it&rsquo;s woven into the very fabric of our workflow.  An experienced iOS developer is not just a coder, but a platform evolution expert constantly adapting to thrive in Apple&rsquo;s dynamic ecosystem.</p>
+<hr />
+<h1 id="subject-2-preventive-maintenance-as-code-refactoring-and-modernization-in-swift">Subject 2: Preventive Maintenance as Code Refactoring and Modernization in Swift<a class="headerlink" href="#subject-2-preventive-maintenance-as-code-refactoring-and-modernization-in-swift" title="Permanent link">&para;</a></h1>
+<p>Chapter 3 introduces &ldquo;Preventive Maintenance&rdquo; aimed at preventing malfunctions and improving maintainability. For an iOS developer working in Swift, this directly translates to the critical practice of code refactoring and modernization.</p>
+<ul>
+<li><strong>Swift Language Evolution:</strong> Swift itself is a rapidly evolving language.  From Swift 1 to Swift 5.x, we&rsquo;ve seen significant syntax changes, new features (like property wrappers, result builders, concurrency with Async/Await), and improved best practices emerge. Code written in older Swift versions may still &ldquo;work&rdquo;, but can become increasingly &ldquo;legacy&rdquo; – harder to understand, less efficient, and not leveraging the power of modern Swift. Preventive maintenance here means refactoring older Swift code to adopt newer language features and patterns.</li>
+<li><strong>Technology Debt Accumulation:</strong> In fast-paced iOS app development, especially in startups or when deadlines loom, we often accumulate &ldquo;technical debt.&rdquo;  This might manifest as:<ul>
+<li><strong>&ldquo;Quick-Fixes&rdquo; and &ldquo;Hacks&rdquo;:</strong> Code that works, but is not clean, well-structured, or easily understandable.</li>
+<li><strong>Lack of Unit Tests:</strong> Areas of the codebase without adequate test coverage, making future changes risky.</li>
+<li><strong>Outdated Architectures (e.g., Massive View Controllers):</strong> Architectural patterns not suited for maintainability and scaling.</li>
+</ul>
+</li>
+</ul>
+<p>Preventive maintenance in iOS becomes essential to address this technical debt <em>before</em> it leads to major problems.  It&rsquo;s about proactively improving the codebase to prevent future corrective and adaptive maintenance from becoming exponentially more difficult and costly (Lehman&rsquo;s Law of Increasing Complexity!).</p>
+<p><strong>Practical iOS Developer Perspective on Preventive Maintenance (Refactoring &amp; Modernization):</strong></p>
+<ul>
+<li><strong>Regular Refactoring is Not a Luxury, but a Necessity:</strong> Experienced iOS developers understand that refactoring isn&rsquo;t something to do &ldquo;when we have time&rdquo;; it&rsquo;s an integral part of the development cycle.  We allocate time to refactor code, improve architecture, and reduce technical debt.</li>
+<li><strong>Focus on Readability and Understandability:</strong>  Refactoring isn&rsquo;t just about making code &ldquo;faster&rdquo;; often, it’s about making it more <em>understandable</em>. We refactor for clarity, using meaningful names, breaking down complex functions, and improving overall code organization. This directly addresses the concerns of program comprehension discussed in Chapter 6.</li>
+<li><strong>Swift Modernization as Preventive Maintenance:</strong>  Actively migrating code to modern Swift versions and adopting new Swift features is a form of preventive maintenance.  It keeps the codebase aligned with current best practices, makes it easier to onboard new team members, and can improve performance and security.</li>
+<li><strong>Strategic Refactoring - Targeting &ldquo;Hotspots&rdquo;:</strong> We don&rsquo;t refactor everything at once. Experienced developers use metrics (like code complexity, code churn, test coverage gaps) to identify &ldquo;hotspots&rdquo; – areas of the codebase that are frequently changed, bug-prone, or overly complex. These become primary targets for preventive refactoring.</li>
+</ul>
+<p>In summary, preventive maintenance for an iOS developer is about continuously nurturing the codebase.  It&rsquo;s about recognizing that a healthy codebase in Swift is one that is actively refactored, modernized, and kept free from accumulating technical debt, thus ensuring its long-term maintainability and evolvability.</p>
+<hr />
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -595,10 +541,10 @@ docs/
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

@@ -7,27 +7,27 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/">
-      
+        <meta name="author" content="Cong Le">
       
       
-        <link rel="next" href="Syllabus/">
+        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_7/Subject_Discussions_in_this_chapter/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>MSE - CPSC-543 - Software Maintenance</title>
+        <title>Subject Discussions in this chapter - MSE - CPSC-543 - Software Maintenance</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-cpsc-543-software-maintenance" class="md-skip">
+        <a href="#subject-1-reverse-engineering-frameworks-and-sdks-in-ios-development" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Subject Discussions in this chapter
             
           </span>
         </div>
@@ -218,7 +218,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -233,30 +233,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,44 +245,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -314,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Syllabus/" class="md-nav__link">
+      <a href="../../../Syllabus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Overview/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Summary/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Discussing_Subjects/" class="md-nav__link">
+      <a href="../../Chapter_1/Discussing_Subjects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,32 +437,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -534,27 +450,80 @@
                   
 
 
-<h1 id="welcome-to-cpsc-543-software-maintenance">Welcome to CPSC-543 Software Maintenance<a class="headerlink" href="#welcome-to-cpsc-543-software-maintenance" title="Permanent link">&para;</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<hr />
+<p>Reverse engineering is an essential skill for iOS developers, especially when dealing with frameworks and legacy code.</p>
+<p>However there are always challenges, especially in weighing the potential benefits against time constraints and resources.</p>
+<hr />
+<h1 id="subject-1-reverse-engineering-frameworks-and-sdks-in-ios-development">Subject 1: Reverse Engineering Frameworks and SDKs in iOS Development<a class="headerlink" href="#subject-1-reverse-engineering-frameworks-and-sdks-in-ios-development" title="Permanent link">&para;</a></h1>
+<p><strong>Context:</strong></p>
+<p>As an experienced iOS developer, I often find myself needing to understand the inner workings of frameworks like UIKit, SwiftUI, or even third-party SDKs. While Apple provides extensive documentation, sometimes the &ldquo;why&rdquo; behind certain design choices, or the specific sequences of events during framework operations, isn&rsquo;t entirely clear. This is where reverse engineering comes into play.</p>
+<p><strong>Reverse Engineering Perspective:</strong></p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Dynamic Analysis:</strong> Tools like the Xcode debugger (LLDB) become crucial. I use breakpoints strategically to trace execution paths, inspect variable values, and understand how specific UIKit components or SwiftUI views react to user input or changes in the application&rsquo;s state. Especially valuable is the ability to step into the framework code, letting me to peek under the hood (where possible). This &ldquo;black box&rdquo; testing lets me check the interfaces’ response.</li>
+<li><strong>Static Analysis:</strong> While I can&rsquo;t directly access Apple&rsquo;s source code for its frameworks, tools like <code>otool</code> and <code>class-dump</code> become essential. I use them to inspect the headers, method signatures, and class hierarchies of frameworks. This process provides insights into the available APIs and how they might interact with each other. It helps immensely with comprehending the framework&rsquo;s architectural design, and how I might best use it within our application.<ul>
+<li>For third-party SDKs, if access to headers is publicly available, I&rsquo;ll also use <code>class-dump</code> (or similar tools) to reveal hidden APIs or internals, sometimes uncovering potential issues or limitations before I encounter them at run-time, saving considerable debugging time later.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</li>
+<li><strong>&ldquo;Hacking&rdquo; and Prototyping:</strong> In some situations when faced with a challenging or poorly documented API, I&rsquo;ll create small, targeted &ldquo;test&rdquo; apps that isolate specific parts of the SDK or framework, this way, I can more precisely understand their operational behavior in a controlled setup. This allows me to test alternative hypotheses or workarounds for a bug that may lie within a framework or API, rather than within my own implementation. This almost constitutes the process of reengineering, discussed in the chapter.</li>
+<li><strong>Implications on Code Maintainability</strong>: By &ldquo;reverse engineering&rdquo; frameworks, I not only address immediate bugs or implementation needs but also write better code. By understanding how UIKit or SwiftUI works, I can leverage their functionality more efficiently and avoid workarounds that may become technical debt later. In essence it becomes part of the standard operating procedures. The resulting more elegant solution is also easier to maintain overall, and to expand on in the future.<ul>
+<li>Also for third party libraries: It is important to have this level of understanding so that issues can be identified early, rather than later where they may become more deeply enmeshed.</li>
+</ul>
+</li>
+<li><strong>Limitations:</strong><ul>
+<li><strong>Security and Ethical Concerns:</strong> While &ldquo;reverse engineering&rdquo;, particularly of third party libraries might give useful insights, care is always required on ensuring that we are not violating their terms of service. This is particularly important for those libraries that enforce a specific license.</li>
+<li><strong>Complexity:</strong> Many frameworks are huge and complex; reverse engineering often requires a very detailed step by step approach. Without having complete technical documentation for a framework, building a comprehensive understanding can be exceptionally time consuming. I will always make a call as to whether or not that time might be more effectively used elsewhere, if the outcome is unlikely to be worth the investment.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="subject-2-applying-reverse-engineering-for-legacy-ios-codebases">Subject 2: Applying Reverse Engineering for Legacy iOS Codebases<a class="headerlink" href="#subject-2-applying-reverse-engineering-for-legacy-ios-codebases" title="Permanent link">&para;</a></h1>
+<p><strong>Context:</strong></p>
+<p>As iOS evolves rapidly, we often inherit legacy iOS codebases often written in Objective-C, using older design paradigms like MVC or even not adhering to a well structured paradigm. These codebases are often undocumented and represent a huge challenge for maintenance and future evolution.</p>
+<p><strong>Reverse Engineering Perspective:</strong></p>
+<ul>
+<li><strong>Code Analysis Tools:</strong> Source code analysers, particularly those that can visualise class relationships and call chains, are vital. These tools enable an initial understanding of the system’s high-level structure. I use these specifically to map out the architecture of legacy code, looking for dependencies and points of coupling.<ul>
+<li>I will also look for patterns in code; these might indicate an intended solution that should be adhered to while implementing changes. Similarly, recognition of known anti-patterns might indicate issues that should be addressed during reverse engineering to enable improved maintainability in the future.</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation Recovery:</strong></p>
+<ul>
+<li>Using tools that can auto generate documentation from source code, is particularly important. Even if these tools do not give completely accurate information (and they never do), it is a very useful base on which a good documentation can be built.</li>
+<li>I&rsquo;ll also extract design rationales from code comments, commit history and even naming conventions on modules and data structures (the beacons discussed in the chapter), all of which can help in redocumenting legacy code.</li>
+<li>It is essential also to analyse the business rules that the software implements, as, often business rules are poorly represented or even missing in older systems.</li>
+<li>Understanding the intended goal of components is very important for the long term survivability of the system for reuse.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reengineering:</strong> Once I have a good mental model of the architecture and what the system is attempting to do, I consider options for implementing change and improvements to the legacy system.</p>
+<ul>
+<li>Often the first step is to refactor code into clearly defined modules or functions representing high-level features (bottom-up chunking). This often helps to highlight sections of code that could be reusable or are redundant, but also gives a good indication of the level of coupling between different parts of the code.</li>
+<li>I will also try to encapsulate different functionalities in small and isolated components to enhance reusability and long term maintenance of the software: an example of this is when dealing with I/O routines and data extraction from a database.</li>
+</ul>
+</li>
+<li><strong>Refactoring towards Modern Patterns:</strong> Where feasible, and where there is a good return for investment, I use reverse engineering to re-implement legacy components using more modern approaches like MVVM or SwiftUI, leveraging the newer features that will lead to better maintainability, especially when this refactoring can encapsulate older code allowing an evolutionary migration to a new framework system.</li>
+<li>
+<p><strong>Testing and Validation:</strong> Legacy systems often have poor or non-existent test suites. Reverse engineering helps create test harnesses that make testing feasible and repeatable, and to identify the most important tests to be made. Then I might create a comprehensive test suite so that we can guarantee our changes did not break other parts of the system (regression tests).</p>
+</li>
+<li>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li><strong>Time Investment:</strong> Reverse engineering legacy codebases is often time consuming, and not always a cost-effective approach.</li>
+<li><strong>Inaccurate Documentation:</strong> Relying purely on automatically generating documentation may produce documentation that may not reveal the full picture as it contains information about how the code is written and not why.</li>
+<li><strong>Risk of Further Degradation:</strong> Ad Hoc and badly targeted changes have the potential to cause more harm than good - it is important that the whole development team has a common understanding about the goals. A poorly planned and executed migration to a new paradigm can easily lead to further problems.</li>
+</ul>
+</li>
+</ul>
+<hr />
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -595,10 +564,10 @@ docs/
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

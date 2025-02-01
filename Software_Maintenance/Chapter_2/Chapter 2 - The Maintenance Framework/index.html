@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Cong Le" name="author"/>
+<link href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_2/Chapter%202%20-%20The%20Maintenance%20Framework/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.50" name="generator"/>
+<title>Chapter 2 The Maintenance Framework - MSE - CPSC-543 - Software Maintenance</title>
+<link href="../../../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+<body data-md-color-accent="amber" data-md-color-primary="orange" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#diagram-1-chapter-2-the-maintenance-framework">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 2   The Maintenance Framework
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="orange" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="deep-orange" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Introduction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Syllabus/">
+<span class="md-ellipsis">
+    Syllabus
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Software Maintenance
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Discussing_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<hr/>
+<h1 id="diagram-1-chapter-2-the-maintenance-framework">Diagram 1: Chapter 2 - The Maintenance Framework<a class="headerlink" href="#diagram-1-chapter-2-the-maintenance-framework" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Chapter 2: The Maintenance Framework))
+    Information_and_Definitions
+      node(Chapter Aim)
+        label(Detail Context of Maintenance Activities)
+      node(Key Question)
+        label(Context for Maintenance Activities?)
+      node(Key Definitions)
+        label(Environment)
+        label(Environmental Factor)
+        label(Framework)
+        label(Information Gap)
+        label(Maintenance Challenge)
+        label(Maintenance Personnel)
+        label(Maintenance Process)
+        label(Operating Environment)
+        label(Organisational Environment)
+        label(Safety-critical)
+        label(Safety-related)
+        label(Software Maintenance Framework)
+    Software_Maintenance_Framework
+      node("Software Maintenance Framework &lt;br&gt; (SMF)")
+        label(Used to discuss factors contributing to maintenance challenge)
+        label(Elements)
+          node(User Requirements)
+            label(Requests for Modifications)
+              label(Functionality)
+              label(Error Correction)
+              label(Maintainability)
+            label(Non-Programming Support Requests)
+            label(Users - catalyst for evolution)
+          node(Organisational Environment)
+            label(External Influences)
+              label(Policies)
+              label(Market Competition)
+              label(Business Rules)
+              label(Taxation Policies)
+              label(Competition for Market Share)
+          node(Operational Environment)
+            label(Technical Platform)
+              label(Hardware Innovations)
+              label(Software Innovations)
+              label(OS Upgrades)
+              label(Compiler Changes)
+              label(Database Management Systems)
+          node(Maintenance Process)
+            label(Activities &amp; Actions during Maintenance)
+              label(Capturing Change Requirements)
+                label(Difficulty in A Priori Capture)
+                label(Information Gap)
+              label(Variation in Programming Practice)
+                label(Inconsistency in styles)
+                label(Impact on comprehension)
+              label(Paradigm Shift)
+                label(Legacy Systems)
+                label('Dead' Paradigms for 'Living' systems)
+              label(Error Detection and Correction)
+                label(Cost implications of late error detection)
+          node(Software Product)
+            label(Evolving Programs, Documentation &amp; Procedures)
+              label(Maturity &amp; Difficulty of Application Domain)
+                label(Established vs. Nascent Domains)
+              label(Quality of Documentation)
+                label(Often Lacking or Outdated)
+              label(Malleability of Programs)
+                label('Soft' nature, Vulnerability to change)
+              label(Inherent Quality)
+                label(Lehman's Law of Continuing Change)
+          node(Maintenance Personnel)
+            label(Human Element in Maintenance)
+              label(Staff Turnover)
+                label(Loss of original authors, tacit knowledge)
+                label(Impact on comprehension effort)
+              label(Domain Expertise)
+                label(Lack of system &amp; application domain knowledge)
+                label(Ripple Effect Risks)
+              label(Working Practices)
+                label(Maintainer's style &amp; creativity)
+                label(Undocumented assumptions &amp; decisions)
+    Relations_Between_Factors
+      node(Relations Between Maintenance Factors)
+        label(Interactions drive software evolution &amp; maintenance challenges)
+        node(Product-Environment Relation)
+          label(Product hosted by environments)
+          label(Inherits environment changes - Brooks Quote)
+        node(Product-User Relation)
+          label(Product serves user needs)
+          label(Changing User Needs drive evolution)
+        node(Personnel-Product Interaction)
+          label(Personnel as change conduit)
+          label(Personnel quality &amp; process affects change quality)
+          label(Impact on product attributes Size &amp; Complexity)
+
+%%style root fill:#fbc,stroke:#333,stroke-width:1px
+</code></pre>
+<p>This mindmap focuses solely on Chapter 2. It’s structured to reflect the chapter’s flow:</p>
+<ul>
+<li><strong>Information and Definitions:</strong> This branch covers the chapter’s aim, the central question it addresses, and lists all the key definitions provided in Chapter 2. This gives a quick reference to the vocabulary of the chapter.</li>
+<li><strong>Software Maintenance Framework (SMF):</strong> This is the central and most detailed branch, representing the core concept of the chapter. It breaks down the SMF into its six key components: User Requirements, Organisational Environment, Operational Environment, Maintenance Process, Software Product, and Maintenance Personnel. Each component is further detailed with its sub-elements and important aspects as described in the chapter.</li>
+<li><strong>Relations Between Factors:</strong> This branch summarizes the crucial inter-relationships between the components of the SMF, specifically Product-Environment, Product-User and Personnel-Product relations and their impact, emphasizing how these relationships are the driving forces behind software evolution and maintenance challenges.</li>
+</ul>
+<p>This detailed mindmap should provide a comprehensive visual representation of all the key concepts and their interconnections within Chapter 2, “The Maintenance Framework”.  It can be used for quick review, understanding the chapter’s structure and grasping the details of the Software Maintenance Framework.</p>
+<hr/>
+<p>This expanded set of diagrams below provides a more comprehensive and detailed visual representation of Chapter 2, “The Maintenance Framework,” catering to different learning styles and information needs.  The relationship diagram contextualizes the framework, the component mindmaps provide granular details, and the definition table offers quick vocabulary reference. Let me know if you’d like any further modifications!</p>
+<hr/>
+<p><strong>Diagram 1: Chapter 2 - Relations Between Maintenance Factors - Flowchart</strong></p>
+<pre class="mermaid"><code>graph LR
+    subgraph User_Environment [User Environment]
+    style User_Environment fill:#ccf,stroke:#333,stroke-width:1px
+        UE[User]
+    end
+    subgraph Organizational_Environment [Organizational Environment]
+    style Organizational_Environment fill:#aac,stroke:#333,stroke-width:1px
+        OE[Org Env]
+    end
+    subgraph Operational_Environment [Operational Environment]
+    style Operational_Environment fill:#cca,stroke:#333,stroke-width:1px
+        OpE[Oper Env]
+    end
+    subgraph Maintenance_Process [Maintenance Process]
+    style Maintenance_Process fill:#aea,stroke:#333,stroke-width:1px
+        MP[Maint. Process]
+    end
+    subgraph Maintenance_Personnel [Maintenance Personnel]
+    style Maintenance_Personnel fill:#eaa,stroke:#333,stroke-width:1px
+        MPe[Personnel]
+    end
+    subgraph Software_Product [Software Product]
+    style Software_Product fill:#faa,stroke:#333,stroke-width:1px
+        SP[Product]
+    end
+
+    SP --&gt; UE
+    SP --&gt; OE
+    SP --&gt; OpE
+    SP --&gt; MPe
+
+    MPe --&gt; SP
+
+    OE -- Indirect Influence --&gt; MP
+    UE -- Indirect Influence --&gt; MP
+    OpE -- Indirect Influence --&gt; MP
+    OE -- Indirect Influence --&gt; MPe
+    UE -- Indirect Influence --&gt; MPe
+    OpE -- Indirect Influence --&gt; MPe
+
+    linkStyle 0,1,2,3,4,5,6,7,8,9,10,11 stroke-width:2px,stroke:black;
+    linkStyle 6,7,8,9,10,11  stroke-dasharray: 5 5;</code></pre>
+<p><strong>Diagram 1: Chapter 2 - Relations Between Maintenance Factors - Flowchart</strong></p>
+<p>This flowchart illustrates the “Relations Between Maintenance Factors” section of Chapter 2 in more detail:</p>
+<ul>
+<li><strong>Nodes as Components:</strong> Each of the six components of the Software Maintenance Framework (User Environment, Organizational Environment, Operational Environment, Maintenance Process, Maintenance Personnel and Software Product) is represented as a subgraph node for visual grouping.</li>
+<li><strong>Arrows as Relations:</strong> Arrows indicate the relationships and influences between the components:<ul>
+<li><strong>Solid Arrows:</strong> Represent direct influences, showing the Product being directly influenced by User Env, Org Env, Oper Env and Maintenance Personnel via links <code>SP --&gt; UE</code>, <code>SP --&gt; OE</code>, <code>SP --&gt; OpE</code>, <code>SP --&gt; MPe</code>. Also the Personnel influence the product via link <code>MPe --&gt; SP</code>.</li>
+<li><strong>Dashed Arrows:</strong> Represent indirect influences, with the Maintenance Process and Personnel being indirectly influenced by all three Environments via links <code>OE -- Indirect Influence --&gt; MP</code>, <code>UE -- Indirect Influence --&gt; MP</code>, <code>OpE -- Indirect Influence --&gt; MP</code>, <code>OE -- Indirect Influence --&gt; MPe</code>, <code>UE -- Indirect Influence --&gt; MPe</code>, <code>OpE -- Indirect Influence --&gt; MPe</code>.</li>
+</ul>
+</li>
+<li><strong>Visual Distinction:</strong> Direct influences are shown with solid lines (<code>linkStyle 0,1,2,3,4,5</code>), indirect influences with dashed lines (<code>linkStyle 6,7,8,9,10,11  stroke-dasharray: 5 5;</code>),  making it easy to differentiate. Each subgraph styled with different background color for visual separation.</li>
+</ul>
+<p>This diagram clearly visualizes the interdependencies and influences within the Maintenance Framework, making the abstract “relations” tangible and understandable.</p>
+<hr/>
+<h1 id="diagram-2-chapter-2-software-maintenance-framework-components-mindmap-breakdown">Diagram 2: Chapter 2 - Software Maintenance Framework Components - Mindmap Breakdown<a class="headerlink" href="#diagram-2-chapter-2-software-maintenance-framework-components-mindmap-breakdown" title="Permanent link">¶</a></h1>
+<p>To further detail each component of the SMF, instead of a single large mindmap, let’s create individual, focused mindmaps for each component to illustrate their sub-elements more clearly:</p>
+<p><strong>a) User Requirements:</strong></p>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((User Requirements))
+    node(Requests for Modifications)
+      label(Functionality)
+      label(Error Correction)
+      label(Maintainability)
+    node(Non-Programming Support Requests)
+      label(User Assistance)
+      label(Documentation)
+      label(Training)
+    node(Users - Catalyst for Evolution)
+      label(Changing Needs)
+      label(Driving Force for Maintenance)</code></pre>
+<p><strong>b) Organizational Environment:</strong></p>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Organizational Environment))
+    node(External Influences)
+      label(Policies)
+        label(Business Rules)
+        label(Taxation Policies)
+      node(Market Competition)
+        label(Competitive Edge)
+        label(Market Share)
+        label(Customer Satisfaction)</code></pre>
+<p><strong>c) Operational Environment:</strong></p>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Operational Environment))
+    node(Technical Platform)
+      node(Hardware Innovations)
+        label(Processor Upgrades)
+      node(Software Innovations)
+        label(OS Upgrades)
+        label(Compiler Changes)
+        label(DBMS evolution)</code></pre>
+<p><strong>d) Maintenance Process:</strong></p>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Maintenance Process))
+    node(Key challenges)
+      node(Capturing Change Requirements)
+        label(Difficulty in A Priori Capture)
+        label(Information Gap)
+      node(Variation in Programming Practice)
+        label(Inconsistent Styles)
+        label(Impact on Comprehension)
+      node(Paradigm Shift)
+        label(Legacy Systems)
+        label("'Dead' Paradigms for 'Living' systems")
+      node(Error Detection and Correction)
+        label(Cost Implications of late error detection)</code></pre>
+<p><strong>e) Software Product:</strong></p>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Software Product))
+    node(Evolving Entity)
+      label(Programs)
+      label(Documentation)
+      label(Operating Procedures)
+    node(Attributes Impacting Maintenance)
+      node(Maturity &amp; Domain Difficulty)
+        label(Established Domains are Stable)
+        label(New Domains Evolve Rapidly)
+      node(Quality of Documentation)
+        label(Completeness)
+        label(Accuracy)
+        label(Up-to-date status)
+      node(Malleability)
+        label('Soft' Nature of Software)
+        label(Vulnerability to Undesirable Changes)
+      node(Inherent Quality)
+        label(Lehman's Law of Continuing Change)</code></pre>
+<p><strong>f) Maintenance Personnel:</strong></p>
+<pre class="mermaid"><code>---
+config:
+  theme: dark
+---
+mindmap
+  root((Maintenance Personnel))
+    node(Human Element)
+      node(Staff Turnover)
+        label(Loss of Knowledge)
+        label(Increased Comprehension Effort)
+      node(Domain Expertise)
+        label(System Domain Knowledge)
+        label(Application Domain Knowledge)
+        label(Risk of Ripple Effect)
+      node(Working Practices)
+        label(Maintainer's Style and Creativity)
+        label(Undocumented Assumptions)
+        label(Impact on Future Maintainability)
+</code></pre>
+<p>These six smaller mindmaps break down each of the components of the SMF into their sub-elements, providing a more granular view than the single overview mindmap. This modular approach can enhance understanding by focusing on each aspect individually.</p>
+<hr/>
+<h1 id="diagram-3-chapter-2-key-definitions">Diagram 3: Chapter 2 - Key Definitions<a class="headerlink" href="#diagram-3-chapter-2-key-definitions" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 2: Key Definitions
+    header Term | Definition
+    row Environment | Totality of conditions &amp; influences acting externally upon an entity.
+    row Environmental Factor | Agent acting externally, influencing an entity's form or operation.
+    row Framework | Set of ideas, conditions, assumptions guiding approach, perception, understanding.
+    row Information Gap | Discrepancy in knowledge between users &amp; maintainers needed for change requests.
+    row Maintenance Challenge | Need to keep systems running; complex for software due to non-physical degradation.
+    row Maintenance Personnel | Individuals involved in maintaining software.
+    row Maintenance Process | Activities/actions by personnel/machine during software maintenance.
+    row Operating Environment | Software &amp; hardware influencing a software product.
+    row Organisational Environment | Non-software/hardware environmental factors (policies, competition).
+    row Safety-critical | System failure could cause death, injury, major loss, damage.
+    row Safety-related | System failure increases risk of injury or damage.
+    row Software Maintenance Framework | Context &amp; environment for software maintenance activities.
+</code></pre>
+<p>Finally, a table to list out all the definitions from Chapter 2 for quick reference.  This offers a more structured way to review the vocabulary introduced in the chapter compared to simply listing them in the mindmap.</p>
+<hr/>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

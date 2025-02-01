@@ -7,27 +7,27 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/">
-      
+        <meta name="author" content="Cong Le">
       
       
-        <link rel="next" href="Syllabus/">
+        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Part_V/Subject_Discussions_in_this_chapter/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>MSE - CPSC-543 - Software Maintenance</title>
+        <title>Subject Discussions in this chapter - MSE - CPSC-543 - Software Maintenance</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-cpsc-543-software-maintenance" class="md-skip">
+        <a href="#subject-1-the-threesome-marriage-reengineering-reuse-and-object-oriented-techniques-applied-to-ios-development" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Subject Discussions in this chapter
             
           </span>
         </div>
@@ -218,7 +218,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
+    <a href="../../.." title="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" aria-label="MSE - CPSC-543 - Software Maintenance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -233,30 +233,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,44 +245,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -314,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Syllabus/" class="md-nav__link">
+      <a href="../../../Syllabus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Overview/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Chapter_Summary/" class="md-nav__link">
+      <a href="../../Chapter_1/Chapter_Summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Software_Maintenance/Chapter_1/Discussing_Subjects/" class="md-nav__link">
+      <a href="../../Chapter_1/Discussing_Subjects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,32 +437,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -534,27 +450,37 @@
                   
 
 
-<h1 id="welcome-to-cpsc-543-software-maintenance">Welcome to CPSC-543 Software Maintenance<a class="headerlink" href="#welcome-to-cpsc-543-software-maintenance" title="Permanent link">&para;</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<hr />
+<p>Let&rsquo;s discuss two subjects from &ldquo;Part V - Looking to the Future&rdquo; through the lens of an experienced iOS developer:</p>
+<hr />
+<h1 id="subject-1-the-threesome-marriage-reengineering-reuse-and-object-oriented-techniques-applied-to-ios-development">Subject 1: The Threesome Marriage (Reengineering, Reuse, and Object-Oriented Techniques) Applied to iOS Development<a class="headerlink" href="#subject-1-the-threesome-marriage-reengineering-reuse-and-object-oriented-techniques-applied-to-ios-development" title="Permanent link">&para;</a></h1>
+<p>As an experienced iOS developer, the &ldquo;Threesome Marriage&rdquo; resonates deeply.  iOS development heavily relies on object-oriented principles using Swift or Objective-C.  This makes reengineering and reuse natural parts of our workflow.</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Reengineering in iOS:</strong>  We often encounter legacy Objective-C codebases that need modernization. Reengineering involves understanding this code (often with poor documentation), restructuring it using Swift, and leveraging newer frameworks like SwiftUI. This improves maintainability, performance, and allows integration of modern features.  Tools like Swiftify can assist in automated conversion, but careful review and refactoring are crucial.</li>
+<li><strong>Reuse in iOS:</strong>  Apple encourages reuse through its frameworks (UIKit, Foundation, SwiftUI) and design patterns (MVC, MVVM, etc.). We reuse UI components, networking code, data models, and algorithms extensively.  Swift packages and CocoaPods also promote reuse of third-party libraries.  However, challenges remain in finding and assessing the quality and suitability of these components for our projects.  Understanding the inner workings (white-box reuse) is often necessary for proper integration and customization.</li>
+<li><strong>Interplay of Reengineering, Reuse, and OO:</strong> Reengineering older apps often involves adopting CocoaPods/Swift Packages and replacing large, monolithic classes with smaller, reusable components following SOLID design principles.  This might mean introducing protocols and generics to improve flexibility and reduce coupling.  It also means building our own reusable component libraries within our organization for faster prototyping and implementation.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<p>The Threesome Marriage is not just a research area; it&rsquo;s the daily reality of a modern iOS developer striving to build maintainable, scalable, and feature-rich applications.</p>
+<hr />
+<h1 id="subject-2-the-best-of-both-worlds-balancing-new-tech-and-legacy-systems-in-the-context-of-ios-and-apples-ecosystem">Subject 2: The Best of Both Worlds (Balancing New Tech and Legacy Systems) in the Context of iOS and Apple&rsquo;s Ecosystem<a class="headerlink" href="#subject-2-the-best-of-both-worlds-balancing-new-tech-and-legacy-systems-in-the-context-of-ios-and-apples-ecosystem" title="Permanent link">&para;</a></h1>
+<p>Apple&rsquo;s relentless pace of introducing new technologies (SwiftUI, Combine, ARKit, etc.) presents a constant &ldquo;Best of Both Worlds&rdquo; challenge.  As iOS developers, we need to adopt these advancements while maintaining support for older devices and OS versions and also ensuring backward compatibility with older components written using Objective-C.</p>
+<ul>
+<li><strong>Incremental Adoption:</strong> We rarely rewrite entire apps from scratch. Instead, we adopt new technologies incrementally. For example, integrating SwiftUI views into existing UIKit-based projects allows us to experiment, modernize parts of the UI, and progressively enhance the codebase.</li>
+<li><strong>Interoperability:</strong>  Swift&rsquo;s interoperability with Objective-C is crucial. It allows us to gradually transition legacy projects without a complete rewrite.  We can wrap Objective-C components in Swift interfaces or reuse Objective-C libraries within Swift projects.</li>
+<li><strong>Balancing Act:</strong>  Deciding when to adopt a new technology is a constant balancing act.  Factors to consider include project timelines, developer expertise, team resources, maintainability trade-offs, target OS versions, and potential benefits (performance improvements, reduced code complexity).</li>
+<li><strong>Community and Resources:</strong> The iOS development community plays a vital role.  Blogs, forums, open-source projects, and conferences help us stay updated, learn best practices, and find solutions for integration challenges.  Apple&rsquo;s documentation and WWDC sessions are essential resources.</li>
+</ul>
+<p>As experienced iOS developers, navigating the &ldquo;Best of Both Worlds&rdquo; is part of our job description. It&rsquo;s about carefully planning our adoption strategies to leverage the latest advancements while preserving the stability and functionality of our existing applications.</p>
+<hr />
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -595,10 +521,10 @@ docs/
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
