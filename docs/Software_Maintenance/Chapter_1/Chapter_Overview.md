@@ -8,9 +8,9 @@ license(s): MIT, CC BY 4.0
 
 ----
 
+# Chapter 1 - Introduction to Basic Concepts
 
-
-# Diagram 1: Overview of the chapter 1 - Introduction to Basic Concepts
+## Diagram 1: Chapter Overview
 
 
 ```mermaid
@@ -134,8 +134,6 @@ mindmap
       label(Theoretical Base Underpins Maintenance)
       label(Next Chapter: Maintenance Framework)
 
-%% style root fill:#f0f,stroke:#333,stroke-width:1px
-
 ```
 
 This mindmap provides a comprehensive overview of Chapter 1, breaking down each section (`1.x`) into its main points. It highlights the definitions, key comparisons (Development vs. Maintenance), reasons for maintenance, and the case study, all within a hierarchical structure typical of a mindmap.
@@ -144,7 +142,7 @@ This mindmap provides a comprehensive overview of Chapter 1, breaking down each 
 ----
 
 
-# Diagram 2: Definitions
+## Diagram 2: Definitions
 
 ```mermaid
 ---
@@ -209,26 +207,19 @@ This class diagram visually represents the definitions discussed in section 1.2.
 
 ---
 
-# Diagram 3: Components of a Software System
+## Diagram 3: Components of a Software System
 
-```mermaid
----
-config:
-    themeVariables:
-      darkMode: true
----
-table Diagram
-    title Components of a Software System
-    header Component | Examples
-    row Program | Source code
-    row  | Object code
-    row Documentation  | Analysis/Specification (Formal spec, Context diagram, DFDs)
-    row   | Design (Flowcharts, ER charts)
-    row   | Implementation (Source code listings, Cross-reference)
-    row   | Testing (Test data, Test results)
-    row Operating Procedures | Instructions to setup and use
-    row  | Instructions on how to react to failures
-```
+
+| Component         | Examples                                       |
+|-----------------|------------------------------------------------|
+| Program           | Source code                                    |
+|                 | Object code                                    |
+| Documentation     | Analysis/Specification (Formal spec, Context diagram, DFDs) |
+|                 | Design (Flowcharts, ER charts)                   |
+|                 | Implementation (Source code listings, Cross-reference) |
+|                 | Testing (Test data, Test results)                |
+| Operating Procedures | Instructions to setup and use                  |
+|                 | Instructions on how to react to failures        |
 
 
 
@@ -236,33 +227,25 @@ This table directly represents Table 1.1 from the textbook, listing the componen
 
 ---
 
-# Diagram 4: New Development vs. Maintenance
+## Diagram 4: New Development vs. Maintenance
 
-```mermaid
----
-config:
-    themeVariables:
-      darkMode: true
----
-table Diagram
-    title New Development vs. Maintenance Differences
-    header Feature | New Development | Maintenance
-    row Site | Green Field | Existing System
-    row Constraints | Few | Parameters and Constraints of Existing System
-    row Impact Analysis | Environment for new system | Ramifications on existing system
-    row Design Focus | Original design, new features | Accommodating change in current architecture
-    row Designer Needs | Create new architecture | Abstract existing architecture, accommodate changes
-    row Risk | Lower (within scope of new system) | Higher (ripple effect on live system)
-    row Cost per sq ft | Lower | Higher (rerouting, removing existing elements)
-    row Analogy | Building New Building | Adding Room to Existing Building
-```
 
+| Feature          | New Development                       | Maintenance                                     |
+|-------------------|---------------------------------------|-------------------------------------------------|
+| **Site**           | Green Field                             | Existing System                                 |
+| **Constraints**    | Few                                     | Parameters and Constraints of Existing System   |
+| **Impact Analysis**| Environment for new system              | Ramifications on existing system               |
+| **Design Focus**   | Original design, new features           | Accommodating change in current architecture    |
+| **Designer Needs** | Create new architecture                 | Abstract existing architecture, accommodate changes |
+| **Risk**           | Lower (within scope of new system)      | Higher (ripple effect on live system)          |
+| **Cost per sq ft** | Lower                                   | Higher (rerouting, removing existing elements)  |
+| **Analogy**        | Building New Building                   | Adding Room to Existing Building               |
 
 This table highlights the key differences between New Development and Software Maintenance, based on section 1.4. Features like 'Site', 'Constraints', 'Impact Analysis', 'Design Focus' and 'Cost' are compared directly to emphasize the unique challenges and characteristics of maintenance work compared to new development.
 
 ---
 
-# Diagram 5: Case Study - Air Traffic Control Project Timeline
+## Diagram 5: Case Study - Air Traffic Control Project Timeline
 
 ```mermaid
 journey

@@ -1,10 +1,13 @@
 site_name: MSE - CPSC-543 - Software Maintenance
-# site_url: "CHANGE_ME_LATER"
+site_url: https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/
 
 nav:
   - Introduction: 'index.md'
   - Syllabus: 'Syllabus.md'
-  - Textbook: 'Chapter_1/Chapter_1.md/'
+  - Software Maintenance:
+    - Chapter 1:
+      - Chapter Overview: 'Software_Maintenance/Chapter_1/Chapter_Overview.md'
+      - Chapter Summary: 'Software_Maintenance/Chapter_1/Chapter_Summary.md'
 
 theme:
   name: material
