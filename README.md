@@ -104,6 +104,14 @@ You can freely use, share, and adapt these notes, diagrams, and illustrations fo
 **Contact:**  Cong Le - CongLeJobs@gmail.com
 
 
+---
 
+
+```bash
+pip install mkdocs
+pip install mkdocs-material
+pip install mkdocs-mermaid2-plugin
+glightbox
+```
 
 ---

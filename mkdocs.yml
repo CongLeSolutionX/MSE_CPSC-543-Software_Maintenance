@@ -53,20 +53,21 @@ theme:
 # Plugins
 plugins:
   - search
-  - glightbox
   - mermaid2
+  # - glightbox
 
 markdown_extensions:
   smarty: {}
   toc:
     permalink: true
   sane_lists: {}
-  pymdownx.superfences:
-      # make exceptions to highlighting of code:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # pymdownx.superfences:
+  #     # make exceptions to highlighting of code:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
 
 
 # # Add toggle for English and Vietnamese language
