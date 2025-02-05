@@ -10,7 +10,7 @@
         <meta name="author" content="Cong Le">
       
       
-        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_5/Subject_Discussions_in_this_chapter/">
+        <link rel="canonical" href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_5/Discussing_Subjects/">
       
       
       
@@ -20,7 +20,7 @@
     
     
       
-        <title>Subject Discussions in this chapter - MSE - CPSC-543 - Software Maintenance</title>
+        <title>Discussion Subjects from chapter 5 - MSE - CPSC-543 - Software Maintenance</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#subject-1-process-models-in-ios-development-beyond-the-waterfall-and-why-agile-ish-is-king" class="md-skip">
+        <a href="#discussion-subjects-from-chapter-5" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Subject Discussions in this chapter
+              Discussion Subjects from chapter 5
             
           </span>
         </div>
@@ -543,6 +543,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#subject-1-process-models-in-ios-development-beyond-the-waterfall-and-why-agile-ish-is-king" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subject 1: Process Models in iOS Development - Beyond the Waterfall (and Why Agile-ish is King)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subject-2-the-quick-fix-model-and-legacy-objective-c-projects-in-ios-a-cautionary-tale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subject 2: The &ldquo;Quick-Fix&rdquo; Model and Legacy Objective-C Projects in iOS - A Cautionary Tale
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -556,10 +582,11 @@
                   
 
 
+<h1 id="discussion-subjects-from-chapter-5">Discussion Subjects from chapter 5<a class="headerlink" href="#discussion-subjects-from-chapter-5" title="Permanent link">&para;</a></h1>
 <hr />
 <p>Below are two examples show how the general principles of software maintenance, as discussed in Chapter 5, are directly applicable and highly relevant to the day-to-day realities of iOS development and maintenance.</p>
 <hr />
-<h1 id="subject-1-process-models-in-ios-development-beyond-the-waterfall-and-why-agile-ish-is-king">Subject 1:  Process Models in iOS Development - Beyond the Waterfall (and Why Agile-ish is King)<a class="headerlink" href="#subject-1-process-models-in-ios-development-beyond-the-waterfall-and-why-agile-ish-is-king" title="Permanent link">&para;</a></h1>
+<h2 id="subject-1-process-models-in-ios-development-beyond-the-waterfall-and-why-agile-ish-is-king">Subject 1:  Process Models in iOS Development - Beyond the Waterfall (and Why Agile-ish is King)<a class="headerlink" href="#subject-1-process-models-in-ios-development-beyond-the-waterfall-and-why-agile-ish-is-king" title="Permanent link">&para;</a></h2>
 <p>Chapter 5 talks about the evolution of process models and how the Waterfall model, while structured, doesn&rsquo;t really capture the iterative and changing nature of software, especially maintenance.  As an iOS developer, this hits home big time. I can&rsquo;t remember the last time I worked on a truly &ldquo;Waterfall&rdquo; iOS project.  Maybe way back for some really rigid enterprise stuff, but even then, things <em>always</em> changed.</p>
 <p>In the iOS world, we live and breathe <strong>Agile</strong> – or some flavor of it.  Think Scrum, Kanban, or even just a loosely defined iterative approach.  Why? Because the iOS ecosystem is <em>inherently</em> dynamic:</p>
 <ul>
@@ -575,7 +602,7 @@
 <p>Even <strong>Boehm&rsquo;s Model</strong>, with its economic lens, makes sense.  We <em>constantly</em> weigh the cost of maintenance (keeping older iOS versions compatible, fixing bugs) against the benefit of new features or a complete rewrite (often when SwiftUI becomes compelling, for instance). Management decisions in iOS are often driven by market pressures and user expectations, just like Boehm describes.</p>
 <p>Bottom line: Chapter 5&rsquo;s framework of process models is useful for understanding the <em>theory</em>, but in iOS development, we&rsquo;re deeply embedded in a world that demands agile, iterative processes to handle constant change. We’re often mixing and matching bits of different models pragmatically, like a more structured &ldquo;Osborne&rsquo;s&rdquo; approach with agile sprints maybe, to manage the ongoing maintenance challenge.</p>
 <hr />
-<h1 id="subject-2-the-quick-fix-model-and-legacy-objective-c-projects-in-ios-a-cautionary-tale">Subject 2:  The &ldquo;Quick-Fix&rdquo; Model and Legacy Objective-C Projects in iOS - A Cautionary Tale<a class="headerlink" href="#subject-2-the-quick-fix-model-and-legacy-objective-c-projects-in-ios-a-cautionary-tale" title="Permanent link">&para;</a></h1>
+<h2 id="subject-2-the-quick-fix-model-and-legacy-objective-c-projects-in-ios-a-cautionary-tale">Subject 2:  The &ldquo;Quick-Fix&rdquo; Model and Legacy Objective-C Projects in iOS - A Cautionary Tale<a class="headerlink" href="#subject-2-the-quick-fix-model-and-legacy-objective-c-projects-in-ios-a-cautionary-tale" title="Permanent link">&para;</a></h2>
 <p>Chapter 5 rightly warns against the <strong>Quick-Fix Model</strong>. As an iOS dev, I&rsquo;ve definitely seen and sometimes <em>been</em> the culprit in quick-fix situations, especially when dealing with <strong>legacy Objective-C codebases</strong>.</p>
 <p>Think about it: you inherit a massive Objective-C project. It’s been around for years, maybe with minimal documentation (or documentation that&rsquo;s wildly out of date).  A bug pops up <em>now</em>, in iOS whatever-number, using the latest Xcode. The pressure to fix it <em>fast</em> is immense: users are complaining, the app is crashing, ratings are dropping.</p>
 <p>The temptation to just apply a &ldquo;Quick-Fix&rdquo; is huge:</p>
