@@ -227,16 +227,30 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#diagram-2-software-maintenance-framework-components-mindmap-breakdown">
+<a class="md-nav__link" href="#diagram-2-relations-between-maintenance-factors-flowchart">
 <span class="md-ellipsis">
-      Diagram 2: Software Maintenance Framework Components - Mindmap Breakdown
+      Diagram 2: Relations Between Maintenance Factors - Flowchart
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#diagram-3-key-definitions">
+<a class="md-nav__link" href="#diagram-3-relations-between-maintenance-factors-flowchart">
 <span class="md-ellipsis">
-      Diagram 3: Key Definitions
+      Diagram 3: Relations Between Maintenance Factors - Flowchart
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-4-software-maintenance-framework-components-mindmap-breakdown">
+<span class="md-ellipsis">
+      Diagram 4: Software Maintenance Framework Components - Mindmap Breakdown
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-5-key-definitions">
+<span class="md-ellipsis">
+      Diagram 5: Key Definitions
     </span>
 </a>
 </li>
@@ -285,16 +299,30 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#diagram-2-software-maintenance-framework-components-mindmap-breakdown">
+<a class="md-nav__link" href="#diagram-2-relations-between-maintenance-factors-flowchart">
 <span class="md-ellipsis">
-      Diagram 2: Software Maintenance Framework Components - Mindmap Breakdown
+      Diagram 2: Relations Between Maintenance Factors - Flowchart
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#diagram-3-key-definitions">
+<a class="md-nav__link" href="#diagram-3-relations-between-maintenance-factors-flowchart">
 <span class="md-ellipsis">
-      Diagram 3: Key Definitions
+      Diagram 3: Relations Between Maintenance Factors - Flowchart
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-4-software-maintenance-framework-components-mindmap-breakdown">
+<span class="md-ellipsis">
+      Diagram 4: Software Maintenance Framework Components - Mindmap Breakdown
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-5-key-definitions">
+<span class="md-ellipsis">
+      Diagram 5: Key Definitions
     </span>
 </a>
 </li>
@@ -419,30 +447,36 @@ mindmap
 <hr/>
 <p>This expanded set of diagrams below provides a more comprehensive and detailed visual representation of Chapter 2, “The Maintenance Framework,” catering to different learning styles and information needs.  The relationship diagram contextualizes the framework, the component mindmaps provide granular details, and the definition table offers quick vocabulary reference. Let me know if you’d like any further modifications!</p>
 <hr/>
-<p><strong>Diagram 1: Chapter 2 - Relations Between Maintenance Factors - Flowchart</strong></p>
-<pre class="mermaid"><code>graph LR
-    subgraph User_Environment [User Environment]
-    style User_Environment fill:#ccf,stroke:#333,stroke-width:1px
+<h2 id="diagram-2-relations-between-maintenance-factors-flowchart">Diagram 2: Relations Between Maintenance Factors - Flowchart<a class="headerlink" href="#diagram-2-relations-between-maintenance-factors-flowchart" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    subgraph User_Environment["User Environment"]
+    style User_Environment fill:#c3c9,stroke:#333,stroke-width:1px
         UE[User]
     end
-    subgraph Organizational_Environment [Organizational Environment]
-    style Organizational_Environment fill:#aac,stroke:#333,stroke-width:1px
+    subgraph Organizational_Environment["Organizational Environment"]
+    style Organizational_Environment fill:#a3a9,stroke:#333,stroke-width:1px
         OE[Org Env]
     end
-    subgraph Operational_Environment [Operational Environment]
-    style Operational_Environment fill:#cca,stroke:#333,stroke-width:1px
+    subgraph Operational_Environment["Operational Environment"]
+    style Operational_Environment fill:#c3c9,stroke:#333,stroke-width:1px
         OpE[Oper Env]
     end
-    subgraph Maintenance_Process [Maintenance Process]
-    style Maintenance_Process fill:#aea,stroke:#333,stroke-width:1px
+    subgraph Maintenance_Process["Maintenance Process"]
+    style Maintenance_Process fill:#a3e9,stroke:#333,stroke-width:1px
         MP[Maint. Process]
     end
-    subgraph Maintenance_Personnel [Maintenance Personnel]
-    style Maintenance_Personnel fill:#eaa,stroke:#333,stroke-width:1px
+    subgraph Maintenance_Personnel["Maintenance Personnel"]
+    style Maintenance_Personnel fill:#e3a9,stroke:#333,stroke-width:1px
         MPe[Personnel]
     end
-    subgraph Software_Product [Software Product]
-    style Software_Product fill:#faa,stroke:#333,stroke-width:1px
+    subgraph Software_Product["Software Product"]
+    style Software_Product fill:#f3a9,stroke:#333,stroke-width:1px
         SP[Product]
     end
 
@@ -460,9 +494,10 @@ mindmap
     UE -- Indirect Influence --&gt; MPe
     OpE -- Indirect Influence --&gt; MPe
 
-    linkStyle 0,1,2,3,4,5,6,7,8,9,10,11 stroke-width:2px,stroke:black;
-    linkStyle 6,7,8,9,10,11  stroke-dasharray: 5 5;</code></pre>
-<p><strong>Diagram 1: Chapter 2 - Relations Between Maintenance Factors - Flowchart</strong></p>
+    linkStyle 0,1,2,3,4,5,6,7,8,9,10 stroke-width:2px,stroke:black;
+    linkStyle 6,7,8,9,10  stroke-dasharray: 5 5;
+</code></pre>
+<h2 id="diagram-3-relations-between-maintenance-factors-flowchart">Diagram 3:  Relations Between Maintenance Factors - Flowchart<a class="headerlink" href="#diagram-3-relations-between-maintenance-factors-flowchart" title="Permanent link">¶</a></h2>
 <p>This flowchart illustrates the “Relations Between Maintenance Factors” section of Chapter 2 in more detail:</p>
 <ul>
 <li><strong>Nodes as Components:</strong> Each of the six components of the Software Maintenance Framework (User Environment, Organizational Environment, Operational Environment, Maintenance Process, Maintenance Personnel and Software Product) is represented as a subgraph node for visual grouping.</li>
@@ -475,7 +510,7 @@ mindmap
 </ul>
 <p>This diagram clearly visualizes the interdependencies and influences within the Maintenance Framework, making the abstract “relations” tangible and understandable.</p>
 <hr/>
-<h2 id="diagram-2-software-maintenance-framework-components-mindmap-breakdown">Diagram 2: Software Maintenance Framework Components - Mindmap Breakdown<a class="headerlink" href="#diagram-2-software-maintenance-framework-components-mindmap-breakdown" title="Permanent link">¶</a></h2>
+<h2 id="diagram-4-software-maintenance-framework-components-mindmap-breakdown">Diagram 4: Software Maintenance Framework Components - Mindmap Breakdown<a class="headerlink" href="#diagram-4-software-maintenance-framework-components-mindmap-breakdown" title="Permanent link">¶</a></h2>
 <p>To further detail each component of the SMF, instead of a single large mindmap, let’s create individual, focused mindmaps for each component to illustrate their sub-elements more clearly:</p>
 <p><strong>a) User Requirements:</strong></p>
 <pre class="mermaid"><code>---
@@ -589,7 +624,7 @@ mindmap
 </code></pre>
 <p>These six smaller mindmaps break down each of the components of the SMF into their sub-elements, providing a more granular view than the single overview mindmap. This modular approach can enhance understanding by focusing on each aspect individually.</p>
 <hr/>
-<h2 id="diagram-3-key-definitions">Diagram 3: Key Definitions<a class="headerlink" href="#diagram-3-key-definitions" title="Permanent link">¶</a></h2>
+<h2 id="diagram-5-key-definitions">Diagram 5: Key Definitions<a class="headerlink" href="#diagram-5-key-definitions" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>---
 config:
     themeVariables:
