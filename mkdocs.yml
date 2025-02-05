@@ -56,7 +56,9 @@ nav:
     - Chapter 13:
       - Chapter Overview: 'Software_Maintenance/Chapter_13/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_13/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_13/Discussion_Subjects.md'
+      - Discussing Subjects:
+        - Subject 1: 'Software_Maintenance/Chapter_13/Discussion_Subject_1.md'
+        - Subject 2: 'Software_Maintenance/Chapter_13/Discussion_Subject_2.md'
     - Chapter 14:
       - Chapter Overview: 'Software_Maintenance/Chapter_14/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_14/Chapter_Summary.md'
