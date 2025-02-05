@@ -6,8 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
+# Chapter 1
 
+## A textual summary
 
 Chapter 1, "Introduction to the Basic Concepts," of the textbook "Software Maintenance: Concepts and Practice" lays the foundation for understanding the discipline of software maintenance and its critical role within software engineering. The chapter begins by defining **Software Maintenance** as any modification to a software product *after delivery* to correct faults, improve performance, adapt to a changed environment, or enhance existing features. This definition is contrasted with related terms like **Evolution**, **Maintainability**, and the broad definition of **Software** itself, which encompasses not just programs (code), but also essential **documentation** (specs, design, manuals) and **operating procedures**.
 

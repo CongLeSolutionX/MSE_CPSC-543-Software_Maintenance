@@ -6,10 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
+# Discussion Subjects from chapter 1
 
 
-# Subject 1: The Ever-Changing Landscape of Software Requirements and the "Moving Target" Problem
+## Subject 1: The Ever-Changing Landscape of Software Requirements and the "Moving Target" Problem
 
 *   **Relationship to Chapter 1:** Chapter 1 introduces the idea that software maintenance is necessary because "if a system is used, it's never finished."  This subject directly expands on the *why* behind this statement, focusing on the dynamic nature of software requirements.
 *   **Description of the Subject:**  This subject delves into the idea that software exists within a constantly evolving environment.  Requirements are not static blueprints but rather living entities that change over time due to:
@@ -23,7 +23,7 @@ license(s): MIT, CC BY 4.0
 ---
 
 
-# Subject 2: The "Image Problem" of Software Maintenance and Strategies for Professional Recognition
+## Subject 2: The "Image Problem" of Software Maintenance and Strategies for Professional Recognition
 
 *   **Relationship to Chapter 1:** Chapter 1 touches upon the "image problem" in section 1.3 and section 1.4, and section 4.5 "The Nomenclature and Image Problems" directly discusses it. This subject expands on the *human* aspect of maintenance challenges.
 *   **Description of the Subject:** This subject focuses on the historical perception (and, to some extent, current perception) of software maintenance as being less prestigious or "glamorous" than new software development. Key aspects include:
