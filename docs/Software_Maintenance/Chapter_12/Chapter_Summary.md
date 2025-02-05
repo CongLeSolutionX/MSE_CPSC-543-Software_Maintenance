@@ -6,9 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
+# Chapter 12: Maintenance Measures
 
-# Chapter 12 - Maintenance Measures - A textual  summary
+## A Textual  Summary
 
 Chapter 12, "Maintenance Measures," emphasizes the importance of quantifying maintainability through various software metrics. It starts by defining fundamental concepts: *measurement* as the process of assigning numbers to entities, *software measurement* applied to software products and processes, a *software measure* as the specific number assigned, and a *software metric* as the measurement method or formula.  Integrity in measurement is crucial, requiring measures to be *empirical* (based on observation), *objective* (unbiased and reliable), and *encodable* (quantifiable).  The objectives of measurement include *evaluation* (comparing alternatives), *control* (managing resources), *assessment* (understanding the current state), *improvement* (enhancing quality), and *prediction* (forecasting future needs).
 
@@ -35,8 +35,6 @@ Guidelines for selecting measures are provided:
 
 The chapter highlights the difficulty of directly measuring internal attributes like maintainability, often relying on external measures.  It concludes by emphasizing the importance of proper metric selection and interpretation, advocating for a measurement program that enhances maintenance decision making, supports process improvement, and aids in resource and effort prediction.
 
-
-----
 
 Applying these concepts in practice, especially for iOS development, requires adapting traditional metrics, considering UI-specific factors, leveraging Xcode and Instruments, and prioritizing actionable measures relevant to the fast-paced iOS ecosystem.  Future trends emphasize system-level metrics, predictive maintenance using machine learning, measuring non-code artifacts, and incorporating security and privacy measures. The core principle remains: thoughtful application of appropriate measures can significantly improve software maintainability and reduce long-term maintenance costs.
 

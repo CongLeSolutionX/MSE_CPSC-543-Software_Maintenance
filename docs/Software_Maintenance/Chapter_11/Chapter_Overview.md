@@ -6,17 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
-
 # Chapter 11: Configuration Management
 
-Below are diagrams and illustrations provide a visual summary of Chapter 11, breaking down the concepts of Configuration Management and Change Control into understandable segments using Mermaid syntax.
 
-
-----
-
-
-# Diagram 1: Configuration Management - Mindmap
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---
@@ -102,7 +95,7 @@ This mindmap provides a hierarchical overview of Chapter 11, starting with the c
 
 ---
 
-# Diagram 2: Configuration Management Processes
+## Diagram 2: Configuration Management Processes
 
 ```mermaid
 ---
@@ -147,7 +140,7 @@ This flowchart illustrates the four core processes within Configuration Manageme
 
 ---
 
-# Diagram 3: Change Control Process
+## Diagram 3: Change Control Process
 
 ```mermaid
 ---
@@ -203,7 +196,7 @@ This flowchart details the steps within a typical Change Control process, as dis
 ---
 
 
-# Diagram 4: Version Control Activities
+## Diagram 4: Version Control Activities
 
 ```mermaid
 ---
@@ -263,7 +256,7 @@ This flowchart illustrates the step-by-step process of version control, from ini
 
 ---
 
-# Diagram 5: Types of Documentation
+## Diagram 5: Types of Documentation
 
 ```mermaid
 ---
@@ -297,7 +290,7 @@ This table summarizes various categories of user and system documentation as des
 
 ---
 
-# Diagram 6: Software Configuration Management Components
+## Diagram 6: Software Configuration Management Components
 
 ```mermaid
 ---
@@ -333,7 +326,7 @@ This mindmap visually structures the four main components of Software Configurat
 
 ---
 
-# Diagram 7: Version Control Concepts
+## Diagram 7: Version Control Concepts
 
 ```mermaid
 ---

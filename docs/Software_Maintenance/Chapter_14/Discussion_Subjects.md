@@ -7,7 +7,7 @@ license(s): MIT, CC BY 4.0
 ---
 
 
----
+# Discussion Subjects from chapter 14
 
 
 Below are two subjects related to Chapter 14, "Maintenance Tools," from the perspective of an experienced iOS developer.
@@ -16,7 +16,7 @@ Below are two subjects related to Chapter 14, "Maintenance Tools," from the pers
 ----
 
 
-# Subject 1: Xcode and Instruments as Essential Maintenance Tools
+## Subject 1: Xcode and Instruments as Essential Maintenance Tools
 
 Chapter 14 emphasizes the importance of tools for program comprehension, debugging, testing, and configuration management. As an experienced iOS developer, I can confidently say that Xcode and Instruments are the cornerstones of our maintenance toolkit.
 
@@ -34,7 +34,7 @@ Chapter 14 emphasizes the importance of tools for program comprehension, debuggi
 ---
 
 
-# Subject 2: Dealing with the "Not Invented Here" Syndrome on iOS Projects
+## Subject 2: Dealing with the "Not Invented Here" Syndrome on iOS Projects
 
 Chapter 14 touches on the "Not Invented Here" (NIH) syndrome as a non-technical factor hindering reuse.  In iOS development, this can manifest as a reluctance to use third-party libraries or frameworks, even when well-established and robust alternatives exist.  
 
@@ -45,8 +45,6 @@ Chapter 14 touches on the "Not Invented Here" (NIH) syndrome as a non-technical 
 *   **Internal Component Libraries:** Larger iOS development teams can also combat NIH by creating internal component libraries (as discussed in the Components Engineering section).  This encourages reuse within the organization while maintaining control and customizability.  However, as the book mentions, these libraries also require maintenance and clear organization to be sustainable, and version control (a core theme of Chapter 14) becomes crucial for managing the evolution of these internally reusable components.
 
 These points highlight how the themes of Chapter 14 are highly relevant for iOS developers. Addressing technical debt, optimizing performance, using suitable version control systems, and intelligently incorporating external libraries are constant aspects of our work in maintaining and evolving iOS projects.
-
-
 
 
 ---

@@ -6,17 +6,11 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
-
 
 # Chapter 12: Maintenance Measures
 
-Below are the diagrams and illustrations in Mermaid syntax to cover its concepts.
 
-
-----
-
-# Diagram 1: Maintenance Measures - Mindmap
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---
@@ -67,7 +61,7 @@ This Mindmap provides a hierarchical overview of Chapter 12, covering the main s
 
 ---
 
-# Table 1: Importance of Integrity in Measurement
+## Table 1: Importance of Integrity in Measurement
 
 ```mermaid
 ---
@@ -88,7 +82,7 @@ This Table details the three key characteristics of integrity in measurement: Em
 
 ---
 
-# Diagram 2: Relation between Entity, Measure, and Attribute
+## Diagram 2: Relation between Entity, Measure, and Attribute
 
 ```mermaid
 ---
@@ -122,7 +116,7 @@ This Flowchart illustrates the relationship between an *Entity* (Software Produc
 
 ---
 
-# Table 2: Objectives of Software Measurement
+## Table 2: Objectives of Software Measurement
 
 ```mermaid
 ---
@@ -146,7 +140,7 @@ This table outlines the Objectives of Software Measurement: Evaluation, Control,
 
 ---
 
-# Diagram 3: Example Measures - Mindmap
+## Diagram 3: Example Measures - Mindmap
 
 ```mermaid
 ---
@@ -203,7 +197,7 @@ This mindmap expands on the "Example Measures" section, breaking down each measu
 ----
 
 
-# Diagram 4: McCabe's Cyclomatic Complexity
+## Diagram 4: McCabe's Cyclomatic Complexity
 
 ```mermaid
 ---
@@ -267,7 +261,7 @@ This flowchart visually represents a simple program with conditional statements.
 
 ---
 
-# Diagram 5: Halstead's Measures
+## Diagram 5: Halstead's Measures
 
 ```mermaid
 ---
@@ -292,7 +286,7 @@ This table explains the key metrics used in Halstead's Software Science, includi
 
 ---
 
-# Diagram 6: Process and Product Entities
+## Diagram 6: Process and Product Entities
 
 ```mermaid
 ---
@@ -325,7 +319,7 @@ This mindmap distinguishes between *Processes* (activities performed during main
 
 ---
 
-# Diagram 7: Relationship between Maintainability and Other Quality Factors
+## Diagram 7: Relationship between Maintainability and Other Quality Factors
 
 ```mermaid
 ---
@@ -371,7 +365,7 @@ This mindmap illustrates how other quality factors contribute to maintainability
 
 ---
 
-# Diagram 8: Guidelines for Selecting Measures
+## Diagram 8: Guidelines for Selecting Measures
 
 ```mermaid
 ---

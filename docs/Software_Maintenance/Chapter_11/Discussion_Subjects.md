@@ -6,8 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
 
+
+# Discussion Subjects from chapter 11
 
 Below are two subjects related to Chapter 11 (Configuration Management), viewed through the lens of an experienced iOS developer.
 
@@ -16,7 +17,7 @@ Below are two subjects related to Chapter 11 (Configuration Management), viewed 
 ----
 
 
-# Subject 1: Branching Strategies in a Collaborative iOS Development Environment
+## Subject 1: Branching Strategies in a Collaborative iOS Development Environment
 
 **Context:** In Chapter 11, version control is mentioned as a core part of configuration management. As an experienced iOS developer, I know that effective branching strategies are essential for navigating the complexities of collaborative development, especially when dealing with large projects, multiple features, and frequent releases.
 
@@ -65,7 +66,7 @@ graph LR
 
     A --> B
     B --> C
-	C -- BugFix --> D
+	  C -- BugFix --> D
     C -- NoBugFix -->E
     D --> E
     A --> E
@@ -84,7 +85,8 @@ graph LR
 
     classDef Elements fill:#a399,stroke:#333,stroke-width:1px
     class B,D,F,G,H Elements
-	style I fill:#a919,stroke:#333,stroke-width:1px
+	
+    style I fill:#a919,stroke:#333,stroke-width:1px
     
 ```
 
@@ -104,7 +106,7 @@ This diagram should provide a clear visual illustration of how Gitflow works in 
 ----
 
 
-# Subject 2: Configuration Management of Xcode Projects and Build Settings
+## Subject 2: Configuration Management of Xcode Projects and Build Settings
 
 **Context:** Chapter 11 mentions the importance of "Building" and "Environment Management" within configuration management. For an iOS developer, this translates directly to the intricate world of Xcode project management and build settings configuration.
 

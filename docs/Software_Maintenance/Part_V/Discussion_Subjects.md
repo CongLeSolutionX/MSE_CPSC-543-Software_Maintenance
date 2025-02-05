@@ -6,15 +6,14 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-
----
+# Discussion Subjects from Part V
 
 
 Let's discuss two subjects from "Part V - Looking to the Future" through the lens of an experienced iOS developer:
 
 ----
 
-# Subject 1: The Threesome Marriage (Reengineering, Reuse, and Object-Oriented Techniques) Applied to iOS Development
+## Subject 1: The Threesome Marriage (Reengineering, Reuse, and Object-Oriented Techniques) Applied to iOS Development
 
 As an experienced iOS developer, the "Threesome Marriage" resonates deeply.  iOS development heavily relies on object-oriented principles using Swift or Objective-C.  This makes reengineering and reuse natural parts of our workflow.
 
@@ -27,7 +26,7 @@ The Threesome Marriage is not just a research area; it's the daily reality of a 
 ---
 
 
-# Subject 2: The Best of Both Worlds (Balancing New Tech and Legacy Systems) in the Context of iOS and Apple's Ecosystem
+## Subject 2: The Best of Both Worlds (Balancing New Tech and Legacy Systems) in the Context of iOS and Apple's Ecosystem
 
 Apple's relentless pace of introducing new technologies (SwiftUI, Combine, ARKit, etc.) presents a constant "Best of Both Worlds" challenge.  As iOS developers, we need to adopt these advancements while maintaining support for older devices and OS versions and also ensuring backward compatibility with older components written using Objective-C.
 
@@ -37,7 +36,5 @@ Apple's relentless pace of introducing new technologies (SwiftUI, Combine, ARKit
 *   **Community and Resources:** The iOS development community plays a vital role.  Blogs, forums, open-source projects, and conferences help us stay updated, learn best practices, and find solutions for integration challenges.  Apple's documentation and WWDC sessions are essential resources.
 
 As experienced iOS developers, navigating the "Best of Both Worlds" is part of our job description. It's about carefully planning our adoption strategies to leverage the latest advancements while preserving the stability and functionality of our existing applications.
-
-
 
 ---

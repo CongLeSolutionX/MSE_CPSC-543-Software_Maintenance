@@ -6,7 +6,7 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
+# Discussion Subjects from chapter 9
 
 Both types of testing below are vital, but as an experienced iOS developer, I focus on employing both using their strengths and weaknesses to my advantage rather than trying to force an unrealistic testing philosophy.
 
@@ -20,7 +20,7 @@ This perspective will bring in some practical, real-world considerations specifi
 ---
 
 
-# Subject 1: Test-Driven Development (TDD) and its Nuances in iOS Development
+## Subject 1: Test-Driven Development (TDD) and its Nuances in iOS Development
 
 *   **The Core Concept in TDD:** As a seasoned iOS developer, I've found that TDD, at its heart, is about writing tests *before* you write the actual code, not afterward or sometimes. For every requirement or feature, we first write a unit test that outlines *exactly* what that code needs to do. This test, initially, will fail. Then, we would write the simplest code to make that test pass. And then we refactor the code so it becomes efficient and more readable while always keeping the tests running. This cycle of Test-Code-Refactor helps ensure that code is always testable, has high coverage, and works as intended.
 
@@ -45,7 +45,7 @@ This perspective will bring in some practical, real-world considerations specifi
 ---
 
 
-# Subject 2: UI Testing vs. Unit Testing and the Practical Trade-Offs in iOS
+## Subject 2: UI Testing vs. Unit Testing and the Practical Trade-Offs in iOS
 
 *   **The Dichotomy:** As an experienced iOS developer, I see the stark differences in the value proposition of UI tests compared to Unit tests:
 

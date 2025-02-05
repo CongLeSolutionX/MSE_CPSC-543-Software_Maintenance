@@ -6,15 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
+# Chapter 9: Testing
 
-# Chapter 9 - Testing
-
-Here are the diagrams and illustrations in Mermaid syntax to cover all the key concepts:
-
----
-
-# Diagram 1: Testing - Mindmap Overview
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---
@@ -109,7 +103,7 @@ This mindmap provides a hierarchical overview of Chapter 9, outlining all the ma
 
 ---
 
-# Diagram 2: Categorizing Tests
+## Diagram 2: Categorizing Tests
 
 ```mermaid
 ---
@@ -179,7 +173,7 @@ This flowchart focuses on the different categories of tests discussed in Chapter
 
 ---
 
-# Diagram 3: Test Plan Elements
+## Diagram 3: Test Plan Elements
 
 ```mermaid
 ---
@@ -211,7 +205,7 @@ This mindmap illustrates the Key Elements of a Test Plan as per the textbook, br
 
 ---
 
-# Diagram 4: Why Test Software - Comparison Table
+## Diagram 4: Why Test Software - Comparison Table
 
 ```mermaid
 table Diagram
@@ -231,7 +225,7 @@ This table captures the core difference between a core (idealized but not practi
 
 ---
 
-# Diagram 5: Test Data Creation Process
+## Diagram 5: Test Data Creation Process
 
 ```mermaid
 ---
@@ -304,7 +298,8 @@ graph LR
 This flowchart visually depicts the process of creating test data, from initial identification of the test object all the way to recording results. It outlines the different paths for deriving test sets - specification- based tests, white-box tests, and operational tests. This visual helps to understand how to approach designing test cases from multiple angles.
 
 ---
-# Diagram 6: Verification and Validation using Levels
+
+## Diagram 6: Verification and Validation using Levels
 
 ```mermaid
 ---
@@ -364,7 +359,7 @@ This diagram outlines the role of Verification and Validation by showing where i
 
 ---
 
-# Diagram 7: Testing Levels and Focus
+## Diagram 7: Testing Levels and Focus
 
 ```mermaid
 table Diagram

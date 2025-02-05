@@ -6,11 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
 
+# Chapter 11: Configuration Management
 
-
-# Chapter 11: Configuration Management - Textual Summary
+## A Textual Summary
 
 
 Chapter 11 delves into the crucial practice of **Configuration Management (CM)**, a discipline essential for controlling software evolution and maintaining product integrity. The core idea is to establish a structured approach to managing changes in a software system that is under development or maintenance, ensuring that you can accurately identify and reproduce any state of the system at any point in time. The chapter underscores that uncontrolled change leads to complexity, and that CM is vital for effective software maintenance projects.

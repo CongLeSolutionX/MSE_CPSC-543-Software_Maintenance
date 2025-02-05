@@ -6,15 +6,13 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-
----
-
+# Discussion Subjects from chapter 13
 
 Below are a subject related to Chapter 13, "Building and Sustaining Maintainability", through the lens of an experienced iOS developer.
 
 ----
 
-# Subject 1:  The Practical Realities of Applying Object-Oriented Principles (and their limitations) in iOS Development
+## Subject 1:  The Practical Realities of Applying Object-Oriented Principles (and their limitations) in iOS Development
 
 Chapter 13 emphasizes the advantages of Object-Oriented Programming (OOP) for building maintainable systems.  As an experienced iOS developer, I can attest to the benefits of OOP principles like encapsulation, inheritance, and polymorphism in structuring code, promoting reuse, and managing complexity.  Swift, the primary language for iOS development, is inherently object-oriented, and frameworks like Foundation, UIKit, and SwiftUI heavily rely on these concepts.
 
@@ -33,13 +31,13 @@ Here's a breakdown from an iOS perspective:
 
 ---
 
-# Swift Code Implementation demo
+## Swift Code Implementation demo
 Below are Swift code examples and descriptions provide a clearer understanding of the practical realities—both benefits and limitations—of Object-Oriented Principles when applied to contemporary iOS Development.
 
 ----
 
 
-## 1. Encapsulation in Swift (Access Control)
+### 1. Encapsulation in Swift (Access Control)
 
 Encapsulation is about bundling data and methods that operate on that data within a single unit (like a class) and controlling access to the internal workings. Swift's access control modifiers are key here.
 
@@ -108,7 +106,7 @@ print("Account balance: \(myAccount.getBalance())") // OK - Controlled access vi
 
 ---
 
-## 2. Inheritance in iOS (UIView Subclassing)
+### 2. Inheritance in iOS (UIView Subclassing)
 
 Inheritance allows us to create new classes that inherit properties and behaviors from existing classes. In iOS, `UIView` and its subclasses are excellent examples.
 
@@ -187,7 +185,7 @@ secondaryButton.setTitle("Secondary Action", for: .normal)
 -----
 
 
-## 3. Polymorphism in iOS (Protocols and UITableView)
+### 3. Polymorphism in iOS (Protocols and UITableView)
 
 Polymorphism allows objects of different classes to respond to the same method call in their own way. Protocols in Swift enable polymorphism, particularly useful in iOS for components like `UITableView`.
 
@@ -258,11 +256,11 @@ class ListViewController: UITableViewController {
 ----
 
 
-## 4. Limitations of OOP in Contemporary iOS Development (Massive View Controllers & Delegate Overuse)
+### 4. Limitations of OOP in Contemporary iOS Development (Massive View Controllers & Delegate Overuse)
 
 These examples are more descriptive, highlighting common iOS development pitfalls that OOP, if not applied thoughtfully, can sometimes worsen:
 
-### Massive View Controllers (Problem)
+#### Massive View Controllers (Problem)
 
 ```swift
 // Imagine a very large UIViewController subclass...
@@ -279,7 +277,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
 
 **Explanation:**  While OOP encourages modularity within *objects*, it's easy to create "God Objects" like Massive View Controllers that manage too much. This leads to tight coupling, reduced reusability, and difficulty in testing (as the diagram illustrates). OOP alone doesn't prevent this; architectural patterns are needed alongside OOP to further decompose responsibilities.
 
-### Delegate and Protocol Overuse (Potential Problem, if Uncontrolled)
+#### Delegate and Protocol Overuse (Potential Problem, if Uncontrolled)
 
 ```swift
 // Example of delegate callback hell - hard to trace execution

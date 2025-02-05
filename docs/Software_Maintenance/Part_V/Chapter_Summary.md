@@ -6,9 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
 
-# Part V - Looking to the Future - A textual summary
+# Part V - Looking to the Future
+
+## A Textual Summary
 
 
 Part V, "Looking to the Future," reflects on the evolution of software maintenance and identifies key research areas to address the ongoing challenges in the field.

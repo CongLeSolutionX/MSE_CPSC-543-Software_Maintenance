@@ -6,17 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
-
-# Chapter 13 - Building and Sustaining Maintainability
+# Chapter 13: Building and Sustaining Maintainability
 
 
-Below are the Mermaid diagrams and illustrations of this chapter.
-
-----
-
-
-# Diagram 1: Building and Sustaining Maintainability - Mindmap Overview
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---
@@ -92,7 +85,7 @@ This mindmap gives a structured overview of Chapter 13, outlining the main secti
 
 ---
 
-# Diagram 2: Quality Assurance - Mindmap Detailing Quality Factors
+## Diagram 2: Quality Assurance - Mindmap Detailing Quality Factors
 
 ```mermaid
 ---
@@ -155,7 +148,7 @@ This mindmap focuses on the "Quality Assurance" section of Chapter 13, breaking 
 
 ---
 
-# Diagram 3: Impact Analysis
+## Diagram 3: Impact Analysis
 
 ```mermaid
 ---
@@ -182,7 +175,7 @@ This flowchart outlines the key steps in conducting Impact Analysis, as relevant
 
 ---
 
-# Diagram 4: 4GLs vs OO - Table Comparing Maintainability Aspects
+## Diagram 4: 4GLs vs OO - Table Comparing Maintainability Aspects
 
 ```mermaid
 ---
@@ -210,7 +203,7 @@ This table directly compares Fourth-Generation Languages (4GLs) and Object-Orien
 ---
 
 
-# Diagram 5: Object-Oriented Decomposition - Illustrative Example
+## Diagram 5: Object-Oriented Decomposition - Illustrative Example
 
 ```mermaid
 ---
@@ -251,7 +244,7 @@ This class diagram illustrates a simple example of Object-Oriented Decomposition
 
 ---
 
-# Diagram 6: Migration Approaches
+## Diagram 6: Migration Approaches
 
 ```mermaid
 ---
@@ -289,7 +282,7 @@ This flowchart illustrates different approaches to migrating a legacy system to 
 
 ---
 
-# Table 2: Maintainability Characteristics of Reusable Components - Table Summary
+## Table 2: Maintainability Characteristics of Reusable Components - Table Summary
 
 ```mermaid
 ---
@@ -317,7 +310,7 @@ This table summarizes the characteristics of reusable components that contribute
 
 ---
 
-# Diagram 7:  Fourth-Generation Languages (4GLs) - Properties and Impact on Maintenance
+## Diagram 7:  Fourth-Generation Languages (4GLs) - Properties and Impact on Maintenance
 
 
 ```mermaid

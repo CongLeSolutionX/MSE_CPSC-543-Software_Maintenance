@@ -6,16 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
+# Chapter 14: Maintenance Tools
 
-# Chapter 14 - Maintenance Tools
-
-Here are the diagrams and illustrations in Mermaid syntax to cover the concepts of the chapter.
-
-----
-
-
-# Diagram 1: Criteria for Selecting Tools - Mindmap
+## Diagram 1: Criteria for Selecting Tools - Mindmap
 
 ```mermaid
 ---
@@ -72,7 +65,7 @@ This mindmap outlines the criteria for selecting maintenance tools as discussed 
 
 ---
 
-# Diagram 2: Taxonomy of Maintenance Tools
+## Diagram 2: Taxonomy of Maintenance Tools
 
 ```mermaid
 ---
@@ -160,7 +153,7 @@ This mindmap illustrates the taxonomy of maintenance tools, categorizing them by
 ---
 
 
-# Diagram 3: Reverse Engineering Process with Tools
+## Diagram 3: Reverse Engineering Process with Tools
 
 ```mermaid
 ---
@@ -199,7 +192,7 @@ This flowchart illustrates a typical Reverse Engineering process, highlighting t
 
 ---
 
-# Table: Tool Categories and Benefits
+## Table: Tool Categories and Benefits
 
 ```mermaid
 ---
@@ -224,7 +217,7 @@ This table provides a concise overview of the Tool Categories from Chapter 14, o
 
 ---
 
-# Table: Comparison of Example Maintenance Tools
+## Table: Comparison of Example Maintenance Tools
 
 ```mermaid
 ---
@@ -250,7 +243,7 @@ This table provides a summary of example maintenance tools categorized according
 
 ---
 
-# Diagram 4: Example SCCS Workflow in Configuration Management
+## Diagram 4: Example SCCS Workflow in Configuration Management
 
 ```mermaid
 ---
@@ -296,7 +289,7 @@ This flowchart represents a simplified example of a workflow using SCCS (Source 
 ---
 
 
-# Diagram 5: Benefits of Using Maintenance Tools
+## Diagram 5: Benefits of Using Maintenance Tools
 
 ```mermaid
 ---
@@ -329,7 +322,7 @@ This mindmap visually represents the advantages of employing maintenance tools a
 
 ---
 
-# Diagram 6: Example Output - Program Slicer
+## Diagram 6: Example Output - Program Slicer
 
 ```mermaid
 ---

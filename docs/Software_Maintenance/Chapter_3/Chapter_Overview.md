@@ -6,9 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-# Chapter 3
+# Chapter 3: Fundamentals of Software Change
 
-## Diagram 1: Fundamentals of Software Change - Mindmap Overview
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---

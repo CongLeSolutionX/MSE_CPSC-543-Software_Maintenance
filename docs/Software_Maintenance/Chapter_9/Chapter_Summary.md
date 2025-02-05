@@ -6,11 +6,11 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
 
 
+# Chapter 9: Testing 
 
-# Chapter 9 - Testing - A Summary
+## A Textual Summary
 
 
 

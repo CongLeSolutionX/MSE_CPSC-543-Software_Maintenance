@@ -12,12 +12,7 @@ license(s): MIT, CC BY 4.0
 
 
 
-Here are the diagrams for Chapter 10:
-
----
-
-
-# Diagram 1: Management and Organizational Issues
+## Diagram 1: Mind Map Overview
 
 ```mermaid
 ---
@@ -149,7 +144,7 @@ This mindmap provides a comprehensive overview of Chapter 10, "Management and Or
 
 ---
 
-# Table 1: Organisational Modes
+## Table 1: Organisational Modes
 
 ```mermaid
 ---
@@ -173,7 +168,7 @@ This table provides a comparative summary of the different Organizational Modes 
 
 ---
 
-# Diagram 2: The Cycle of Enhancing Maintenance Productivity
+## Diagram 2: The Cycle of Enhancing Maintenance Productivity
 
 ```mermaid
 ---
@@ -205,7 +200,7 @@ This flowchart illustrates the interconnected steps in enhancing maintenance pro
 
 ---
 
-# Diagram 3: Motivating Maintenance Personnel
+## Diagram 3: Motivating Maintenance Personnel
 
 ```mermaid
 ---
@@ -238,7 +233,7 @@ This mindmap details the specific methods and strategies for motivating maintena
 
 ---
 
-# Diagram 4: Personnel Education and Training Strategies
+## Diagram 4: Personnel Education and Training Strategies
 
 ```mermaid
 ---
@@ -274,7 +269,7 @@ This mindmap outlines the various strategies for personnel education and trainin
 
 ---
 
-# Diagram 5: Responsibility & Structure of a Permanent Maintenance Team
+## Diagram 5: Responsibility & Structure of a Permanent Maintenance Team
 
 ```mermaid
 ---
@@ -307,7 +302,7 @@ This flowchart illustrates the hierarchical structure of responsibilities within
 
 ---
 
-# Diagram 6: Organizational Modes - Table (Expanded)
+## Diagram 6: Organizational Modes - Table (Expanded)
 
 ```mermaid
 ---

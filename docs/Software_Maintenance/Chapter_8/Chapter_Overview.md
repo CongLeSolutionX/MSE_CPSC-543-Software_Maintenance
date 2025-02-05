@@ -6,16 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
 
+# Chapter 8: Reuse and Reusability
 
-# Chapter 8 - Reuse and Reusability
-
-Here are the diagrams and illustrations Mermaid syntax to cover its concepts:
-
----
-
-# Diagram 1: Overview - Mindmap
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---
@@ -72,7 +66,7 @@ This mindmap provides a chapter-level overview of Chapter 8, structuring the mai
 
 ---
 
-# Diagram 2: Approaches to Reuse - Detailed Mindmap
+## Diagram 2: Approaches to Reuse - Detailed Mindmap
 
 ```mermaid
 ---
@@ -133,7 +127,7 @@ This mindmap drills down into the "Approaches to Reuse" discussed in Chapter 8, 
 
 ---
 
-# Diagram 3: Factors Impacting Reuse
+## Diagram 3: Factors Impacting Reuse
 
 ```mermaid
 ---
@@ -189,7 +183,7 @@ This mindmap details the "Factors Impacting Reuse" from Chapter 8, categorizing 
 
 ---
 
-# Diagram 4: Reuse Process Model
+## Diagram 4: Reuse Process Model
 
 ```mermaid
 ---
@@ -224,7 +218,7 @@ This flowchart represents the "Reuse Process Model" detailed in Chapter 8, break
 
 ---
 
-# Table 1: Targets for Reuse
+## Table 1: Targets for Reuse
 
 ```mermaid
 ---
@@ -248,7 +242,7 @@ This table breaks down the "Targets for Reuse" from Chapter 8. It specifies each
 
 ---
 
-# Diagram 5: Objectives and Benefits of Reuse
+## Diagram 5: Objectives and Benefits of Reuse
 
 ```mermaid
 ---
@@ -288,7 +282,7 @@ This mindmap visualizes  the "Objectives and Benefits of Reuse" in an easy to un
 
 ---
 
-# Diagram 6: Components Engineering and Domain Analysis
+## Diagram 6: Components Engineering and Domain Analysis
 
 ```mermaid
 ---
@@ -355,7 +349,7 @@ This diagram illustrates the "Components Engineering" and "Domain Analysis" conc
 
 ---
 
-# Diagram 7: Factors Impacting Reuse
+## Diagram 7: Factors Impacting Reuse
 
 ```mermaid
 ---

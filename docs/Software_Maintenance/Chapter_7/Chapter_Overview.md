@@ -11,7 +11,7 @@ license(s): MIT, CC BY 4.0
 # Chapter 7: Reverse Engineering
 
 
-## Diagram 1: Overview - Mindmap
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---

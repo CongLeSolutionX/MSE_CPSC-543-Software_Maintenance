@@ -9,7 +9,9 @@ license(s): MIT, CC BY 4.0
 ----
 
 
-# Chapter 8: Reuse and Reusability - Summary
+# Chapter 8: Reuse and Reusability
+
+## A Textual Summary
 
 Chapter 8 explores the critical concept of software reuse and reusability as a means to address common problems like low productivity and poor software quality in software development and maintenance. The chapter breaks down the "why, what, and how" of software reuse.
 

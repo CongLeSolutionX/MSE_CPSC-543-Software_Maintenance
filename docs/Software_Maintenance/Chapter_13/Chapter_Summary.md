@@ -6,9 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
+# Chapter 13: Building and Sustaining Maintainability
 
-# Chapter 13 - Building and Sustaining Maintainability - A textual summary
+## A Textual Summary
 
 Chapter 13, "Building and Sustaining Maintainability," emphasizes the importance of designing software for maintainability from the outset and actively preserving it throughout the software's lifecycle. The chapter argues that maintainability is crucial due to the inevitable evolution of software systems driven by changing user needs, environmental factors, and error correction.
 

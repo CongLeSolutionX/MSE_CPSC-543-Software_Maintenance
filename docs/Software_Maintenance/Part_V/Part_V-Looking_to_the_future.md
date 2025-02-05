@@ -6,17 +6,12 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
 
 # PART V: LOOKING TO THE FUTURE
 
 
-Below are Mermaid diagrams and illustrations to cover the key concepts from this section.
 
----
-
-
-# Diagram 1: Part V Overview - Mindmap
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---
@@ -57,7 +52,7 @@ This mindmap provides a high-level summary of Part V, "Looking to the Future". I
 
 ---
 
-# Table 1: Research Areas in Software Maintenance
+## Table 1: Research Areas in Software Maintenance
 
 ```mermaid
 ---
@@ -89,7 +84,7 @@ This table details the Research Areas discussed in Part V.  The columns are:
 ---
 
 
-# Diagram 2: Past and Present of Software Maintenance - Detailed Mindmap
+## Diagram 2: Past and Present of Software Maintenance - Detailed Mindmap
 
 ```mermaid
 ---
@@ -129,11 +124,11 @@ This mindmap breaks down the "Past and Present" section, showing the evolution o
 
 ---
 
-# Diagrams 2-9: Detailed Mindmaps for Each Research Area
+## Diagrams 2-9: Detailed Mindmaps for Each Research Area
 
 Now, let's create a detailed mindmap for each of the Research Areas listed in Part V:
 
-## Diagram 2: Classification
+### Diagram 2: Classification
 
 ```mermaid
 ---
@@ -162,7 +157,7 @@ This mindmap details the "Classification" research area, highlighting its focus 
 
 ---
 
-## Diagram 3: Software Experience Bases
+### Diagram 3: Software Experience Bases
 
 ```mermaid
 ---
@@ -196,7 +191,7 @@ This mindmap elaborates on the "Software Experience Bases" research area, focusi
 
 ---
 
-## Diagram 4: Software Reuses
+### Diagram 4: Software Reuses
 
 ```mermaid
 ---
@@ -227,7 +222,7 @@ This mindmap details the "Software Reuse" research area. It emphasizes maximizin
 
 ---
 
-## Diagram 5: Support Tools
+### Diagram 5: Support Tools
 
 ```mermaid
 ---
@@ -257,7 +252,7 @@ This mindmap expands on the "Support Tools" research area, focusing on automatio
 
 ---
 
-## Diagram 6: Software Measurement
+### Diagram 6: Software Measurement
 
 
 ```mermaid
@@ -289,7 +284,7 @@ This mindmap further elaborates on the "Software Measurement" research area, hig
 
 ---
 
-## Diagram 7: Program Comprehension
+### Diagram 7: Program Comprehension
 
 ```mermaid
 ---
@@ -326,7 +321,7 @@ This mindmap provides a detailed breakdown of the "Program Comprehension" resear
 
 ---
 
-## Diagram 8: Software Maintenance Process
+### Diagram 8: Software Maintenance Process
 
 ```mermaid
 ---
@@ -359,7 +354,7 @@ This mindmap provides details on the "Software Maintenance Process" research are
 
 ---
 
-## Diagram 9: Threesome Marriage
+### Diagram 9: Threesome Marriage
 
 ```mermaid
 ---
@@ -396,7 +391,7 @@ This mindmap details the "Threesome Marriage" research area, focusing on the syn
 
 ---
 
-# Diagram 10: Best of Both Worlds
+## Diagram 10: Best of Both Worlds
 
 ```mermaid
 ---

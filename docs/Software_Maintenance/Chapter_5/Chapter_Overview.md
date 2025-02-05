@@ -7,9 +7,9 @@ license(s): MIT, CC BY 4.0
 ---
 
 
-# Chapter 5
+# Chapter 5: The Maintenance Process
 
-## Diagram 1: The Maintenance Process - Mindmap Overview
+## Diagram 1: Mindmap Overview
 
 ```mermaid
 ---

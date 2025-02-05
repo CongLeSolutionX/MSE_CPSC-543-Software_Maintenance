@@ -7,9 +7,9 @@ license(s): MIT, CC BY 4.0
 ---
 
 
-# Chapter 6 
+# Chapter 6: Program Understanding
 
-## Diagram 1: Program Understanding - Main Mindmap
+## Diagram 1: Main Mindmap
 
 ```mermaid
 ---

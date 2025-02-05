@@ -6,15 +6,14 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-
----
+# Discussion Subjects from chapter 13
 
 
 Below are a subject related to Chapter 13, "Building and Sustaining Maintainability", through the lens of an experienced iOS developer.
 
 ---
 
-# Subject 2: The Importance of Testability and the Role of Tools in the iOS Ecosystem
+## Subject 2: The Importance of Testability and the Role of Tools in the iOS Ecosystem
 
 Chapter 13 also highlights testability as a vital quality factor.   In the iOS world, we have a robust testing framework called XCTest.  This framework provides the tools to write unit tests, UI tests, and performance tests, ensuring that changes don't introduce regressions or bugs.
 

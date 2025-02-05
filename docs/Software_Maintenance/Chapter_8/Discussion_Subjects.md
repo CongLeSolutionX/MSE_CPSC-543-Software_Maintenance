@@ -6,7 +6,7 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
+# Discussion Subjects from chapter 8
 
 
 Below are two subjects, viewed through the lens of an experienced iOS developer, showcase how the principles of reuse and reusability, outlined in Chapter 8, apply to practical iOS development challenges.
@@ -16,7 +16,7 @@ The discussion provides hands-on examples and specific scenarios where these con
 ---
 
 
-# Subject 1: Reusability of Custom UI Components in SwiftUI vs. UIKit
+## Subject 1: Reusability of Custom UI Components in SwiftUI vs. UIKit
 
 *   **Context:** As an experienced iOS developer, I've seen firsthand how UI frameworks can both support and hinder reuse. Chapter 8 talks about the ideal of reusable components, but let's get into the practicalities on iOS.
 *   **SwiftUI and Reuse:**
@@ -42,7 +42,7 @@ The discussion provides hands-on examples and specific scenarios where these con
 ---
 
 
-# Subject 2:  Reuse of Networking Layers in iOS Development: A Case for Abstraction
+## Subject 2:  Reuse of Networking Layers in iOS Development: A Case for Abstraction
 
 *   **Context:** Chapter 8 emphasizes the reuse of software components. In my experience, a great example which directly saves long term developer time is reusing your Networking Layer in iOS Development. Let's examine how you can make a framework reusable and why it is important to abstract away the actual calls.
 *   **The Problem:** Networking in iOS can be particularly messy. You often end up with similar code for fetch requests, error handling, authentication, etc., scattered across your codebase, thus impacting maintainability, readability and testing. Think of the traditional approach of using URLSession, manually converting decodable data types into the respective Model data structure and adding the logic each time.
