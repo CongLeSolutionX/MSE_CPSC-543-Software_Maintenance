@@ -1,0 +1,1260 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Cong Le" name="author"/>
+<link href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_13/Chapter_Overview/" rel="canonical"/>
+<link href="../../Chapter_12/Discussion_Subjects/" rel="prev"/>
+<link href="../Chapter_Summary/" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.2" name="generator"/>
+<title>Chapter Overview - MSE - CPSC-543 - Software Maintenance</title>
+<link href="../../../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="amber" data-md-color-primary="orange" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-13-building-and-sustaining-maintainability">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter Overview
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="orange" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="deep-orange" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Syllabus/">
+<span class="md-ellipsis">
+    Syllabus
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Software Maintenance
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 2
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_2/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_2/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_2/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 3
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_3/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_3/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_3/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 4
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 4
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_4/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_4/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_4/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 5
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 5
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_5/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_5/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_5/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 6
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 6
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_6/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_6/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_6/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 7
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 7
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 8
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_8">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 8
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_8/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_8/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_8/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 9
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_9_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_9">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 9
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_9/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_9/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_9/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_10_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_10">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 10
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_10/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_10/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_10/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_11_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_11">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 11
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_11/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_11/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_11/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 12
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_12_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_12">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 12
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_12/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_12/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_12/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 13
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_13_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_13">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 13
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-1-mindmap-overview">
+<span class="md-ellipsis">
+      Diagram 1: Mindmap Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-2-quality-assurance-mindmap-detailing-quality-factors">
+<span class="md-ellipsis">
+      Diagram 2: Quality Assurance - Mindmap Detailing Quality Factors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-3-impact-analysis">
+<span class="md-ellipsis">
+      Diagram 3: Impact Analysis
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-4-4gls-vs-oo-table-comparing-maintainability-aspects">
+<span class="md-ellipsis">
+      Diagram 4: 4GLs vs OO - Table Comparing Maintainability Aspects
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-5-object-oriented-decomposition-illustrative-example">
+<span class="md-ellipsis">
+      Diagram 5: Object-Oriented Decomposition - Illustrative Example
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-6-migration-approaches">
+<span class="md-ellipsis">
+      Diagram 6: Migration Approaches
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-2-maintainability-characteristics-of-reusable-components-table-summary">
+<span class="md-ellipsis">
+      Table 2: Maintainability Characteristics of Reusable Components - Table Summary
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-7-fourth-generation-languages-4gls-properties-and-impact-on-maintenance">
+<span class="md-ellipsis">
+      Diagram 7: Fourth-Generation Languages (4GLs) - Properties and Impact on Maintenance
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Discussion_Subjects.md">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 14
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_14_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_14">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 14
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_14/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_14/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_14/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+<span class="md-ellipsis">
+    PART V
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_15_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_15">
+<span class="md-nav__icon md-icon"></span>
+            PART V
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Part_V-Looking_to_the_future.md">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-1-mindmap-overview">
+<span class="md-ellipsis">
+      Diagram 1: Mindmap Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-2-quality-assurance-mindmap-detailing-quality-factors">
+<span class="md-ellipsis">
+      Diagram 2: Quality Assurance - Mindmap Detailing Quality Factors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-3-impact-analysis">
+<span class="md-ellipsis">
+      Diagram 3: Impact Analysis
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-4-4gls-vs-oo-table-comparing-maintainability-aspects">
+<span class="md-ellipsis">
+      Diagram 4: 4GLs vs OO - Table Comparing Maintainability Aspects
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-5-object-oriented-decomposition-illustrative-example">
+<span class="md-ellipsis">
+      Diagram 5: Object-Oriented Decomposition - Illustrative Example
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-6-migration-approaches">
+<span class="md-ellipsis">
+      Diagram 6: Migration Approaches
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-2-maintainability-characteristics-of-reusable-components-table-summary">
+<span class="md-ellipsis">
+      Table 2: Maintainability Characteristics of Reusable Components - Table Summary
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-7-fourth-generation-languages-4gls-properties-and-impact-on-maintenance">
+<span class="md-ellipsis">
+      Diagram 7: Fourth-Generation Languages (4GLs) - Properties and Impact on Maintenance
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-13-building-and-sustaining-maintainability">Chapter 13: Building and Sustaining Maintainability<a class="headerlink" href="#chapter-13-building-and-sustaining-maintainability" title="Permanent link">¶</a></h1>
+<h2 id="diagram-1-mindmap-overview">Diagram 1: Mindmap Overview<a class="headerlink" href="#diagram-1-mindmap-overview" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Chapter 13: &lt;br&gt; Building and Sustaining Maintainability))
+    node(Introduction)
+      label(Focus on building better systems)
+      label(Applying lessons from previous parts)
+    node(Definitions)
+      label(Impact Analysis)
+      label(Quality Assurance)
+      label(Maintainability)
+    node(Impact Analysis)
+      label(Crucial for Maintainability)
+      label(Models and Strategies)
+      label(Example: 'Year 2000 Problem')
+    node(Quality Assurance)
+      label(Key to Maintainability)
+      label(Quality Factors)
+        label(Fitness for Purpose)
+        label(Correctness)
+        label(Portability)
+        label(Testability)
+        label(Usability)
+        label(Reliability)
+        label(Efficiency)
+        label(Integrity)
+        label(Reusability)
+        label(Interoperability)
+    node("Fourth-Generation Languages &lt;br&gt; (4GLs)")
+      label(Properties for Maintainability)
+      label(Impact on Maintenance)
+        label(Increased Productivity)
+        label(Cost Reduction)
+        label(Ease of Understanding)
+        label(Automatic Documentation)
+        label(Workload Reduction)
+      node(Weaknesses of 4GLs)
+        label(Application-Specific)
+        label(Proprietary)
+        label(Hyped Ease of Use)
+        label(Poor Design Potential)
+    node("Object-Oriented Paradigms &lt;br&gt; (OOP)")
+      label(Decomposition for Comprehension)
+        label(Algorithmic Decomposition)
+        label(Object-Oriented Decomposition)
+      label(Impact on Maintenance)
+        label(Smaller Systems)
+        label("Resilient to Change &lt;br&gt; [Evolvability]")
+        label(Reduced Risks - Incremental Development)
+        label(Reusable Components)
+      node(Migration to OOP)
+        label(Approaches)
+          label(Rewrite Whole System)
+          label(OO Analysis as Springboard)
+          label(Object Wrapping)
+        label(Retraining Personnel)
+    node(Case Study - Usability)
+      label(Usability as Key Quality Factor)
+      label(ACME Health Clinic - 'Software Airbag' Example)
+    node(Summary)
+      label(Recap of Key Concepts)
+      label(Transition to Maintenance Tools - Chapter 14)
+
+</div>
+<p>This mindmap gives a structured overview of Chapter 13, outlining the main sections and topics covered, from Impact Analysis to Object-Oriented Paradigms and the concluding Summary and transition.</p>
+<hr/>
+<h2 id="diagram-2-quality-assurance-mindmap-detailing-quality-factors">Diagram 2: Quality Assurance - Mindmap Detailing Quality Factors<a class="headerlink" href="#diagram-2-quality-assurance-mindmap-detailing-quality-factors" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root(Quality Assurance Factors for Maintainability)
+    A[Fitness for Purpose]
+      label(Meets user needs)
+      label(Clear Requirements Essential)
+      label("Measurable Requirements &lt;br&gt; (Hard vs. Soft)")
+    B[Correctness]
+      label(Error-free operation)
+      label(Reduced Corrective Maintenance)
+      label(Maintenance-Conscious Models)
+    C[Portability]
+      label(Platform Independence)
+      label(Ease of Migration)
+      label(Adherence to Standards)
+      label(Example Scenarios: HW, OS, Language)
+    D[Testability]
+      label(Ease of Testing)
+      label(Effective Change Verification)
+      label(Requirements for Testability)
+      label(Up-to-date Documentation for Tests)
+    E[Usability]
+      label(User-Friendliness)
+      label(System Adoption &amp; Utility)
+      label(Example: ACME Clinic Warning System)
+    F[Reliability]
+      label(Consistent Performance)
+      label(Trust in System)
+      label(Risk-Based Testing)
+    G[Efficiency]
+      label(Resource Optimization)
+      label(Performance Metrics)
+      label(Clear Efficiency Requirements)
+    H[Integrity]
+      label(Data Security)
+      label(Access Control)
+      label(Configuration Integrity)
+      label(Reproducibility)
+    I[Reusability]
+      label(Component Reuse)
+      label(Reduced Redundancy)
+      label(Faster Development &amp; Maintenance)
+      label(Refer to Chapter 8)
+    J[Interoperability]
+      label(System Interaction)
+      label(Data Exchange)
+      label(Standardized Interfaces)
+      label(Future-Proofing)
+
+</div>
+<p>This mindmap focuses on the “Quality Assurance” section of Chapter 13, breaking down the ten key “Quality Factors” that contribute to maintainability: Fitness for Purpose, Correctness, Portability, Testability, Usability, Reliability, Efficiency, Integrity, Reusability, and Interoperability.</p>
+<hr/>
+<h2 id="diagram-3-impact-analysis">Diagram 3: Impact Analysis<a class="headerlink" href="#diagram-3-impact-analysis" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Understand Proposed Change] --&gt; B{Identify Affected Components};
+    B --&gt; C{Analyze Dependencies};
+    C --&gt; D{Estimate Resources &amp; Effort};
+    D --&gt; E{"Assess Risks &amp; Ripple Effects"};
+    E --&gt; F{Document Findings &amp; Plan};
+
+    classDef KeyStep fill:#c3d9,stroke:#333,stroke-width:1px
+
+    class A,B,C,D,E,F KeyStep
+
+</div>
+<p>This flowchart outlines the key steps in conducting Impact Analysis, as relevant to Chapter 13’s discussion on building maintainability. Stages include Understanding Change, Identifying Components, Analyzing Dependencies, Estimating Resources, Assessing Risks, and Documentation.</p>
+<hr/>
+<h2 id="diagram-4-4gls-vs-oo-table-comparing-maintainability-aspects">Diagram 4: 4GLs vs OO - Table Comparing Maintainability Aspects<a class="headerlink" href="#diagram-4-4gls-vs-oo-table-comparing-maintainability-aspects" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 13: 4GLs vs OO for Maintainability
+    header Feature | Fourth-Generation Languages (4GLs) | Object-Oriented Paradigms (OO)
+    row Productivity | Increased, Rapid Development | Increased through Reuse &amp; Abstraction
+    row Cost | Reduced Development &amp; Maintenance Costs | Potentially Reduced Long-Term Costs
+    row Understandability | Easier for Simple Tasks | Improved through Decomposition &amp; Encapsulation
+    row Flexibility | Limited to Specific Domains | High, Adaptable to Complex Systems
+    row Standardization | Proprietary, Vendor Lock-in | Open Standards, Interoperability Focus
+    row Design Control | Risk of Poor Design by Non-Experts | Emphasizes Good Design Principles
+    row Long-term Evolution | Can Hinder Evolution due to Limitations | Designed for Evolution &amp; Extensibility
+    row Learning Curve | Easier for Non-Programmers Initially | Steeper Initial Curve, but Powerful Long-Term
+
+</div>
+<p>This table directly compares Fourth-Generation Languages (4GLs) and Object-Oriented (OO) Paradigms in terms of their impact on maintainability, focusing on features like Productivity, Cost, Understandability, Flexibility, Standardization, Design Control, Long-term Evolution and Learning Curve.</p>
+<hr/>
+<h2 id="diagram-5-object-oriented-decomposition-illustrative-example">Diagram 5: Object-Oriented Decomposition - Illustrative Example<a class="headerlink" href="#diagram-5-object-oriented-decomposition-illustrative-example" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  look: handDrawn
+  theme: dark
+---
+classDiagram
+    class Shape {
+        +draw()
+        +getArea()
+    }
+    class Circle {
+        -radius : double
+        +draw()
+        +getArea()
+    }
+    class Rectangle {
+        -width : double
+        -height : double
+        +draw()
+        +getArea()
+    }
+    Shape &lt;|-- Circle
+    Shape &lt;|-- Rectangle
+
+    class Drawing {
+        +addShape(Shape)
+        +drawAll()
+    }
+    Drawing o-- Shape
+
+</div>
+<p>This class diagram illustrates a simple example of Object-Oriented Decomposition, showing the classes <code>Shape</code>, <code>Circle</code>, <code>Rectangle</code>, and <code>Drawing</code>. It demonstrates inheritance (<code>Shape &lt;|-- Circle</code>, <code>Shape &lt;|-- Rectangle</code>) and composition (<code>Drawing o-- Shape</code>). This relates to the chapter’s discussion of how OOP facilitates comprehension and reuse through decomposition.</p>
+<hr/>
+<h2 id="diagram-6-migration-approaches">Diagram 6: Migration Approaches<a class="headerlink" href="#diagram-6-migration-approaches" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Legacy System];
+    B{"Assess System &amp; Needs"};
+    C[Rewrite using OOP];
+    D{Choose Migration Approach};
+    E[Wrap Existing Functionality];
+    F["OO Analysis &amp; Design"];
+    G[Implement in 3GL];
+    H[Migrate to OOP Later];
+
+    A --&gt; B
+    B -- Small System/Low Risk --&gt; C
+    B -- Large System/High Risk --&gt; D
+    D -- Object Wrapping --&gt; E
+    D -- OO Analysis as Springboard --&gt; F
+    F --&gt; G
+    G --&gt; H
+
+    classDef Elements fill:#a3d9,stroke:#333,stroke-width:1px
+    class A,B,C,D,E,F,G,H Elements
+
+</div>
+<p>This flowchart illustrates different approaches to migrating a legacy system to an Object-Oriented platform, as discussed in the chapter: a complete rewrite (for smaller systems), object wrapping (encapsulating existing components), and using Object-Oriented Analysis as a springboard (for larger, complex systems).</p>
+<hr/>
+<h2 id="table-2-maintainability-characteristics-of-reusable-components-table-summary">Table 2: Maintainability Characteristics of Reusable Components - Table Summary<a class="headerlink" href="#table-2-maintainability-characteristics-of-reusable-components-table-summary" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 13: Maintainability &amp; Reusable Components
+    header Characteristic | Description | Impact on Maintainability
+    row Generality | Applicable to a wider range of problems | Easier to reuse in different contexts
+    row High Cohesion | Related elements grouped within components | Improves code organization
+    row Loose Coupling | Reduced dependencies between components | Easier testing and change
+    row Standardisation | Following coding, documentation, interface standards | Improved Consistency
+    row Information Hiding | Implementation details are hidden behind interfaces | Flexible change implementations
+    row Abstraction | Abstract data types and operations | Reduced code changes
+    row Documentation | Up-to-date and accurate documentation of components  | Easier understanding and reuse
+    row Interoperability | Defined interfaces for system interaction | Easier integration with other systems
+</div>
+<p>This table summarizes the characteristics of reusable components that contribute to maintainability, as discussed in Chapter 13.   It links these characteristics back to how they affect long-term system health and maintainability.</p>
+<hr/>
+<h2 id="diagram-7-fourth-generation-languages-4gls-properties-and-impact-on-maintenance">Diagram 7:  Fourth-Generation Languages (4GLs) - Properties and Impact on Maintenance<a class="headerlink" href="#diagram-7-fourth-generation-languages-4gls-properties-and-impact-on-maintenance" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Ease of Use];
+    B(Non-Professional Use);
+    C[Database Integration];
+    D[Fewer Instructions];
+    E(Increased Productivity);
+    F[Non-Procedural];
+    G[Automated Documentation];
+    H(Reduced Documentation Effort);
+
+    I(Reduced Cost);
+    J[Ease of Understanding];
+    K[Reduced Workload];
+
+    subgraph 4GL["4GL Properties"]
+    style 4GL fill:#a3d9,stroke:#333,stroke-width:1px
+        A --&gt; B
+        C --&gt; B
+        D --&gt; E
+        F --&gt; E
+        G --&gt; H
+    end
+
+    subgraph Impact_on_Maintenance["Impact on Maintenance"]
+    style Impact_on_Maintenance fill:#a319,stroke:#333,stroke-width:1px
+        B --&gt; I
+        E --&gt; I
+        H --&gt; I
+        J --&gt; I
+        K --&gt; I
+    end
+
+    classDef Reduced_Cost fill:#a3a9,stroke:#333
+    class I Reduced_Cost
+
+    classDef Elements fill:#c39,stroke:#333
+    class A,C,D,F,G Elements
+
+</div>
+<p>This graph visually connects the properties of 4GLs (Ease of Use, Database Integration, Fewer Instructions, Non-Procedural approach, Automated Documentation) to their impact on Software Maintenance (Increased Productivity, Reduced Cost, Ease of Understanding, Reduced Documentation Effort, and Reduced Workload). It emphasizes the benefits of 4GLs for maintainability while also implicitly highlighting their limitations when these are not present.</p>
+<p><em>Note: Need to review the sources for more context and corrections if needed.</em></p>
+<hr/>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.f13b1293.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

@@ -1,0 +1,1324 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Cong Le" name="author"/>
+<link href="https://conglesolutionx.github.io/MSE_CPSC-543-Software_Maintenance/Software_Maintenance/Chapter_12/Chapter_Overview/" rel="canonical"/>
+<link href="../../Chapter_11/Discussion_Subjects/" rel="prev"/>
+<link href="../Chapter_Summary/" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.2" name="generator"/>
+<title>Chapter Overview - MSE - CPSC-543 - Software Maintenance</title>
+<link href="../../../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="amber" data-md-color-primary="orange" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-12-maintenance-measures">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MSE - CPSC-543 - Software Maintenance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter Overview
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="orange" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="deep-orange" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MSE - CPSC-543 - Software Maintenance" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="MSE - CPSC-543 - Software Maintenance">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"></path></svg>
+</a>
+    MSE - CPSC-543 - Software Maintenance
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Syllabus/">
+<span class="md-ellipsis">
+    Syllabus
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Software Maintenance
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Software Maintenance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_1/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 2
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_2/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_2/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_2/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 3
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_3/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_3/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_3/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 4
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 4
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_4/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_4/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_4/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 5
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 5
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_5/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_5/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_5/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 6
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 6
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_6/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_6/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_6/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 7
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 7
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 8
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_8">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 8
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_8/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_8/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_8/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 9
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_9_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_9">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 9
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_9/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_9/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_9/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_10_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_10">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 10
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_10/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_10/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_10/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_11_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_11">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 11
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_11/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_11/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_11/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 12
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_12_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_12">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 12
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-1-mindmap-overview">
+<span class="md-ellipsis">
+      Diagram 1: Mindmap Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-1-importance-of-integrity-in-measurement">
+<span class="md-ellipsis">
+      Table 1: Importance of Integrity in Measurement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-2-relation-between-entity-measure-and-attribute">
+<span class="md-ellipsis">
+      Diagram 2: Relation between Entity, Measure, and Attribute
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-2-objectives-of-software-measurement">
+<span class="md-ellipsis">
+      Table 2: Objectives of Software Measurement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-3-example-measures-mindmap">
+<span class="md-ellipsis">
+      Diagram 3: Example Measures - Mindmap
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-4-mccabes-cyclomatic-complexity">
+<span class="md-ellipsis">
+      Diagram 4: McCabe’s Cyclomatic Complexity
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-5-halsteads-measures">
+<span class="md-ellipsis">
+      Diagram 5: Halstead’s Measures
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-6-process-and-product-entities">
+<span class="md-ellipsis">
+      Diagram 6: Process and Product Entities
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-7-relationship-between-maintainability-and-other-quality-factors">
+<span class="md-ellipsis">
+      Diagram 7: Relationship between Maintainability and Other Quality Factors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-8-guidelines-for-selecting-measures">
+<span class="md-ellipsis">
+      Diagram 8: Guidelines for Selecting Measures
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 13
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_13_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_13">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 13
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_13/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_13/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_13/Discussion_Subjects.md">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+<span class="md-ellipsis">
+    Chapter 14
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_14_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_14">
+<span class="md-nav__icon md-icon"></span>
+            Chapter 14
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_14/Chapter_Overview/">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_14/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_14/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+<span class="md-ellipsis">
+    PART V
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_15_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_15">
+<span class="md-nav__icon md-icon"></span>
+            PART V
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Part_V-Looking_to_the_future.md">
+<span class="md-ellipsis">
+    Chapter Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Chapter_Summary/">
+<span class="md-ellipsis">
+    Chapter Summary
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Chapter_7/Discussion_Subjects/">
+<span class="md-ellipsis">
+    Discussing Subjects
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-1-mindmap-overview">
+<span class="md-ellipsis">
+      Diagram 1: Mindmap Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-1-importance-of-integrity-in-measurement">
+<span class="md-ellipsis">
+      Table 1: Importance of Integrity in Measurement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-2-relation-between-entity-measure-and-attribute">
+<span class="md-ellipsis">
+      Diagram 2: Relation between Entity, Measure, and Attribute
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-2-objectives-of-software-measurement">
+<span class="md-ellipsis">
+      Table 2: Objectives of Software Measurement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-3-example-measures-mindmap">
+<span class="md-ellipsis">
+      Diagram 3: Example Measures - Mindmap
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-4-mccabes-cyclomatic-complexity">
+<span class="md-ellipsis">
+      Diagram 4: McCabe’s Cyclomatic Complexity
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-5-halsteads-measures">
+<span class="md-ellipsis">
+      Diagram 5: Halstead’s Measures
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-6-process-and-product-entities">
+<span class="md-ellipsis">
+      Diagram 6: Process and Product Entities
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-7-relationship-between-maintainability-and-other-quality-factors">
+<span class="md-ellipsis">
+      Diagram 7: Relationship between Maintainability and Other Quality Factors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram-8-guidelines-for-selecting-measures">
+<span class="md-ellipsis">
+      Diagram 8: Guidelines for Selecting Measures
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-12-maintenance-measures">Chapter 12: Maintenance Measures<a class="headerlink" href="#chapter-12-maintenance-measures" title="Permanent link">¶</a></h1>
+<h2 id="diagram-1-mindmap-overview">Diagram 1: Mindmap Overview<a class="headerlink" href="#diagram-1-mindmap-overview" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Chapter 12: &lt;br&gt;Maintenance Measures))
+    node(Definitions)
+      label(Measurement)
+      label(Software Measurement)
+      label(Software Measure)
+      label(Software Metric)
+    node(Importance of Integrity)
+      label(Empirical)
+      label(Objective)
+      label(Encodable)
+    node(Objectives of Measurement)
+      label(Evaluation)
+      label(Control)
+      label(Assessment)
+      label(Improvement)
+      label(Prediction)
+    node(Example Measures)
+      label(Size)
+      label(Complexity)
+        label(McCabe's Cyclomatic)
+        label(Halstead's Measures)
+      label(Quality)
+        label(Product Quality)
+        label(Process Quality)
+      label(Understandability)
+      label(Maintainability)
+      label(Cost Estimation)
+    node(Guidelines for Selection)
+      label(Clearly Defined Objectives)
+      label(Fitness for Purpose)
+      label(Ease of Use)
+      label(Low Implementation Cost)
+      label(Sensitivity)
+
+</div>
+<p>This Mindmap provides a hierarchical overview of Chapter 12, covering the main sections and sub-topics: Definitions, Importance of Integrity, Objectives, Example Measures and Guidelines.</p>
+<hr/>
+<h2 id="table-1-importance-of-integrity-in-measurement">Table 1: Importance of Integrity in Measurement<a class="headerlink" href="#table-1-importance-of-integrity-in-measurement" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 12: Integrity in Measurement
+    header Characteristic | Description | Importance
+    row Empirical | Verified by observation or experiment         | Ensures measures are based on real-world evidence
+    row Objective  | Unbiased, Reliable, Efficient, Unambiguous      | Guarantees consistent and repeatable measurements
+    row Encodable  | Expressed in formal symbols (numbers)         | Allows quantitative analysis and comparison
+
+</div>
+<p>This Table details the three key characteristics of integrity in measurement: Empirical, Objective, and Encodable. It explains the description and importance of each characteristic for software measurement.</p>
+<hr/>
+<h2 id="diagram-2-relation-between-entity-measure-and-attribute">Diagram 2: Relation between Entity, Measure, and Attribute<a class="headerlink" href="#diagram-2-relation-between-entity-measure-and-attribute" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    subgraph Entity
+        A["Software Product &lt;br&gt; (e.g., Program)"]
+    end
+
+    subgraph Attribute
+        B["Property to be Measured &lt;br&gt; (e.g., Complexity)"]
+    end
+
+    subgraph Measure
+        C["Software Measure &lt;br&gt; (e.g., Cyclomatic Complexity Score: 20)"]
+    end
+
+    A --&gt;|is mapped to| C
+    B --&gt;|is characterized by| C
+
+    style C fill:#c3cf,stroke:#333,stroke-width:1px
+
+</div>
+<p>This Flowchart illustrates the relationship between an <em>Entity</em> (Software Product), an <em>Attribute</em> (Property to be Measured), and a <em>Measure</em> (Software Measure). It visually explains how a measure maps an entity to a quantifiable representation of an attribute.</p>
+<hr/>
+<h2 id="table-2-objectives-of-software-measurement">Table 2: Objectives of Software Measurement<a class="headerlink" href="#table-2-objectives-of-software-measurement" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 12: Objectives of Software Measurement
+    header Objective | Description | Benefit
+    row Evaluation   | Comparing methods, tools, components | Informed decision-making, optimal selection
+    row Control      | Managing change, tracking progress, budgets | Process visibility &amp; efficiency, project management
+    row Assessment   | Characterizing product/process, feasibility |  Understanding current state, informed strategic decisions
+    row Improvement  | Monitoring enhancements, setting targets |  Quality &amp; productivity gains, continuous improvement
+    row Prediction   | Estimating resource, time, effort for tasks |  Resource allocation, project planning, risk mitigation
+
+</div>
+<p>This table outlines the Objectives of Software Measurement: Evaluation, Control, Assessment, Improvement and Prediction, detailing the description and benefit of each objective in the context of software maintenance.</p>
+<hr/>
+<h2 id="diagram-3-example-measures-mindmap">Diagram 3: Example Measures - Mindmap<a class="headerlink" href="#diagram-3-example-measures-mindmap" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+mindmap
+  root((Chapter 12: &lt;br&gt;Example Measures))
+    node(Size)
+      label("Lines of Code &lt;br&gt; (LOC)")
+      label(Delta LOC)
+      label(Measure Program Size)
+    node(Complexity)
+      label(McCabe's Cyclomatic Complexity)
+        label(Control Flow Paths)
+        label(Psychological Complexity)
+      node("Halstead's Measures")
+        label(Program Length)
+        label(Program Effort)
+        label(Software Science)
+    node(Quality)
+      node(Product Quality)
+        label(User Change Requests)
+        label("Post-Operation Faults")
+        label(Customer Satisfaction)
+      node(Process Quality)
+        label(Schedule Variance)
+        label("Productivity &lt;br&gt; (LOC/Person-Days)")
+        label(Efficiency of Maintenance Process)
+    node(Understandability)
+      label(Inverse of Complexity)
+      label(Documentation Quality)
+      label(Coding Style Consistency)
+      label(Ease of Program Comprehension)
+    node(Maintainability)
+      label("Mean Time To Repair &lt;br&gt; (MTTR)")
+      label(External Attribute)
+      label(Time to Effect Change)
+    node(Cost Estimation)
+      label(Historical Data)
+      label(Mathematical Models)
+      label("Boehm's COCOMO")
+      label(Predicting Maintenance Effort)
+
+</div>
+<p>This mindmap expands on the “Example Measures” section, breaking down each measure type (Size, Complexity, Quality, Understandability, Maintainability, Cost Estimation) into further details and specific examples like McCabe’s and Halstead’s measures.</p>
+<hr/>
+<h2 id="diagram-4-mccabes-cyclomatic-complexity">Diagram 4: McCabe’s Cyclomatic Complexity<a class="headerlink" href="#diagram-4-mccabes-cyclomatic-complexity" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+graph LR
+    A[Start];
+    B{"Condition 1?"};
+    C[Action 1];
+    D{"Condition 2?"};
+    E[Action 2];
+    F[Action 3];
+    G[End];
+
+
+    A --&gt; B
+    B -- True --&gt; C
+    B -- False --&gt; D
+    D -- True --&gt; E
+    D -- False --&gt; F
+    C --&gt; G
+    E --&gt; G
+    F --&gt; G
+
+    classDef Start_and_End_Point fill:#1919,stroke:#333,stroke-width:2px;
+    class A,G Start_and_End_Point;
+
+    classDef Decision_Point fill:#9398,stroke:#333,stroke-width:2px;
+    class B,D Decision_Point
+
+    classDef Actions fill:#cfe4,stroke:#33,stroke-width:2px;
+    class C,E,F Actions
+
+</div>
+<p>This flowchart visually represents a simple program with conditional statements. It can be used to illustrate how McCabe’s Cyclomatic Complexity is calculated based on the number of linearly independent paths through the code.</p>
+<ul>
+<li><strong>Nodes:</strong> (e.g., A, B, C, D, E, F, G) represent program statements.</li>
+<li><strong>Edges:</strong> (arrows) represent the flow of control.</li>
+<li><strong>Decision Points:</strong> (e.g., B, D) are conditions that create branching paths.</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>v(F) = e - n + 2</li>
+<li>e = number of edges (arrows)</li>
+<li>n = number of nodes</li>
+</ul>
+<p><strong>In this example:</strong></p>
+<ul>
+<li>e = 7</li>
+<li>n = 7</li>
+<li>v(F) = 7 - 7 + 2 = 2</li>
+</ul>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>The Cyclomatic Complexity of this program is 2. This value can indicate the program’s testability and understandability. Higher values generally imply more complex code that is harder to test and understand.</li>
+</ul>
+<hr/>
+<h2 id="diagram-5-halsteads-measures">Diagram 5: Halstead’s Measures<a class="headerlink" href="#diagram-5-halsteads-measures" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+    themeVariables:
+      darkMode: true
+---
+table Diagram
+    title Chapter 12: Halstead's Measures
+    header Metric | Formula | Description
+    row Unique Operators | n₁ | Number of unique operators (e.g., +, -, *, IF, WHILE)
+    row Unique Operands | n₂ | Number of unique operands (e.g., variables, constants)
+    row Total Operators | N₁ | Total occurrences of operators
+    row Total Operands | N₂ | Total occurrences of operands
+    row Program Length | N = N₁ + N₂ | Total number of operators and operands
+    row Calculated Program Length | N̂ = n₁log₂(n₁) + n₂log₂(n₂) | Estimated program length based on unique operators and operands
+    row Program Effort | E = (n₁N₂(N₁ + N₂)*log₂(n₁ + n₂)) / (2 * n₂) | Measure of the mental effort required to create or understand a program
+</div>
+<p>This table explains the key metrics used in Halstead’s Software Science, including the basic counts (n₁, n₂, N₁, N₂) and the derived metrics (N, N̂, and E). It clarifies what constitutes an operator and an operand, providing a foundation for understanding these measures.</p>
+<hr/>
+<h2 id="diagram-6-process-and-product-entities">Diagram 6: Process and Product Entities<a class="headerlink" href="#diagram-6-process-and-product-entities" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  theme: dark
+---
+mindmap
+  root((Process and Product Entities))
+    node(Processes)
+      label(Activities during Maintenance)
+      node(Change Analysis)
+      node(Design)
+      node(Coding)
+      node(Testing)
+      node(Documentation)
+    node(Products)
+      label(Outputs of Maintenance Activities)
+      node(Source Code)
+        label(Modified Code)
+        label(New Code)
+      node(Documentation)
+        label(Updated Documents)
+        label(New Documents)
+      node(Test Cases)
+      node(Test Reports)
+
+</div>
+<p>This mindmap distinguishes between <em>Processes</em> (activities performed during maintenance) and <em>Products</em> (the outputs of those activities). It clarifies that both processes and products can be measured, providing examples of each.</p>
+<hr/>
+<h2 id="diagram-7-relationship-between-maintainability-and-other-quality-factors">Diagram 7: Relationship between Maintainability and Other Quality Factors<a class="headerlink" href="#diagram-7-relationship-between-maintainability-and-other-quality-factors" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  theme: dark
+---
+mindmap
+  root((Maintainability))
+    node(Correctness)
+      label(Fewer Defects)
+      label(Easier to Debug)
+    node(Reliability)
+      label(Consistent Performance)
+      label(Fault Tolerance)
+    node(Efficiency)
+      label(Resource Optimization)
+      label(Faster Modifications)
+    node(Usability)
+      label(Ease of Understanding)
+      label(User Friendliness)
+    node(Testability)
+      label(Easy to Verify Changes)
+      label(Comprehensive Test Cases)
+    node(Portability)
+      label(Adaptability to Environments)
+      label(Platform Independence)
+    node(Reusability)
+      label(Modular Design)
+      label(Component Extraction)
+    node(Interoperability)
+      label(Seamless Data Exchange)
+      label(Cross-Platform Compatibility)
+    node(Integrity)
+      label(Security)
+      label(Data Protection)
+    node(Fitness for Purpose)
+      label(Meets Requirements)
+      label(Addresses User Needs)
+
+</div>
+<p>This mindmap illustrates how other quality factors contribute to maintainability. Each factor is linked to maintainability, showing that a system that scores high on these factors is likely to be more maintainable.</p>
+<hr/>
+<h2 id="diagram-8-guidelines-for-selecting-measures">Diagram 8: Guidelines for Selecting Measures<a class="headerlink" href="#diagram-8-guidelines-for-selecting-measures" title="Permanent link">¶</a></h2>
+<div class="mermaid">---
+config:
+  theme: dark
+---
+mindmap
+  root((Guidelines for Selecting Measures))
+    node(Clearly Defined Objectives)
+      label(Purpose of Measurement)
+      label(Specific Goals)
+    node(Fitness for Purpose)
+      label(Relevant to Maintenance Tasks)
+      label(Addresses Specific Needs)
+    node(Ease of Use)
+      label(Simple to Apply)
+      label(Minimal Overhead)
+      label(Automated if Possible)
+    node(Low Implementation Cost)
+      label(Affordable Tools)
+      label(Minimal Training)
+    node(Sensitivity)
+      label(Reflects Changes in Attributes)
+      label(Discriminates between Entities)
+    node(Personnel Involvement)
+      label(Clear Purpose Communication)
+      label(Avoid Punitive Use)
+
+</div>
+<p>This mindmap summarizes the key guidelines for selecting appropriate maintenance measures, emphasizing the importance of clear objectives, fitness for purpose, ease of use, cost, sensitivity and personnel involvement.</p>
+<hr/>
+<p>These additional diagrams and tables provide a more detailed visual representation of the core concepts within Chapter 12, including:</p>
+<ul>
+<li><strong>McCabe’s Cyclomatic Complexity:</strong> Visualized using a flowchart to demonstrate how paths are counted.</li>
+<li><strong>Halstead’s Measures:</strong> Explained in a table format, defining each metric and its formula.</li>
+<li><strong>Process and Product Entities:</strong> Differentiated using a Mindmap to show examples of measurable entities during maintenance.</li>
+<li><strong>Relationship between Maintainability and Other Quality Factors:</strong> Illustrated with a Mindmap to demonstrate how each factor contributes to maintainability.</li>
+<li><strong>Guidelines for Selecting Measures:</strong> Summarized in a Mindmap, highlighting key considerations for choosing appropriate measures.</li>
+</ul>
+<hr/>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.f13b1293.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
