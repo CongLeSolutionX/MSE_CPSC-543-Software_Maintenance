@@ -7,7 +7,10 @@ license(s): MIT, CC BY 4.0
 ---
 
 ----
-# Diagram 1: Chapter 2 - The Maintenance Framework
+
+# Chapter 2 - The Maintenance Framework
+
+## Diagram 1: Chapter Overview
 
 
 ```mermaid
@@ -195,7 +198,7 @@ This diagram clearly visualizes the interdependencies and influences within the 
 
 ---
 
-# Diagram 2: Chapter 2 - Software Maintenance Framework Components - Mindmap Breakdown
+## Diagram 2: Software Maintenance Framework Components - Mindmap Breakdown
 
 To further detail each component of the SMF, instead of a single large mindmap, let's create individual, focused mindmaps for each component to illustrate their sub-elements more clearly:
 
@@ -338,7 +341,7 @@ These six smaller mindmaps break down each of the components of the SMF into the
 
 ---
 
-# Diagram 3: Chapter 2 - Key Definitions
+## Diagram 3: Key Definitions
 
 ```mermaid
 ---

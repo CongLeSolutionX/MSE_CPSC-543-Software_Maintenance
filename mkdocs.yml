@@ -9,6 +9,10 @@ nav:
       - Chapter Overview: 'Software_Maintenance/Chapter_1/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_1/Chapter_Summary.md'
       - Discussing Subjects: 'Software_Maintenance/Chapter_1/Discussing_Subjects.md'
+    - Chapter 2:
+      - Chapter Overview: 'Software_Maintenance/Chapter_2/Chapter_Overview.md'
+      - Chapter Summary: 'Software_Maintenance/Chapter_2/Chapter_Summary.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_2/Discussing_Subjects.md'
 
 theme:
   name: material

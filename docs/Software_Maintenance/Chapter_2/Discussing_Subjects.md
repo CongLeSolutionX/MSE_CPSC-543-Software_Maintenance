@@ -6,18 +6,17 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
+# Discussion Subjects from chapter 2
 
 ---
 
 
 These two subjects below illustrate how the concepts in Chapter 2 are deeply intertwined and constantly relevant for an experienced iOS developer in the real world. 
 
-
-
 ---
 
 
-# Subject 1: The Ever-Shifting Sands of the iOS Operational Environment – A Maintenance Nightmare (and Opportunity)
+## Subject 1: The Ever-Shifting Sands of the iOS Operational Environment – A Maintenance Nightmare (and Opportunity)
 
 Chapter 2 emphasizes the "Operational Environment" as a key component driving maintenance. For an iOS developer, this is acutely felt and constantly in motion. Apple's ecosystem is both a blessing and a curse in this regard:
 
@@ -31,7 +30,7 @@ So, from an iOS developer's perspective, the "Operational Environment" is not a 
 
 ---
 
-# Subject 2: User Requirements in the Wild West of the App Store – Balancing Desires and Data
+## Subject 2: User Requirements in the Wild West of the App Store – Balancing Desires and Data
 
 Chapter 2 mentions "User Requirements" as a driver for maintenance.  But in the iOS world, “user requirements” are a really interesting beast, far more than just a stakeholder meeting in a typical enterprise software context:
 
