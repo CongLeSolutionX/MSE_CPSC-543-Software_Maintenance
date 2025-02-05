@@ -11,9 +11,7 @@ license(s): MIT, CC BY 4.0
 # Chapter 7: Reverse Engineering
 
 
-Here are the diagrams and illustrations created using Mermaid syntax to cover all the key concepts:
-
-# Diagram 1: Overview - Mindmap
+## Diagram 1: Overview - Mindmap
 
 ```mermaid
 ---
@@ -114,7 +112,7 @@ This mindmap provides a hierarchical overview of Chapter 7, outlining all the se
 
 ---
 
-# Table 1: Levels of Reverse Engineering
+## Table 1: Levels of Reverse Engineering
 
 ```mermaid
 ---
@@ -135,7 +133,7 @@ This table summarizes and compares the three levels of reverse engineering discu
 
 ---
 
-# Diagram 2: Reverse Engineering Process
+## Diagram 2: Reverse Engineering Process
 
 ```mermaid
 ---
@@ -180,7 +178,7 @@ This flowchart illustrates the Reverse Engineering process as described in Chapt
 
 ---
 
-# Table 2: Benefits of Reverse Engineering
+## Table 2: Benefits of Reverse Engineering
 
 ```mermaid
 ---
@@ -211,7 +209,7 @@ Here are the additional diagrams for Chapter 7
 
 ---
 
-# Diagram 3: Abstraction Types
+## Diagram 3: Abstraction Types
 
 ```mermaid
 ---
@@ -252,7 +250,7 @@ This mindmap elaborates on the three abstraction types (Function, Data, and Proc
 
 ---
 
-# Diagram 4: Levels of Reverse Engineering
+## Diagram 4: Levels of Reverse Engineering
 
 ```mermaid
 ---
@@ -294,7 +292,7 @@ A flowchart that visually details the steps of determining the levels of reverse
 
 ---
 
-# Diagram 5: Supporting Techniques
+## Diagram 5: Supporting Techniques
 
 ```mermaid
 ---
@@ -340,7 +338,7 @@ This diagram visualizes the Supporting Techniques discussed in chapter 7, using 
 
 ---
 
-# Diagram 6: Case Study (US DoD)
+## Diagram 6: Case Study (US DoD)
 
 ```mermaid
 ---
@@ -394,7 +392,7 @@ This mindmap details the Case Study within Chapter 7, illustrating the context, 
 
 ---
 
-# Table 3: Conditions for Reverse Engineering
+## Table 3: Conditions for Reverse Engineering
 
 ```mermaid
 ---

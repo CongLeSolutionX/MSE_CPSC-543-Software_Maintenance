@@ -7,6 +7,8 @@ license(s): MIT, CC BY 4.0
 ---
 
 
+# Discussion Subjects from chapter 7
+
 ----
 
 Reverse engineering is an essential skill for iOS developers, especially when dealing with frameworks and legacy code.
@@ -17,7 +19,7 @@ However there are always challenges, especially in weighing the potential benefi
 ---
 
 
-# Subject 1: Reverse Engineering Frameworks and SDKs in iOS Development
+## Subject 1: Reverse Engineering Frameworks and SDKs in iOS Development
 
 **Context:**
 
@@ -38,7 +40,7 @@ As an experienced iOS developer, I often find myself needing to understand the i
 ---
 
 
-# Subject 2: Applying Reverse Engineering for Legacy iOS Codebases
+## Subject 2: Applying Reverse Engineering for Legacy iOS Codebases
 
 **Context:**
 

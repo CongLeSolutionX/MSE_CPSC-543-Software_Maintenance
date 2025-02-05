@@ -6,10 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
 
+# Chapter 7
 
-# Chapter 7: Reverse Engineering - Summary
+## A Textual Summary
 
 Chapter 7 delves into the crucial practice of reverse engineering within the context of software maintenance. It underscores that before any meaningful changes can be made to a system, a thorough understanding of its existing state is essential, and that reverse engineering provides the tools and techniques to achieve that understanding when documentation is missing, inaccurate, or outdated.
 

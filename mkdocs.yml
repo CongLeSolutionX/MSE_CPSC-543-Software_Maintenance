@@ -8,23 +8,31 @@ nav:
     - Chapter 1:
       - Chapter Overview: 'Software_Maintenance/Chapter_1/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_1/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_1/Discussing_Subjects.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_1/Discussion_Subjects.md'
     - Chapter 2:
       - Chapter Overview: 'Software_Maintenance/Chapter_2/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_2/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_2/Discussing_Subjects.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_2/Discussion_Subjects.md'
     - Chapter 3:
       - Chapter Overview: 'Software_Maintenance/Chapter_3/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_3/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_3/Discussing_Subjects.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_3/Discussion_Subjects.md'
     - Chapter 4:
       - Chapter Overview: 'Software_Maintenance/Chapter_4/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_4/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_4/Discussing_Subjects.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_4/Discussion_Subjects.md'
     - Chapter 5:
       - Chapter Overview: 'Software_Maintenance/Chapter_5/Chapter_Overview.md'
       - Chapter Summary: 'Software_Maintenance/Chapter_5/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_5/Discussing_Subjects.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_5/Discussion_Subjects.md'
+    - Chapter 6:
+      - Chapter Overview: 'Software_Maintenance/Chapter_6/Chapter_Overview.md'
+      - Chapter Summary: 'Software_Maintenance/Chapter_6/Chapter_Summary.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_6/Discussion_Subjects.md'
+    - Chapter 7:
+      - Chapter Overview: 'Software_Maintenance/Chapter_7/Chapter_Overview.md'
+      - Chapter Summary: 'Software_Maintenance/Chapter_7/Chapter_Summary.md'
+      - Discussing Subjects: 'Software_Maintenance/Chapter_7/Discussion_Subjects.md'
 
 
 theme:
