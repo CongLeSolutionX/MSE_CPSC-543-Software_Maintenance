@@ -62,9 +62,9 @@ nav:
       - Chapter Summary: 'Software_Maintenance/Chapter_14/Chapter_Summary.md'
       - Discussing Subjects: 'Software_Maintenance/Chapter_14/Discussion_Subjects.md'
     - PART V:
-      - Chapter Overview: 'Software_Maintenance/Chapter_7/Part_V-Looking_to_the_future.md'
-      - Chapter Summary: 'Software_Maintenance/Chapter_7/Chapter_Summary.md'
-      - Discussing Subjects: 'Software_Maintenance/Chapter_7/Discussion_Subjects.md'
+      - Chapter Overview: 'Software_Maintenance/Part_V/Part_V-Looking_to_the_future.md'
+      - Chapter Summary: 'Software_Maintenance/Part_V/Chapter_Summary.md'
+      - Discussing Subjects: 'Software_Maintenance/Part_V/Discussion_Subjects.md'
 
 
 theme:
