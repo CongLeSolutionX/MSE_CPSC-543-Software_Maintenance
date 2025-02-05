@@ -111,7 +111,12 @@ You can freely use, share, and adapt these notes, diagrams, and illustrations fo
 pip install mkdocs
 pip install mkdocs-material
 pip install mkdocs-mermaid2-plugin
-glightbox
+# glightbox
 ```
+
+```bash
+mkdocs gh-deploy
+```
+
 
 ---
