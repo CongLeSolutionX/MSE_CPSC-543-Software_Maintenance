@@ -6,7 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
+
+# Chapter 6
+
+## A Textual Summary
 
 
 Chapter 6, "Program Understanding," emphasizes its **central role in software maintenance**, highlighting that a significant portion of maintenance effort is dedicated to understanding existing code before any modifications can be made.  The chapter begins by defining key terms like **abstraction, change, cognitive process, and mental model**, establishing a foundation for discussing program comprehension.

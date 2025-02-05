@@ -6,16 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
 
-# Chapter 6 - Program Understanding
+# Chapter 6 
 
-The diagrams below provide a comprehensive visual representation of Chapter 6, "Program Understanding", breaking down its complex concepts into digestible and structured formats using Mermaid syntax.
-
-
----
-
-# Diagram 1 - Program Understanding - Main Mindmap
+## Diagram 1: Program Understanding - Main Mindmap
 
 ```mermaid
 ---
@@ -113,7 +107,7 @@ This mindmap acts as a central index for Chapter 6. It outlines all the major se
 
 ---
 
-# Diagram 2 - Aims of Program Comprehension
+## Diagram 2: Aims of Program Comprehension
 
 ```mermaid
 ---
@@ -173,7 +167,7 @@ This mindmap expands specifically on the "Aims of Program Comprehension" as disc
 
 ---
 
-# Diagram 3 - Maintainer's Information Needs - Detailed Mindmap
+## Diagram 3: Maintainer's Information Needs - Detailed Mindmap
 
 ```mermaid
 ---
@@ -228,7 +222,7 @@ This mindmap elaborates on "Maintainer's Information Needs" from Chapter 6, diff
 
 ---
 
-# Diagram 4 - Comprehension Process Model
+## Diagram 4: Comprehension Process Model
 
 ```mermaid
 ---
@@ -262,7 +256,7 @@ This flowchart represents the "Comprehension Process Model" described in Chapter
 
 ---
 
-# Diagram 5 - Program Comprehension Strategies
+## Diagram 5: Program Comprehension Strategies
 
 ```mermaid
 ---
@@ -315,7 +309,7 @@ Below are additional diagrams and tables should provide a much more detailed vis
 ---
 
 
-# Diagram: Mental Models
+## Diagram: Mental Models
 
 ```mermaid
 ---
@@ -351,7 +345,7 @@ This diagram visualizes the concept of "Mental Models" in Chapter 6. It shows th
 
 ---
 
-# Table 1: Examples of Beacons
+## Table 1: Examples of Beacons
 
 ```mermaid
 ---
@@ -381,7 +375,7 @@ This table provides examples of "Beacons" from Chapter 6, categorized as Interna
 
 ---
 
-# Diagram: Chunking in Bottom-Up Comprehension
+## Diagram: Chunking in Bottom-Up Comprehension
 
 ```mermaid
 ---
@@ -440,7 +434,7 @@ This layered diagram visually demonstrates the "Chunking" process in Bottom-Up C
 
 ---
 
-# Table 2: Reading Techniques
+## Table 2: Reading Techniques
 
 ```mermaid
 ---
@@ -463,7 +457,7 @@ This table compares and contrasts different "Reading Techniques" from Chapter 6,
 
 ---
 
-# Diagram 6: Factors - Implementation Issues (Naming Style - Good vs. Bad Examples)
+## Diagram: Factors - Implementation Issues (Naming Style - Good vs. Bad Examples)
 
 ```mermaid
 ---
@@ -508,7 +502,7 @@ This diagram illustrates the impact of "Naming Style" under Implementation Issue
 
 ---
 
-# Diagram 7: Factors - Support Tools
+## Diagram 7: Factors - Support Tools
 
 ```mermaid
 ---

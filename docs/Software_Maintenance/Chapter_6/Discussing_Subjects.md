@@ -6,6 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
+
+# Discussion Subjects from chapter 6
+
+
 ----
 
 Below are two subjects highlight how the principles from Chapter 6 directly translate into real-world challenges and strategies faced by experienced iOS developers, especially when dealing with the complexities of large and evolving iOS applications and the need to maintain older Objective-C codebases in a rapidly changing technology landscape.
@@ -14,7 +18,7 @@ Below are two subjects highlight how the principles from Chapter 6 directly tran
 ----
 
 
-# Subject 1: Navigating and Understanding Massive iOS Codebases with Evolving Team Knowledge
+## Subject 1: Navigating and Understanding Massive iOS Codebases with Evolving Team Knowledge
 
 **iOS Developer Lens:**  We often inherit projects, especially in larger companies, that are *colossal*.  Think apps with hundreds of screens, complex architectures (sometimes… maybe not), and years of accumulated code written by teams that have long since moved on.  This is a bread-and-butter problem for senior iOS folks.
 
@@ -44,7 +48,7 @@ Below are two subjects highlight how the principles from Chapter 6 directly tran
 
 ---
 
-# Subject 2:  Maintaining and Evolving Legacy Objective-C and UIKit Code in a Modern SwiftUI and Swift World
+## Subject 2:  Maintaining and Evolving Legacy Objective-C and UIKit Code in a Modern SwiftUI and Swift World
 
 **iOS Developer Lens:**  Many of us, especially those in the industry for a while, maintain apps that are largely or entirely built in Objective-C and UIKit.  These older codebases are often critical to the business and can't simply be rewritten overnight, even with the allure of modern Swift and SwiftUI.
 
