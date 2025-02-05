@@ -137,32 +137,38 @@ This expanded set of diagrams below provides a more comprehensive and detailed v
 
 
 
-**Diagram 1: Chapter 2 - Relations Between Maintenance Factors - Flowchart**
+## Diagram 2: Relations Between Maintenance Factors - Flowchart
 
 ```mermaid
+---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
 graph LR
-    subgraph User_Environment [User Environment]
-    style User_Environment fill:#ccf,stroke:#333,stroke-width:1px
+    subgraph User_Environment["User Environment"]
+    style User_Environment fill:#c3c9,stroke:#333,stroke-width:1px
         UE[User]
     end
-    subgraph Organizational_Environment [Organizational Environment]
-    style Organizational_Environment fill:#aac,stroke:#333,stroke-width:1px
+    subgraph Organizational_Environment["Organizational Environment"]
+    style Organizational_Environment fill:#a3a9,stroke:#333,stroke-width:1px
         OE[Org Env]
     end
-    subgraph Operational_Environment [Operational Environment]
-    style Operational_Environment fill:#cca,stroke:#333,stroke-width:1px
+    subgraph Operational_Environment["Operational Environment"]
+    style Operational_Environment fill:#c3c9,stroke:#333,stroke-width:1px
         OpE[Oper Env]
     end
-    subgraph Maintenance_Process [Maintenance Process]
-    style Maintenance_Process fill:#aea,stroke:#333,stroke-width:1px
+    subgraph Maintenance_Process["Maintenance Process"]
+    style Maintenance_Process fill:#a3e9,stroke:#333,stroke-width:1px
         MP[Maint. Process]
     end
-    subgraph Maintenance_Personnel [Maintenance Personnel]
-    style Maintenance_Personnel fill:#eaa,stroke:#333,stroke-width:1px
+    subgraph Maintenance_Personnel["Maintenance Personnel"]
+    style Maintenance_Personnel fill:#e3a9,stroke:#333,stroke-width:1px
         MPe[Personnel]
     end
-    subgraph Software_Product [Software Product]
-    style Software_Product fill:#faa,stroke:#333,stroke-width:1px
+    subgraph Software_Product["Software Product"]
+    style Software_Product fill:#f3a9,stroke:#333,stroke-width:1px
         SP[Product]
     end
 
@@ -180,11 +186,12 @@ graph LR
     UE -- Indirect Influence --> MPe
     OpE -- Indirect Influence --> MPe
 
-    linkStyle 0,1,2,3,4,5,6,7,8,9,10,11 stroke-width:2px,stroke:black;
-    linkStyle 6,7,8,9,10,11  stroke-dasharray: 5 5;
+    linkStyle 0,1,2,3,4,5,6,7,8,9,10 stroke-width:2px,stroke:black;
+    linkStyle 6,7,8,9,10  stroke-dasharray: 5 5;
+
 ```
 
-**Diagram 1: Chapter 2 - Relations Between Maintenance Factors - Flowchart**
+## Diagram 3:  Relations Between Maintenance Factors - Flowchart
 
 This flowchart illustrates the "Relations Between Maintenance Factors" section of Chapter 2 in more detail:
 
@@ -198,7 +205,7 @@ This diagram clearly visualizes the interdependencies and influences within the 
 
 ---
 
-## Diagram 2: Software Maintenance Framework Components - Mindmap Breakdown
+## Diagram 4: Software Maintenance Framework Components - Mindmap Breakdown
 
 To further detail each component of the SMF, instead of a single large mindmap, let's create individual, focused mindmaps for each component to illustrate their sub-elements more clearly:
 
@@ -341,7 +348,7 @@ These six smaller mindmaps break down each of the components of the SMF into the
 
 ---
 
-## Diagram 3: Key Definitions
+## Diagram 5: Key Definitions
 
 ```mermaid
 ---
