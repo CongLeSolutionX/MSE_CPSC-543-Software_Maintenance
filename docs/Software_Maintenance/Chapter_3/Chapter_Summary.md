@@ -7,7 +7,9 @@ license(s): MIT, CC BY 4.0
 ---
 
 
----
+# Chapter 3
+
+## A Textual Summary
 
 
 Chapter 3, "Fundamentals of Software Change," lays the groundwork for understanding software maintenance by exploring the nature and reasons for software evolution.  It starts by **defining key terms** such as "software evolution," "maintenance," and different types of "change" (corrective, adaptive, perfective, preventive).

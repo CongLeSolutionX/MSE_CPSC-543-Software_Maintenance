@@ -6,6 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
+# Discussion Subjects from chapter 3
+
+
 ---
 
 
@@ -15,7 +18,7 @@ These two subjects below, Adaptive and Preventive Maintenance in iOS, highlight 
 
 ----
 
-# Subject 1: Adaptive Maintenance and the Relentless iOS Platform Evolution
+## Subject 1: Adaptive Maintenance and the Relentless iOS Platform Evolution
 
 From a textbook perspective, Chapter 3 introduces "Adaptive Maintenance" as changes driven by modifications in the software's environment. For an iOS developer, this isn't just theory – it’s a daily reality.  Apple's ecosystem is in constant flux:
 *   **Yearly iOS Updates are a Given:** Every year, we brace for a new iOS release. This isn't merely an "upgrade"; it's a substantial environmental change. New APIs are introduced, old ones deprecated, system behaviors shift, and sometimes, entire UI paradigms are revamped (like the move to SwiftUI).  As seasoned iOS developers, we know that apps *must* adapt.
@@ -36,7 +39,7 @@ In essence, adaptive maintenance in iOS development is not an optional activity;
 ---
 
 
-# Subject 2: Preventive Maintenance as Code Refactoring and Modernization in Swift
+## Subject 2: Preventive Maintenance as Code Refactoring and Modernization in Swift
 
 Chapter 3 introduces "Preventive Maintenance" aimed at preventing malfunctions and improving maintainability. For an iOS developer working in Swift, this directly translates to the critical practice of code refactoring and modernization.
 

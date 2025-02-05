@@ -6,7 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
+
+# Chapter 5
+
+## A Textual Summary
 
 
 Chapter 5, "The Maintenance Process," from "Software Maintenance: Concepts and Practice," systematically explores the crucial role of process models in software maintenance. It begins by establishing the **importance of process models** as abstractions that help manage the complexity of software evolution, contrasting them with the broader software life-cycle which encompasses the cyclical nature of software from inception to obsolescence. The chapter highlights how models, using the analogy of maps and architectural drawings, provide essential representations for understanding and managing complex processes.

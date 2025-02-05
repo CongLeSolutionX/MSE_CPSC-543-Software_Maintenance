@@ -8,12 +8,10 @@ license(s): MIT, CC BY 4.0
 
 ----
 
-
 # Chapter 4: Limitations and Economic Implications to Software Change
 
-Here are the diagrams and illustrations using Mermaid syntax:
 
-# Diagram 1: Chapter 4 - Limitations and Economic Implications
+## Diagram 1: Limitations and Economic Implications
 
 ```mermaid
 ---
@@ -94,7 +92,7 @@ This mindmap provides a comprehensive overview of Chapter 4, structured around i
 
 ---
 
-# Table 1: Expenditure on Different Changes
+## Table 1: Expenditure on Different Changes
 
 ```mermaid
 ---
@@ -118,7 +116,7 @@ This table presents the data from the Lientz and Swanson study mentioned in Chap
 ----
 
 
-# Diagram 2: Limitations to Software Change
+## Diagram 2: Limitations to Software Change
 
 ```mermaid
 ---
@@ -180,7 +178,7 @@ This Fishbone diagram (also known as Ishikawa or Cause-and-Effect diagram) visua
 
 ---
 
-# Table 2: Nomenclature and Image
+## Table 2: Nomenclature and Image
 
 ```mermaid
 ---
@@ -203,7 +201,7 @@ This table compares the terms "Maintenance," "Evolution," and "Support" in terms
 
 ---
 
-# Table 3: Potential Solutions
+## Table 3: Potential Solutions
 
 ```mermaid
 ---
@@ -226,7 +224,7 @@ This table lists the potential solutions to maintenance problems discussed in Ch
 
 ---
 
-# Diagram 4: Expenditure on Change Types
+## Diagram 4: Expenditure on Change Types
 
 ```mermaid
 ---
@@ -251,7 +249,7 @@ Building on the previous table, this bar chart visually represents the distribut
 
 ---
 
-# Diagram 5: Image Problem
+## Diagram 5: Image Problem
 
 ```mermaid
 ---

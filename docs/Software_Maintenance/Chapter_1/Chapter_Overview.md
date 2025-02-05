@@ -6,8 +6,6 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
-
 # Chapter 1 - Introduction to Basic Concepts
 
 ## Diagram 1: Chapter Overview

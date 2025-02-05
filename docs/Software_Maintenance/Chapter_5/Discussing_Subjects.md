@@ -6,6 +6,11 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
+
+# Discussion Subjects from chapter 5
+
+
+
 ---
 
 Below are two examples show how the general principles of software maintenance, as discussed in Chapter 5, are directly applicable and highly relevant to the day-to-day realities of iOS development and maintenance.
@@ -14,7 +19,7 @@ Below are two examples show how the general principles of software maintenance, 
 ---
 
 
-# Subject 1:  Process Models in iOS Development - Beyond the Waterfall (and Why Agile-ish is King)
+## Subject 1:  Process Models in iOS Development - Beyond the Waterfall (and Why Agile-ish is King)
 
 Chapter 5 talks about the evolution of process models and how the Waterfall model, while structured, doesn't really capture the iterative and changing nature of software, especially maintenance.  As an iOS developer, this hits home big time. I can't remember the last time I worked on a truly "Waterfall" iOS project.  Maybe way back for some really rigid enterprise stuff, but even then, things *always* changed.
 
@@ -37,7 +42,7 @@ Bottom line: Chapter 5's framework of process models is useful for understanding
 
 
 
-# Subject 2:  The "Quick-Fix" Model and Legacy Objective-C Projects in iOS - A Cautionary Tale
+## Subject 2:  The "Quick-Fix" Model and Legacy Objective-C Projects in iOS - A Cautionary Tale
 
 Chapter 5 rightly warns against the **Quick-Fix Model**. As an iOS dev, I've definitely seen and sometimes *been* the culprit in quick-fix situations, especially when dealing with **legacy Objective-C codebases**.
 

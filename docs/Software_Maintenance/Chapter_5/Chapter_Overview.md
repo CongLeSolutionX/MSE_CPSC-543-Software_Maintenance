@@ -6,15 +6,10 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
 
+# Chapter 5
 
-# Chapter 5 - The Maintenance Process
-
-
-Here are the diagrams and illustrations for Chapter 5:
-
-# Diagram 1: The Maintenance Process - Mindmap Overview
+## Diagram 1: The Maintenance Process - Mindmap Overview
 
 ```mermaid
 ---
@@ -88,7 +83,7 @@ This mindmap provides an overview of Chapter 5, outlining the progression from t
 
 ---
 
-# Diagram 2: Maintenance Process Models
+## Diagram 2: Maintenance Process Models
 
 ```mermaid
 ---
@@ -239,7 +234,7 @@ This is the same Flowchart as Diagram 3 from the previous response, but included
 
 ---
 
-# Table 1: Process Model Comparison
+## Table 1: Process Model Comparison
 
 ```mermaid
 ---
@@ -271,7 +266,7 @@ This table provides a comparative overview of the different Maintenance Process 
 
 
 
-# Diagram: Software Production Process
+## Diagram: Software Production Process
 
 ```mermaid
 ---
@@ -302,7 +297,7 @@ This flowchart elaborates on the "Software Production Process" mentioned in Chap
 
 ---
 
-# Diagram: Evolution of Process Models
+## Diagram: Evolution of Process Models
 
 ```mermaid
 ---
@@ -356,7 +351,7 @@ This diagram presents a spectrum of process models, illustrating their evolution
 
 ---
 
-# Diagram 3: Change Control Workflow
+## Diagram: Change Control Workflow
 
 ```mermaid
 ---
@@ -421,7 +416,7 @@ This flowchart illustrates a typical Change Control Workflow, starting from when
 
 ---
 
-# Diagram 4: Process Maturity Levels
+## Diagram: Process Maturity Levels
 
 ```mermaid
 ---
@@ -470,7 +465,7 @@ This diagram uses a level-based structure to represent the Capability Maturity M
 ---
 
 
-# Diagram 5: Software Experience Base
+## Diagram: Software Experience Base
 
 ```mermaid
 ---

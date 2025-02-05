@@ -6,10 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
-----
+# Chapter 3
 
-
-# Diagram 1: Chapter 3 - Fundamentals of Software Change - Mindmap Overview
+## Diagram 1: Fundamentals of Software Change - Mindmap Overview
 
 ```mermaid
 ---
@@ -174,7 +173,7 @@ This mindmap provides a structural overview of Chapter 3, breaking down each sec
 
 ---
 
-# Diagram 2: Chapter 3.3.1 Classification of Changes
+## Diagram 2: Chapter 3.3.1 Classification of Changes
 
 ```mermaid
 ---
@@ -235,7 +234,7 @@ This mindmap focuses specifically on the four classifications of software change
 
 ---
 
-# Diagram 3: Chapter 3.5 Lehman's Laws
+## Diagram 3: Chapter 3.5 Lehman's Laws
 
 ```mermaid
 ---
@@ -284,7 +283,7 @@ This mindmap details each of Lehman's Laws of Software Evolution, providing a co
 
 
 
-# Diagram 4: Chapter 3.3.1 Classification of Software Changes
+## Diagram 4: Chapter 3.3.1 Classification of Software Changes
 
 **Classification of Software Changes - Comparison Table**
 
@@ -310,7 +309,7 @@ This table provides a concise comparison of the four Software Change Classificat
 
 ---
 
-# Diagram 5: Chapter 3.3.3 Case Study - ACME Payroll
+## Diagram 5: Chapter 3.3.3 Case Study - ACME Payroll - Flowchart of Decision Balancing
 
 ```mermaid
 graph LR
@@ -333,13 +332,11 @@ graph LR
 ```
 
 
-**Chapter 3.3.3 Case Study - ACME Payroll - Flowchart of Decision Balancing**
-
 This flowchart visualizes the decision-making process in the ACME Health Clinic Payroll System case study, illustrating the need to balance resources between maintaining the obsolete system and developing the new one.
 
 ---
 
-# Diagram 6: Chapter 3.3.4 Incremental Release
+## Diagram 6: Chapter 3.3.4 Incremental Release - Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -365,13 +362,12 @@ sequenceDiagram
     Note over of SoftwareVendor: Changes Introduced Incrementally over Releases
 ```
 
-**Chapter 3.3.4 Incremental Release - Sequence Diagram**
 
 This sequence diagram depicts the process of incremental software release, showing how changes, both minor and major, are incorporated and deployed over successive releases.
 
 ---
 
-# Diagram 7: Chapter 3.4 Ongoing Support
+## Diagram 7: Chapter 3.4 Ongoing Support
 
 ```mermaid
 ---
@@ -410,13 +406,11 @@ mindmap
 
 ```
 
-**Chapter 3.4 Ongoing Support - Mindmap**
-
 This mindmap breaks down the concept of Ongoing Support, detailing its objectives - Effective Communication, Training of End-Users, and Providing Business Information - and the various elements within each objective.
 
 ---
 
-# Diagram 8: Chapter 3.3.2 Relationship Between Software Changes
+## Diagram 8: Chapter 3.3.2 Relationship Between Software Changes
 
 ```mermaid
 graph LR

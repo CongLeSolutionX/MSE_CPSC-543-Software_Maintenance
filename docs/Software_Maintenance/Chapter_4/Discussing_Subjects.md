@@ -6,6 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
+# Discussion Subjects from chapter 4
+
+
 ---
 
 Below are two subjects, viewed through the practical experience of an iOS developer, illustrate how the theoretical concepts from Chapter 4 manifest in real-world iOS development and maintenance scenarios.
@@ -18,7 +21,7 @@ They highlight the constant balancing act between resource constraints, technica
 
 
 
-# Subject 1: Resource Limitations - The iOS Developer's Daily Reality
+## Subject 1: Resource Limitations - The iOS Developer's Daily Reality
 
 *   **Chapter 4 Context:** Chapter 4 discusses "Resource Limitations" as a key constraint on software change. It points out that lack of budget, skilled personnel, and appropriate tools hinders effective maintenance.
 
@@ -38,7 +41,7 @@ They highlight the constant balancing act between resource constraints, technica
 
 ---
 
-# Subject 2: Quality of Existing System (Legacy Code) - The Ever-Present UIKit Elephant
+## Subject 2: Quality of Existing System (Legacy Code) - The Ever-Present UIKit Elephant
 
 *   **Chapter 4 Context:** Chapter 4 emphasizes that "Quality of Existing System" is a major limitation. Poor quality legacy code becomes increasingly difficult and expensive to maintain, hindering evolution and innovation.
 

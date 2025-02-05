@@ -6,8 +6,9 @@ version: "1.0"
 license(s): MIT, CC BY 4.0
 ---
 
----
+# Chapter 4
 
+## A Textual Summary
 
 Chapter 4 of "Software Maintenance: Concepts and Practice" discussed the **limitations and economic realities of software maintenance**, highlighting why it's a costly and challenging endeavor. The chapter opens by emphasizing the **staggering economic implications** of software modification, revealing that maintenance often consumes a larger portion of IT budgets than new development. This economic burden underscores the urgency of addressing maintenance problems effectively.
 
