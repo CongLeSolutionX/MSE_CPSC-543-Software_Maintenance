@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -53,16 +53,7 @@
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  </head>
   
   
     
@@ -241,6 +232,7 @@
   
   <span class="md-ellipsis">
     Introduction
+    
   </span>
   
 
@@ -261,6 +253,7 @@
   
   <span class="md-ellipsis">
     Syllabus
+    
   </span>
   
 
@@ -291,6 +284,7 @@
   
   <span class="md-ellipsis">
     Software Maintenance
+    
   </span>
   
 
@@ -326,6 +320,7 @@
   
   <span class="md-ellipsis">
     Chapter 1
+    
   </span>
   
 
@@ -351,6 +346,7 @@
   
   <span class="md-ellipsis">
     Chapter Overview
+    
   </span>
   
 
@@ -372,6 +368,7 @@
   
   <span class="md-ellipsis">
     Chapter Summary
+    
   </span>
   
 
@@ -393,6 +390,7 @@
   
   <span class="md-ellipsis">
     Discussing Subjects
+    
   </span>
   
 
@@ -432,6 +430,7 @@
   
   <span class="md-ellipsis">
     Chapter 2
+    
   </span>
   
 
@@ -457,6 +456,7 @@
   
   <span class="md-ellipsis">
     Chapter Overview
+    
   </span>
   
 
@@ -478,6 +478,7 @@
   
   <span class="md-ellipsis">
     Chapter Summary
+    
   </span>
   
 
@@ -499,6 +500,7 @@
   
   <span class="md-ellipsis">
     Discussing Subjects
+    
   </span>
   
 
@@ -538,6 +540,7 @@
   
   <span class="md-ellipsis">
     Chapter 3
+    
   </span>
   
 
@@ -563,6 +566,7 @@
   
   <span class="md-ellipsis">
     Chapter Overview
+    
   </span>
   
 
@@ -584,6 +588,7 @@
   
   <span class="md-ellipsis">
     Chapter Summary
+    
   </span>
   
 
@@ -605,6 +610,7 @@
   
   <span class="md-ellipsis">
     Discussing Subjects
+    
   </span>
   
 
@@ -644,6 +650,7 @@
   
   <span class="md-ellipsis">
     Chapter 4
+    
   </span>
   
 
@@ -669,6 +676,7 @@
   
   <span class="md-ellipsis">
     Chapter Overview
+    
   </span>
   
 
@@ -690,6 +698,7 @@
   
   <span class="md-ellipsis">
     Chapter Summary
+    
   </span>
   
 
@@ -711,6 +720,7 @@
   
   <span class="md-ellipsis">
     Discussing Subjects
+    
   </span>
   
 
@@ -750,6 +760,7 @@
   
   <span class="md-ellipsis">
     Chapter 5
+    
   </span>
   
 
@@ -775,6 +786,7 @@
   
   <span class="md-ellipsis">
     Chapter Overview
+    
   </span>
   
 
@@ -796,6 +808,7 @@
   
   <span class="md-ellipsis">
     Chapter Summary
+    
   </span>
   
 
@@ -817,6 +830,7 @@
   
   <span class="md-ellipsis">
     Discussing Subjects
+    
   </span>
   
 
@@ -874,6 +888,7 @@
                   
 
 
+
 <hr />
 <p>Below are a subject related to Chapter 13, &ldquo;Building and Sustaining Maintainability&rdquo;, through the lens of an experienced iOS developer.</p>
 <hr />
@@ -901,60 +916,60 @@
 <hr />
 <h2 id="1-encapsulation-in-swift-access-control">1. Encapsulation in Swift (Access Control)<a class="headerlink" href="#1-encapsulation-in-swift-access-control" title="Permanent link">&para;</a></h2>
 <p>Encapsulation is about bundling data and methods that operate on that data within a single unit (like a class) and controlling access to the internal workings. Swift&rsquo;s access control modifiers are key here.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">import</span><span class="w"> </span><span class="nc">UIKit</span>
+<pre><code class="language-swift">import UIKit
 
-<span class="kd">class</span><span class="w"> </span><span class="nc">BankAccount</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Private property - only accessible within BankAccount class</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">balance</span><span class="p">:</span><span class="w"> </span><span class="nb">Double</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">0</span>
+class BankAccount {
+    // Private property - only accessible within BankAccount class
+    private var balance: Double = 0
 
-<span class="w">    </span><span class="c1">// Internal property - accessible within the same module (e.g., app)</span>
-<span class="w">    </span><span class="kd">internal</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nv">accountNumber</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span>
+    // Internal property - accessible within the same module (e.g., app)
+    internal let accountNumber: String
 
-<span class="w">    </span><span class="c1">// Public method - accessible from anywhere</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">deposit</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span><span class="w"> </span><span class="nb">Double</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">balance</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">amount</span>
-<span class="w">            </span><span class="bp">print</span><span class="p">(</span><span class="s">&quot;Deposited </span><span class="si">\(</span><span class="n">amount</span><span class="si">)</span><span class="s">. New balance: </span><span class="si">\(</span><span class="n">balance</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="bp">print</span><span class="p">(</span><span class="s">&quot;Deposit amount must be positive.&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
+    // Public method - accessible from anywhere
+    public func deposit(amount: Double) {
+        if amount &gt; 0 {
+            balance += amount
+            print(&quot;Deposited \(amount). New balance: \(balance)&quot;)
+        } else {
+            print(&quot;Deposit amount must be positive.&quot;)
+        }
+    }
 
-<span class="w">    </span><span class="c1">// Private method - only accessible within BankAccount class</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">withdrawInternal</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span><span class="w"> </span><span class="nb">Double</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nb">Bool</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">balance</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">balance</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">amount</span>
-<span class="w">            </span><span class="bp">print</span><span class="p">(</span><span class="s">&quot;Withdrawn </span><span class="si">\(</span><span class="n">amount</span><span class="si">)</span><span class="s">. New balance: </span><span class="si">\(</span><span class="n">balance</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="bp">print</span><span class="p">(</span><span class="s">&quot;Insufficient funds or invalid withdrawal amount.&quot;</span><span class="p">)</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
+    // Private method - only accessible within BankAccount class
+    private func withdrawInternal(amount: Double) -&gt; Bool {
+        if amount &gt; 0 &amp;&amp; balance &gt;= amount {
+            balance -= amount
+            print(&quot;Withdrawn \(amount). New balance: \(balance)&quot;)
+            return true
+        } else {
+            print(&quot;Insufficient funds or invalid withdrawal amount.&quot;)
+            return false
+        }
+    }
 
-<span class="w">    </span><span class="c1">// Public method that uses the private withdrawInternal method</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">withdraw</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span><span class="w"> </span><span class="nb">Double</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nb">Bool</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">withdrawInternal</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="c1">// Internal logic encapsulated</span>
-<span class="w">    </span><span class="p">}</span>
+    // Public method that uses the private withdrawInternal method
+    public func withdraw(amount: Double) -&gt; Bool {
+        return withdrawInternal(amount: amount) // Internal logic encapsulated
+    }
 
-<span class="w">    </span><span class="c1">// Internal (or public) method to get balance - controlled access to data</span>
-<span class="w">    </span><span class="kd">internal</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">getBalance</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nb">Double</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">balance</span><span class="w"> </span><span class="c1">// Controlled access to balance</span>
-<span class="w">    </span><span class="p">}</span>
+    // Internal (or public) method to get balance - controlled access to data
+    internal func getBalance() -&gt; Double {
+        return balance // Controlled access to balance
+    }
 
-<span class="w">    </span><span class="c1">// Initializer (public)</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">init</span><span class="p">(</span><span class="n">accountNumber</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">accountNumber</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">accountNumber</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+    // Initializer (public)
+    public init(accountNumber: String) {
+        self.accountNumber = accountNumber
+    }
+}
 
-<span class="kd">let</span><span class="w"> </span><span class="nv">myAccount</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">BankAccount</span><span class="p">(</span><span class="n">accountNumber</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1234567890&quot;</span><span class="p">)</span>
-<span class="n">myAccount</span><span class="p">.</span><span class="n">deposit</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="c1">// OK - Public access</span>
-<span class="n">myAccount</span><span class="p">.</span><span class="n">withdraw</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="c1">// OK - Public access to controlled withdrawal</span>
+let myAccount = BankAccount(accountNumber: &quot;1234567890&quot;)
+myAccount.deposit(amount: 100) // OK - Public access
+myAccount.withdraw(amount: 50) // OK - Public access to controlled withdrawal
 
-<span class="c1">// myAccount.balance = 1000 // Error: &#39;balance&#39; is private - Encapsulation enforced!</span>
-<span class="bp">print</span><span class="p">(</span><span class="s">&quot;Account balance: </span><span class="si">\(</span><span class="n">myAccount</span><span class="p">.</span><span class="n">getBalance</span><span class="si">())</span><span class="s">&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// OK - Controlled access via public/internal methods</span>
-</code></pre></div>
+// myAccount.balance = 1000 // Error: 'balance' is private - Encapsulation enforced!
+print(&quot;Account balance: \(myAccount.getBalance())&quot;) // OK - Controlled access via public/internal methods
+</code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
 <li><code>private var balance</code>:  The <code>balance</code> is intentionally made <code>private</code>. External code cannot directly modify it, enforcing data integrity and encapsulation.</li>
@@ -965,69 +980,69 @@
 <hr />
 <h2 id="2-inheritance-in-ios-uiview-subclassing">2. Inheritance in iOS (UIView Subclassing)<a class="headerlink" href="#2-inheritance-in-ios-uiview-subclassing" title="Permanent link">&para;</a></h2>
 <p>Inheritance allows us to create new classes that inherit properties and behaviors from existing classes. In iOS, <code>UIView</code> and its subclasses are excellent examples.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">import</span><span class="w"> </span><span class="nc">UIKit</span>
+<pre><code class="language-swift">import UIKit
 
-<span class="c1">// Base class: Reusable button with common properties</span>
-<span class="kd">class</span><span class="w"> </span><span class="nc">CustomButton</span><span class="p">:</span><span class="w"> </span><span class="bp">UIButton</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">override</span><span class="w"> </span><span class="kd">init</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">CGRect</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">super</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">frame</span><span class="p">)</span>
-<span class="w">        </span><span class="n">setupButton</span><span class="p">()</span>
-<span class="w">    </span><span class="p">}</span>
+// Base class: Reusable button with common properties
+class CustomButton: UIButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupButton()
+    }
 
-<span class="w">    </span><span class="kr">required</span><span class="w"> </span><span class="kd">init</span><span class="p">?(</span><span class="n">coder</span><span class="p">:</span><span class="w"> </span><span class="bp">NSCoder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="bp">fatalError</span><span class="p">(</span><span class="s">&quot;init(coder:) has not been implemented&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
+    required init?(coder: NSCoder) {
+        fatalError(&quot;init(coder:) has not been implemented&quot;)
+    }
 
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">setupButton</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">backgroundColor</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">.</span><span class="n">systemBlue</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">setTitleColor</span><span class="p">(.</span><span class="n">white</span><span class="p">,</span><span class="w"> </span><span class="k">for</span><span class="p">:</span><span class="w"> </span><span class="p">.</span><span class="n">normal</span><span class="p">)</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">layer</span><span class="p">.</span><span class="n">cornerRadius</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">8</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">clipsToBounds</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+    private func setupButton() {
+        self.backgroundColor = .systemBlue
+        self.setTitleColor(.white, for: .normal)
+        self.layer.cornerRadius = 8
+        self.clipsToBounds = true
+    }
+}
 
-<span class="c1">// Subclass 1: Primary Action Button - Inherits from CustomButton, adding specific style</span>
-<span class="kd">class</span><span class="w"> </span><span class="nc">PrimaryActionButton</span><span class="p">:</span><span class="w"> </span><span class="n">CustomButton</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">override</span><span class="w"> </span><span class="kd">init</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">CGRect</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">super</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">frame</span><span class="p">)</span>
-<span class="w">        </span><span class="n">customizePrimaryButton</span><span class="p">()</span>
-<span class="w">    </span><span class="p">}</span>
+// Subclass 1: Primary Action Button - Inherits from CustomButton, adding specific style
+class PrimaryActionButton: CustomButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        customizePrimaryButton()
+    }
 
-<span class="w">    </span><span class="kr">required</span><span class="w"> </span><span class="kd">init</span><span class="p">?(</span><span class="n">coder</span><span class="p">:</span><span class="w"> </span><span class="bp">NSCoder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="bp">fatalError</span><span class="p">(</span><span class="s">&quot;init(coder:) has not been implemented&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
+    required init?(coder: NSCoder) {
+        fatalError(&quot;init(coder:) has not been implemented&quot;)
+    }
 
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">customizePrimaryButton</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">titleLabel</span><span class="p">?.</span><span class="n">font</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="bp">UIFont</span><span class="p">.</span><span class="n">boldSystemFont</span><span class="p">(</span><span class="n">ofSize</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">backgroundColor</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">.</span><span class="n">systemGreen</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-
-
-<span class="c1">// Subclass 2: Secondary Action Button - Inherits from CustomButton, adding different style</span>
-<span class="kd">class</span><span class="w"> </span><span class="nc">SecondaryActionButton</span><span class="p">:</span><span class="w"> </span><span class="n">CustomButton</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">override</span><span class="w"> </span><span class="kd">init</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">CGRect</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">super</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">frame</span><span class="p">)</span>
-<span class="w">        </span><span class="n">customizeSecondaryButton</span><span class="p">()</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kr">required</span><span class="w"> </span><span class="kd">init</span><span class="p">?(</span><span class="n">coder</span><span class="p">:</span><span class="w"> </span><span class="bp">NSCoder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="bp">fatalError</span><span class="p">(</span><span class="s">&quot;init(coder:) has not been implemented&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">customizeSecondaryButton</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">backgroundColor</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">.</span><span class="n">systemGray</span>
-<span class="w">        </span><span class="kc">self</span><span class="p">.</span><span class="n">setTitleColor</span><span class="p">(.</span><span class="n">black</span><span class="p">,</span><span class="w"> </span><span class="k">for</span><span class="p">:</span><span class="w"> </span><span class="p">.</span><span class="n">normal</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+    private func customizePrimaryButton() {
+        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        self.backgroundColor = .systemGreen
+    }
+}
 
 
-<span class="kd">let</span><span class="w"> </span><span class="nv">primaryButton</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PrimaryActionButton</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">CGRect</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">))</span>
-<span class="n">primaryButton</span><span class="p">.</span><span class="n">setTitle</span><span class="p">(</span><span class="s">&quot;Primary Action&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">for</span><span class="p">:</span><span class="w"> </span><span class="p">.</span><span class="n">normal</span><span class="p">)</span>
+// Subclass 2: Secondary Action Button - Inherits from CustomButton, adding different style
+class SecondaryActionButton: CustomButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        customizeSecondaryButton()
+    }
 
-<span class="kd">let</span><span class="w"> </span><span class="nv">secondaryButton</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">SecondaryActionButton</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span><span class="w"> </span><span class="n">CGRect</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">))</span>
-<span class="n">secondaryButton</span><span class="p">.</span><span class="n">setTitle</span><span class="p">(</span><span class="s">&quot;Secondary Action&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">for</span><span class="p">:</span><span class="w"> </span><span class="p">.</span><span class="n">normal</span><span class="p">)</span>
-</code></pre></div>
+    required init?(coder: NSCoder) {
+        fatalError(&quot;init(coder:) has not been implemented&quot;)
+    }
+
+    private func customizeSecondaryButton() {
+        self.backgroundColor = .systemGray
+        self.setTitleColor(.black, for: .normal)
+    }
+}
+
+
+let primaryButton = PrimaryActionButton(frame: CGRect(x: 20, y: 50, width: 200, height: 50))
+primaryButton.setTitle(&quot;Primary Action&quot;, for: .normal)
+
+let secondaryButton = SecondaryActionButton(frame: CGRect(x: 20, y: 120, width: 200, height: 50))
+secondaryButton.setTitle(&quot;Secondary Action&quot;, for: .normal)
+</code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
 <li><code>CustomButton</code>:  This is the <strong>base class</strong> defining common button properties (background color, text color, corner radius).</li>
@@ -1037,62 +1052,62 @@
 <hr />
 <h2 id="3-polymorphism-in-ios-protocols-and-uitableview">3. Polymorphism in iOS (Protocols and UITableView)<a class="headerlink" href="#3-polymorphism-in-ios-protocols-and-uitableview" title="Permanent link">&para;</a></h2>
 <p>Polymorphism allows objects of different classes to respond to the same method call in their own way. Protocols in Swift enable polymorphism, particularly useful in iOS for components like <code>UITableView</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">import</span><span class="w"> </span><span class="nc">UIKit</span>
+<pre><code class="language-swift">import UIKit
 
-<span class="c1">// Protocol defining common behavior for data items in a list</span>
-<span class="kd">protocol</span><span class="w"> </span><span class="nc">ListDataItem</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">get</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">subtitle</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">get</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">icon</span><span class="p">:</span><span class="w"> </span><span class="bp">UIImage</span><span class="p">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">get</span><span class="w"> </span><span class="p">}</span>
-<span class="p">}</span>
+// Protocol defining common behavior for data items in a list
+protocol ListDataItem {
+    var title: String { get }
+    var subtitle: String? { get }
+    var icon: UIImage? { get }
+}
 
-<span class="c1">// Concrete data item types conforming to ListDataItem</span>
-<span class="kd">struct</span><span class="w"> </span><span class="nc">User</span><span class="p">:</span><span class="w"> </span><span class="n">ListDataItem</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nv">email</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">subtitle</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">icon</span><span class="p">:</span><span class="w"> </span><span class="bp">UIImage</span><span class="p">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="bp">UIImage</span><span class="p">(</span><span class="n">systemName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;person.circle.fill&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
-<span class="p">}</span>
+// Concrete data item types conforming to ListDataItem
+struct User: ListDataItem {
+    let name: String
+    let email: String
+    var title: String { return name }
+    var subtitle: String? { return email }
+    var icon: UIImage? { return UIImage(systemName: &quot;person.circle.fill&quot;) }
+}
 
-<span class="kd">struct</span><span class="w"> </span><span class="nc">Product</span><span class="p">:</span><span class="w"> </span><span class="n">ListDataItem</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nv">productName</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nv">price</span><span class="p">:</span><span class="w"> </span><span class="nb">Double</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">productName</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">subtitle</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="n">format</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$%.2f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">icon</span><span class="p">:</span><span class="w"> </span><span class="bp">UIImage</span><span class="p">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="bp">UIImage</span><span class="p">(</span><span class="n">systemName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cube.box.fill&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
-<span class="p">}</span>
+struct Product: ListDataItem {
+    let productName: String
+    let price: Double
+    var title: String { return productName }
+    var subtitle: String? { return String(format: &quot;$%.2f&quot;, price) }
+    var icon: UIImage? { return UIImage(systemName: &quot;cube.box.fill&quot;) }
+}
 
 
-<span class="kd">class</span><span class="w"> </span><span class="nc">ListViewController</span><span class="p">:</span><span class="w"> </span><span class="bp">UITableViewController</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">items</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">ListDataItem</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[]</span>
+class ListViewController: UITableViewController {
+    var items: [ListDataItem] = []
 
-<span class="w">    </span><span class="kr">override</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">viewDidLoad</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kc">super</span><span class="p">.</span><span class="n">viewDidLoad</span><span class="p">()</span>
-<span class="w">        </span><span class="n">tableView</span><span class="p">.</span><span class="n">register</span><span class="p">(</span><span class="bp">UITableViewCell</span><span class="p">.</span><span class="kc">self</span><span class="p">,</span><span class="w"> </span><span class="n">forCellReuseIdentifier</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cell&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="n">items</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Smith&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;alice@example.com&quot;</span><span class="p">),</span>
-<span class="w">            </span><span class="n">Product</span><span class="p">(</span><span class="n">productName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Awesome Gadget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">:</span><span class="w"> </span><span class="mf">99.99</span><span class="p">),</span>
-<span class="w">            </span><span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Johnson&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bob@example.com&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">]</span>
-<span class="w">    </span><span class="p">}</span>
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: &quot;cell&quot;)
+        items = [
+            User(name: &quot;Alice Smith&quot;, email: &quot;alice@example.com&quot;),
+            Product(productName: &quot;Awesome Gadget&quot;, price: 99.99),
+            User(name: &quot;Bob Johnson&quot;, email: &quot;bob@example.com&quot;)
+        ]
+    }
 
-<span class="w">    </span><span class="kr">override</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">tableView</span><span class="p">(</span><span class="kc">_</span><span class="w"> </span><span class="n">tableView</span><span class="p">:</span><span class="w"> </span><span class="bp">UITableView</span><span class="p">,</span><span class="w"> </span><span class="n">numberOfRowsInSection</span><span class="w"> </span><span class="n">section</span><span class="p">:</span><span class="w"> </span><span class="nb">Int</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nb">Int</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">items</span><span class="p">.</span><span class="bp">count</span>
-<span class="w">    </span><span class="p">}</span>
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return items.count
+    }
 
-<span class="w">    </span><span class="kr">override</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">tableView</span><span class="p">(</span><span class="kc">_</span><span class="w"> </span><span class="n">tableView</span><span class="p">:</span><span class="w"> </span><span class="bp">UITableView</span><span class="p">,</span><span class="w"> </span><span class="n">cellForRowAt</span><span class="w"> </span><span class="n">indexPath</span><span class="p">:</span><span class="w"> </span><span class="n">IndexPath</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="bp">UITableViewCell</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nv">cell</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cell&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">for</span><span class="p">:</span><span class="w"> </span><span class="n">indexPath</span><span class="p">)</span>
-<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nv">item</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">items</span><span class="p">[</span><span class="n">indexPath</span><span class="p">.</span><span class="n">row</span><span class="p">]</span>
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: &quot;cell&quot;, for: indexPath)
+        let item = items[indexPath.row]
 
-<span class="w">        </span><span class="n">cell</span><span class="p">.</span><span class="n">textLabel</span><span class="p">?.</span><span class="n">text</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">item</span><span class="p">.</span><span class="n">title</span><span class="w"> </span><span class="c1">// Polymorphic access via protocol</span>
-<span class="w">        </span><span class="n">cell</span><span class="p">.</span><span class="n">detailTextLabel</span><span class="p">?.</span><span class="n">text</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">item</span><span class="p">.</span><span class="n">subtitle</span>
-<span class="w">        </span><span class="n">cell</span><span class="p">.</span><span class="n">imageView</span><span class="p">?.</span><span class="n">image</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">item</span><span class="p">.</span><span class="n">icon</span>
+        cell.textLabel?.text = item.title // Polymorphic access via protocol
+        cell.detailTextLabel?.text = item.subtitle
+        cell.imageView?.image = item.icon
 
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">cell</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+        return cell
+    }
+}
+</code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
 <li><code>ListDataItem</code> Protocol: Defines the common interface (<code>title</code>, <code>subtitle</code>, <code>icon</code>) for any item that can be displayed in a list.</li>
@@ -1103,45 +1118,45 @@
 <h2 id="4-limitations-of-oop-in-contemporary-ios-development-massive-view-controllers-delegate-overuse">4. Limitations of OOP in Contemporary iOS Development (Massive View Controllers &amp; Delegate Overuse)<a class="headerlink" href="#4-limitations-of-oop-in-contemporary-ios-development-massive-view-controllers-delegate-overuse" title="Permanent link">&para;</a></h2>
 <p>These examples are more descriptive, highlighting common iOS development pitfalls that OOP, if not applied thoughtfully, can sometimes worsen:</p>
 <h3 id="massive-view-controllers-problem">Massive View Controllers (Problem)<a class="headerlink" href="#massive-view-controllers-problem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1">// Imagine a very large UIViewController subclass...</span>
-<span class="kd">class</span><span class="w"> </span><span class="nc">ShoppingCartViewController</span><span class="p">:</span><span class="w"> </span><span class="bp">UIViewController</span><span class="p">,</span><span class="w"> </span><span class="bp">UITableViewDataSource</span><span class="p">,</span><span class="w"> </span><span class="bp">UITableViewDelegate</span><span class="p">,</span><span class="w"> </span><span class="bp">UITextFieldDelegate</span><span class="p">,</span><span class="w"> </span><span class="n">ProductSelectionDelegate</span><span class="p">,</span><span class="w"> </span><span class="n">PaymentProcessingDelegate</span><span class="p">,</span><span class="w"> </span><span class="n">LocationServicesDelegate</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">{</span>
+<pre><code class="language-swift">// Imagine a very large UIViewController subclass...
+class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, ProductSelectionDelegate, PaymentProcessingDelegate, LocationServicesDelegate, ... {
 
-<span class="w">    </span><span class="c1">// ... hundreds or thousands of lines of code ...</span>
+    // ... hundreds or thousands of lines of code ...
 
-<span class="w">    </span><span class="c1">// Managing UI, data fetching, business logic, presentation,</span>
-<span class="w">    </span><span class="c1">// networking, location services, payments, etc. within ONE class!</span>
+    // Managing UI, data fetching, business logic, presentation,
+    // networking, location services, payments, etc. within ONE class!
 
-<span class="w">    </span><span class="c1">// Hard to understand, test, and maintain.</span>
-<span class="p">}</span>
-</code></pre></div>
+    // Hard to understand, test, and maintain.
+}
+</code></pre>
 <p><strong>Explanation:</strong>  While OOP encourages modularity within <em>objects</em>, it&rsquo;s easy to create &ldquo;God Objects&rdquo; like Massive View Controllers that manage too much. This leads to tight coupling, reduced reusability, and difficulty in testing (as the diagram illustrates). OOP alone doesn&rsquo;t prevent this; architectural patterns are needed alongside OOP to further decompose responsibilities.</p>
 <h3 id="delegate-and-protocol-overuse-potential-problem-if-uncontrolled">Delegate and Protocol Overuse (Potential Problem, if Uncontrolled)<a class="headerlink" href="#delegate-and-protocol-overuse-potential-problem-if-uncontrolled" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1">// Example of delegate callback hell - hard to trace execution</span>
-<span class="kd">class</span><span class="w"> </span><span class="nc">MyObject</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">weak</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">delegate</span><span class="p">:</span><span class="w"> </span><span class="n">MyDelegate</span><span class="p">?</span>
+<pre><code class="language-swift">// Example of delegate callback hell - hard to trace execution
+class MyObject {
+    weak var delegate: MyDelegate?
 
-<span class="w">    </span><span class="kd">func</span><span class="w"> </span><span class="nf">doSomethingAsync</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// ... async operation ...</span>
-<span class="w">        </span><span class="n">delegate</span><span class="p">?.</span><span class="n">myObjectDidComplete</span><span class="p">(</span><span class="kc">self</span><span class="p">,</span><span class="w"> </span><span class="n">withResult</span><span class="p">:</span><span class="w"> </span><span class="n">result</span><span class="p">)</span><span class="w"> </span><span class="c1">// Delegate callback</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+    func doSomethingAsync() {
+        // ... async operation ...
+        delegate?.myObjectDidComplete(self, withResult: result) // Delegate callback
+    }
+}
 
 
-<span class="kd">class</span><span class="w">  </span><span class="nc">ViewController</span><span class="p">:</span><span class="w"> </span><span class="bp">UIViewController</span><span class="p">,</span><span class="w"> </span><span class="n">MyDelegate</span><span class="p">,</span><span class="w"> </span><span class="n">AnotherDelegate</span><span class="p">,</span><span class="w"> </span><span class="n">YetAnotherDelegate</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">{</span>
+class  ViewController: UIViewController, MyDelegate, AnotherDelegate, YetAnotherDelegate, ... {
 
-<span class="w">    </span><span class="c1">// ... implementing multiple delegate protocols ...</span>
+    // ... implementing multiple delegate protocols ...
 
-<span class="w">    </span><span class="kd">func</span><span class="w"> </span><span class="nf">myObjectDidComplete</span><span class="p">(</span><span class="kc">_</span><span class="w"> </span><span class="n">object</span><span class="p">:</span><span class="w"> </span><span class="n">MyObject</span><span class="p">,</span><span class="w"> </span><span class="n">withResult</span><span class="w"> </span><span class="n">result</span><span class="p">:</span><span class="w"> </span><span class="n">ResultType</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// ... handle callback, potentially triggering other async operations</span>
-<span class="w">        </span><span class="n">anotherObject</span><span class="p">.</span><span class="n">performAnotherAsyncAction</span><span class="p">(</span><span class="n">delegate</span><span class="p">:</span><span class="w"> </span><span class="kc">self</span><span class="p">)</span><span class="w"> </span><span class="c1">// Another delegate call</span>
-<span class="w">    </span><span class="p">}</span>
+    func myObjectDidComplete(_ object: MyObject, withResult result: ResultType) {
+        // ... handle callback, potentially triggering other async operations
+        anotherObject.performAnotherAsyncAction(delegate: self) // Another delegate call
+    }
 
-<span class="w">    </span><span class="kd">func</span><span class="w"> </span><span class="nf">anotherObjectDidComplete</span><span class="p">(</span><span class="kc">_</span><span class="w"> </span><span class="n">object</span><span class="p">:</span><span class="w"> </span><span class="n">AnotherObject</span><span class="p">,</span><span class="w"> </span><span class="n">withAnotherResult</span><span class="w"> </span><span class="n">result</span><span class="p">:</span><span class="w"> </span><span class="n">AnotherResultType</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// ... and so on ...</span>
+    func anotherObjectDidComplete(_ object: AnotherObject, withAnotherResult result: AnotherResultType) {
+        // ... and so on ...
 
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+    }
+}
+</code></pre>
 <p><strong>Explanation:</strong> Delegates are essential for decoupling <em>object communication</em> in iOS (e.g., UITableViewDelegate). However, deeply nested delegate callbacks can create &ldquo;callback hell,&rdquo; making control flow and data updates difficult to track. This isn&rsquo;t OOP&rsquo;s fault <em>per se</em>, but it&rsquo;s a common pattern where protocol-based OOP designs, if not carefully managed, can become complex to maintain.  Reactive programming (Combine) and state management solutions (like Redux with SwiftUI) are often used to simplify asynchronous data flow and state updates instead of relying solely on delegates.</p>
 <hr />
 
@@ -1196,10 +1211,8 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f13b1293.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+  </body>
 </html>
